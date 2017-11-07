@@ -14,7 +14,7 @@ node_js:
 
 env:
   global:
-    - secure: "YCKTPsF1tiHjBYXUef1dW3FXxVRkdhGUfDxBQAwe7fyQnlzJsLsLlwzJavPaV59nkajhMTdXQX0mNdKO9dqp6R939AGgvHO9bF5an6uE0FJoRG6hDNj5kuYe6r2nQo2S2c7YrftwArfOVbhi/bZIXh73Si1961YR+vU5gTA/30HuiGrnG0zgvip6pxFVJEoBRvKJ5qaxZoeNXNgUW9Tb10EMOmcCBU0IYDXRK+Pl++gxQDc8tWQTKqR2fFe3dPWAwcohkJUZvY0s6AGVKkDVA2qQrpsDSmslBy51oWBE5t7FQwpCZWpVjHfzNc+9l2w2NTbqCYyvZgRtybyExv99dmWFTxDcb5KWznhIOWy4XQoAM4rPamV/KXvhQwdclgBkBGWrPJ1YEqklT+JY9vUOmTY0+WugZkp6iHIU48Lf46UTqMa0NZlz4MGrDXoEYHusJAwzBb6gtnpwtkt5ue8t8WjknCzUiSMd0iXFfirv8QE85adOij5acKMgKsLPf3eVja/fu9YEwCMSjzV0BQGkixOOcoeaMafHQ34By9OQA3zVkyJbS90NkyPnl08aV2L1kVJiubSeqVjEMHfqHMvNKGMkjLPvovGVS8J12pzURcci+5L33LowVyjDbdD24LuvDe9sJVvMksVTJjIZcq85jk+XdpwFFlXoMxyZDpCwFeQ="
+    - secure: "SP1gDLIydLI7OLjLSi0162OGr19iKJfAyoRYUWj52pMrImT/Hvp4EJaxs1+PCB9LEL29AueHX7Kt8BIYJ86/rAKzbV+hITS1kYXC3MnRZJ0gxhZ1eobeZuAAIh9T6fPHrkABv2O+6I2KZ7sJBBC8oeXoVgKGc2UFW6LLXQ0A+yygWhm2v/5WozEHpA5ftEcHQXxilFyUsa7KidEp7J6D0mTpMuge+oxNuRODODZt0HJuC8NWpfYKOv7U9q389/41Mxn5+Hqdzjw5XqIqLRYfEgvZRaN8NGbQWXHrrbWJMyDkwfKgj+pPhFA6j3JWwo7BWfhJX4vv7zc9r31hdIOrlnNSYzjdRR/5q9YwI1hPQG750gYEUIRyZ5fVlw/YVeKUoeZfG84gioKd/rBJ/m9zbURs8srDQtt7YOyG4c0wrGWWfvPVUunen3lGrk9qJvAHngtOeTimM+eqycsvaACqEYLduwP+DjoXh5rNTyaf8SqxcUNYe3f0ms1EoyulB8TZfxGBvTWNYatnzGkdIiODQgAT4sM7osFdRBQWUe2OiCJirhmE+Dycv3sQnU7WRmv9NIJpL4f2bRrS3IOGw1lj+1ogEStfCMD47YJ04UXdi9DPMa/opVg8sIUYm0Q5UT3fUeBuRGIrNpF3rRMrtjWCbvHe6vP3drlABZxy8LuSOqY="
 
 before_script:
   - export DISPLAY=:99.0
@@ -31,16 +31,16 @@ script:
   - npm run build-ghpages
 
 after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" -a "$TRAVIS_PULL_REQUEST" == "false" ] ; then angular-cli-ghpages --dir="dist-ghpages" --repo="https://${GH_TOKEN}@github.com/zurfyx/angular-library-starter-kit.git" --name="Sr. Travis" --email="hi@travis.org"; fi
+  - if [ "$TRAVIS_BRANCH" == "master" -a "$TRAVIS_PULL_REQUEST" == "false" ] ; then angular-cli-ghpages --dir="dist-ghpages" --repo="https://${GH_TOKEN}@github.com/unm-idi/splendid-view.git" --name="Sr. Travis" --email="hi@travis.org"; fi
 
 before_deploy:
   - cd dist
 
 deploy:
   provider: npm
-  email: zurfyx+npm@gmail.com
+  email: unm-idi+npm@gmail.com
   api_key: 
-    secure: V68J6Ks+EyJRgAAvm1Rvp6kdHrVBoGaa99cw9ZUzuLQrGrj6SJqsGTtlL9qVCSauWLTyzLiE5UzavptUZR6dXEsvIa0eu/4j1D8ziV0Xgl7levVulL7RrM7W8t6Sn1IOJguZkgGv2J2ZBD5BB66a12aNLpoUTqXB3Vwrvr9sjtL3WzojmT0gHRE9ZU2ExwyUNycT08TO0dPJxw+Rc9Glj6AOAxaXmOayJ0K2eOyoW6UXwTGMw+jnY0Bu9DyMQJFxg4rFPtHBtWoSXRr7Iq75U8BRE67q7PrjhEq/bu66UxiO9dE8NEGlLnUejjDeh62U/rd6SIv2zv6bsTNyPGViK/PIebz8H4wx5h3G75zuRKglV+E/viqrvkHUHb1EkXQgImoclLbUDrFBi4S0mu8eclaup2DTleo/iBejxWGvrvjXmV1Wbo+kztZ/lZco7V0ahaTu9Ze+AdmKCfJ2jHSEo20up14hfCAUfJou566buMCALvOju+JvfTvEeUEG1ejtTwsHQP8Wc2jM8gXsFvifmlAqbK94H3n+eU6fvh4iq4rHXv5rkfIYiUXQXAB9o7V2tsqtaj3n829aLm8ZwaU14jUaFyIQz3311k2m8oWXhCmhd9YPLlwITib8K6KZxnro1X1Q4lENdGkAjRWLuW1Lu2DXDHosEBbUUs0pkDEm7uQ="
+    secure: "fzoTXcqcaHlU+2j++scR0NhuZaAefzrEF+WJQPgtvjVsaEuhoWZ2t6nszLmWcWpbC+M/+/VaMOqFG/66PIeew8GzdMMT9yCKrUy3TMJ38gCEDa6+9FuP1Wc0rb5JIQ8WcM7dicgGVv9QVZ3mS78g1eBm4vI7seD+DtQdUFG17+6i1qU9P+MpoF7z3FX1m1UZN7F+DEwJAE5VIgZrY7885bV7yVap9EPdKbu0UsRW0cizapqPTi4azfz2BkVMCSieDakopxxRVYCwDYqMuu91620vu9LZvFyKW15aAeR802ICGDfRBfjGMRbrsef5vcTIA4HyMiixMhUs01y9CXVIjw8EX3vJ+2KiwW6O5JMyqbOtH0h5T69mORJvXSH3jZUSMUUIqc8KFd+OyHKXUTMyUk6gp+riljezEzssG5Ao6ouCHcVRCv9rVqniBCYY9XQVI04bLaxPBtv1SPWYUbEHfa3izU4GDTIVnrbziDhoA4oPAZV5B40ogsvMCYvp/af+8GXWbtAd7T4vyfiMZvnsDU3cLR4MBaUPhLBuw9sPxxgHBg66d9Jby+O/wsVHuabO0D2aQnlMJIFVHevm9eVIat45P3CAOlffglbr9w62LEp3XF18BPFxVok+eEeKNKAmitTugm0U7GbNXn8WpyYaczv6g7QshdpzwkXEfp9U3z0="
   on:
     branch: master
   skip_cleanup: true

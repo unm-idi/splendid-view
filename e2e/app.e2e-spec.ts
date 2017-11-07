@@ -8,7 +8,7 @@ describe('App', () => {
     page.navigateTo();
   });
 
-  it('should display "<Angular2+ Library Starter Kit>"', () => {
-    expect(page.getTitleText()).toContain('<Angular2+ Library Starter Kit>');
+  it('should display "Splendid View"', () => {
+    expect(page.getTitleText()).toContain('Splendid View');
   });
 });
