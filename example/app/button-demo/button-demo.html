@@ -1,0 +1,16 @@
+<h2>Buttons</h2>
+
+<label class="sv-label">Button</label>
+<sv-button (onClick)="clickTest()">Click Me</sv-button>
+
+<label class="sv-label">Disabled Button</label>
+<sv-button (onClick)="clickTest()" [disabled]="true">Click Me</sv-button>
+
+<label class="sv-label">Loading State</label>
+<sv-button (onClick)="loadingStateTest()" [loading]="loadingFlag">Click To Load</sv-button>
+
+<label class="sv-label">Alternate State</label>
+<sv-button (onClick)="alternateStateTest()" [alternateState]="alternateStateFlag">
+  Save Form
+  <span alternate-state>Success!</span>
+</sv-button>

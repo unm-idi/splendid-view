@@ -9,6 +9,6 @@ describe('App', () => {
   });
 
   it('should display "Splendid View"', () => {
-    expect(page.getTitleText()).toContain('Splendid View');
+    expect(page.getTitleText()).toContain('SPLENDID VIEW');
   });
 });

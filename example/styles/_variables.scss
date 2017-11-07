@@ -1,0 +1,46 @@
+/*
+  Typography
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Roboto:400,400i,700');
+$font-family-ui: 'Montserrat', sans-serif;
+$font-family-base: 'Roboto', sans-serif;
+
+$font-size-base: 1rem;
+$font-weight-base: 400;
+$font-weight-ui: 500;
+$line-height-base: 1.15;
+ 
+/*
+  Colors
+*/
+
+$primary-color: #A8AA19;
+$secondary-color: #007A86;
+
+$success-color: #A8AA19;
+$warning-color: #ED8B00;
+$error-color: #BA0C2F;
+
+$dark-gray: #A1A6BA;
+$light-gray: #B9BED2;
+
+$body-color: #000;
+$body-bg: #FFF;
+$text-muted: $dark-gray;
+$link-color: $primary-color;
+$link-hover-color: rbba($primary-color, 0.8);
+
+
+/* 
+  Stuff
+*/
+
+$border-radius-base: 4px;
+$ui-input-size: 36px;
+
+
+/*
+  Media Queries
+*/
+
