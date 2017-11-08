@@ -26,16 +26,6 @@ import { trigger, transition, style, animate, state } from '@angular/animations'
         animate('200ms ease-in-out', style({ opacity: 0, transform: 'translateX(10px)' }))
       ])
     ])
-    // trigger('alternateState', [
-    //   state('in', style({ opacity: 1, transform: 'translateX(0)' })),
-    //   transition(':enter', [
-    //     style({ opacity: 0, transform: 'translateX(10px)' }),
-    //     animate('200ms')
-    //   ]),
-    //   transition(':leave', [
-    //     animate('200ms', style({ opacity: 0, transform: 'translateX(10px)' }))
-    //   ])
-    // ])
   ]
 })
 export class SVButtonComponent {
@@ -43,9 +33,9 @@ export class SVButtonComponent {
   @Input() loading = false;
   @Input() alternateState = false;
 
-  @Output('onClick') clickEvent = new EventEmitter<any>();
+  @Output() onClick = new EventEmitter<any>();
 
   handleClick(event: any) {
-    this.clickEvent.emit();
+    this.onClick.emit();
   }
 }

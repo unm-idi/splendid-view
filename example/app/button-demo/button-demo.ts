@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'button-demo',
+  selector: 'sv-button-demo',
   templateUrl: './button-demo.html',
   styleUrls: ['./button-demo.scss']
 })
 export class ButtonDemoComponent {
   loadingFlag = false;
   alternateStateFlag = false;
-  
+
   clickTest() {
     window.alert('You clicked a button!');
   }
