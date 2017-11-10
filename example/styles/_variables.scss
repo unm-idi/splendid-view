@@ -2,7 +2,7 @@
   Typography
 */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Roboto:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700');
 $font-family-ui: 'Montserrat', sans-serif;
 $font-family-base: 'Roboto', sans-serif;
 
@@ -31,6 +31,7 @@ $text-muted: $dark-gray;
 $link-color: $primary-color;
 $link-hover-color: rbba($primary-color, 0.8);
 
+$color-palette: (primary: $primary-color, secondary: $secondary-color, success: $success-color, warning: $warning-color, error: $error-color, gray: $dark-gray);
 
 /* 
   Stuff

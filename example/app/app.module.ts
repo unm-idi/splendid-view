@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import { ButtonDemoModule } from './button-demo/button-demo.module';
+import { SpinnerDemoModule } from './spinner-demo/spinner-demo.module';
+import { SwitchDemoModule } from './switch-demo/switch-demo.module';
 
 @NgModule({
   imports: [
     BrowserModule,
-    ButtonDemoModule
+    ButtonDemoModule,
+    SpinnerDemoModule,
+    SwitchDemoModule
   ],
   declarations: [
     AppComponent,

@@ -1,0 +1,26 @@
+@each $color, $value in $color-palette {
+  :host-context(.#{$color}) {
+    .sv-button,
+    .button-hollow {
+      border: 1px solid $value;
+
+      &.alternate-state,
+      &.alternate-state:hover,
+      &.alternate-state:disabled {
+        background-color: rgba($value, 0.25);
+      }
+
+      .sv-button-state {
+        color: $value;
+      }
+    }
+
+    .sv-button {
+      background: $value;
+
+      &:hover {
+        background-color: rgba($value, 0.8);
+      }
+    }
+  }
+}

@@ -2,6 +2,8 @@
 
 .spinner-container {
   display: inline-block;
+  text-align: center;
+
   span  {
     font-family: $font-family-ui;
     text-transform: uppercase;
@@ -9,6 +11,7 @@
     letter-spacing: 0.1em;
   }
 }
+
 .spinner {
   margin: 0px auto 0;
   width: 70px;
