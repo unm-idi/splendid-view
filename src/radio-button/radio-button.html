@@ -1,0 +1,13 @@
+<div class="sv-radio-button-container" (click)="active = !active">
+  <!-- Element that appears to be the radio button -->
+  <div class="sv-radio-button-display" [ngClass]="{active: active}">
+  </div>
+
+  <!-- Radio button value display -->
+  <label class="sv-radio-button-label">
+    <ng-content></ng-content>
+  </label>
+
+  <!-- Hidden radio button to bind ngModel to -->
+  <input type="radio" class="sv-radio-button-control">
+</div>

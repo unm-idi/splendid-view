@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, Renderer2, ElementRef } from '@angular/core';
 
-import { colorMixin, ColorValue, ColorPalette, Colors } from '../core/color';
+import { colorMixin, ColorValue, ColorPalette } from '../core/color';
 
 class SVSwitchBase {
   constructor(public _renderer: Renderer2, public _element: ElementRef) { }
