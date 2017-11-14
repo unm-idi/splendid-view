@@ -11,7 +11,7 @@ export class ButtonDemoComponent {
   alternateStateColor = 'secondary';
 
   clickTest() {
-    window.alert('You clicked a button!');
+    // window.alert('You clicked a button!');
   }
 
   loadingStateTest() {

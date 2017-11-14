@@ -1,11 +1,8 @@
 @import '../base';
+@import './radio-button-theme';
 
 .sv-radio-button-container {
   cursor: pointer;
-}
-
-.sv-radio-button-control {
-  display: none;
 }
 
 .sv-radio-button-label {
@@ -38,7 +35,7 @@
     transform: scale(0);
     opacity: 0;
     
-    transition: all .1s ease-in-out;
+    transition: all .2s ease-in;
   }
 
   &.active {

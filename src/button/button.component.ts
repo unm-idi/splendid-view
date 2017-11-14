@@ -36,7 +36,6 @@ const _SVButtonBase = colorMixin(SVButtonBase);
     ])
   ]
 })
-
 export class SVButtonComponent extends _SVButtonBase implements ColorValue {
   @Input() disabled = false;
   @Input() loading = false;
@@ -47,6 +46,10 @@ export class SVButtonComponent extends _SVButtonBase implements ColorValue {
 
   handleClick(event: any) {
     this.onClick.emit();
+  }
+
+  hostElement() {
+    return this._element.nativeElement;
   }
 
   constructor(renderer: Renderer2, element: ElementRef) {

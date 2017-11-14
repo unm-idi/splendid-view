@@ -17,8 +17,7 @@ export interface ElementRenderer {
 // Provides a component with a color property and getter/setters.
 // The color is then reflected as a class on the component's parent elelment.
 export function colorMixin<T extends Constructor<ElementRenderer>>(base: T, defaultColor?: ColorPalette): Constructor<ColorValue> & T {
-// export function colorMixin<TBase extends Constructor>(Base: TBase) {
-return class extends base {
+  return class extends base {
     private _color: ColorPalette;
 
     get color(): ColorPalette {
