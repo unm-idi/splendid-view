@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SVSpinnerComponent } from './spinner.component';
+import { SvSpinner } from './spinner';
 
 @NgModule({
-  declarations: [ SVSpinnerComponent ],
+  declarations: [ SvSpinner ],
   imports: [ CommonModule ],
-  exports: [ SVSpinnerComponent ],
+  exports: [ SvSpinner ],
   providers: [],
 })
-export class SVSpinnerModule {}
+export class SvSpinnerModule {}

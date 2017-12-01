@@ -1,9 +1,0 @@
-@each $color, $value in $color-palette {
-  :host-context(.#{$color}) {
-    .sv-switch {
-      &.on {
-        background-color: $value;
-      }
-    }
-  }
-}

@@ -1,16 +1,37 @@
 <h2>Buttons</h2>
 
-<label class="sv-label">Button</label>
-<sv-button (onClick)="clickTest()" color="primary">Click Me</sv-button>
+<label class="sv-label">Buttons</label>
 
-<label class="sv-label">Disabled Button</label>
-<sv-button (onClick)="clickTest()" [disabled]="true">Click Me</sv-button>
+<sv-button>Click Me!</sv-button>
+<sv-button class="hollow">Click Me!</sv-button>
+<sv-button color="secondary">Click Me!</sv-button>
+<sv-button color="error" class="hollow">Click Me!</sv-button><br><br>
 
-<label class="sv-label">Loading State</label>
-<sv-button (onClick)="loadingStateTest()" [loading]="loadingFlag">Click To Load</sv-button>
+<sv-button class="small" color="gray">I'm Smaller</sv-button>
+<sv-button class="hollow small" color="warning">Same</sv-button><br><br>
 
-<label class="sv-label">Alternate State</label>
-<sv-button (onClick)="alternateStateTest()" [alternateState]="alternateStateFlag" [color]="alternateStateColor">
-  Save Form
-  <span alternate-state color="primary">Success!</span>
+<sv-button class="large">I'm bigger</sv-button>
+<sv-button class="hollow large">YAY</sv-button><br><br>
+
+<sv-button class="long">I'm a long button!</sv-button>
+
+<label class="sv-label">Disabled Buttons</label>
+<sv-button [disabled]="true">I'm Disabled</sv-button>
+<sv-button class="hollow" [disabled]="true" color="warning">So am I</sv-button>
+
+<label class="sv-label">Button States</label>
+<sv-button [buttonState]="alternateState" (onClick)="alternateStateTest(0)" color="secondary">
+  Save
+  <span svButtonState state="success">Success</span>
+  <span svButtonState state="error">Error</span>
 </sv-button>
+
+<sv-button [buttonState]="alternateState" (onClick)="alternateStateTest(1)" color="secondary" class="hollow small">
+  Save
+  <span svButtonState state="success">Success</span>
+  <span svButtonState state="error">Error</span>
+</sv-button>
+
+<sv-button [buttonState]="loadingFlag ? 'loading' : 'button'" color="blue" (onClick)="loadingStateTest()">Load More</sv-button>
+
+<sv-button buttonState="loading" color="gray"></sv-button>

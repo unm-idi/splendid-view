@@ -1,0 +1,28 @@
+<button
+  (click)="handleClick($event)"
+  [ngClass]="{'alternate-state': buttonState !== 'button'}"
+  [disabled]="disabled"
+>
+
+  <!-- Main Button Text -->
+  <span 
+    [ngClass]="{'hidden-loading': buttonState == 'loading', 'hidden-state': !['button', 'loading'].includes(buttonState)}"
+    class="sv-button-content"
+  >
+    <ng-content></ng-content>
+  </span>
+
+  <!-- Loading State -->
+  <span *ngIf="buttonState === 'loading'" class="sv-button-spinner" @loadingState>
+    <sv-spinner [color]="color"></sv-spinner>
+  </span>
+  
+  <!-- Button States -->
+  <span class="state-container" *ngIf="buttonState === 'success'" @alternateState>
+    <ng-content select="[svButtonState][state=success]"></ng-content>
+  </span>
+
+  <span class="state-container" *ngIf="buttonState === 'error'" @alternateState>
+    <ng-content select="[svButtonState][state=error]"></ng-content>
+  </span>
+</button>

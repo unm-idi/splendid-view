@@ -9,8 +9,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "ng serve",
-    "build": "ng-packagr -p ng-package.json",
+    "start": "ng serve --host 0.0.0.0",
+    "build": "cp ./tsconfig.build.json ./node_modules/ng-packagr/lib/conf/tsconfig.ngc.json && ng-packagr -p ng-package.json",
     "build-ghpages": "ng build --base-href \"https://unm-idi.github.io/splendid-view/\" --output-path \"dist-ghpages\"",
     "test": "npm run lint && ng test --watch false",
     "test-watch": "ng test",
@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "@angular/animations": "^5.0.0",
-    "@angular/cli": "1.4.9",
+    "@angular/cli": "1.5.5",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
     "@angular/compiler-cli": "^5.0.0",
@@ -63,7 +63,7 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "ng-packagr": "^1.5.0-rc.1",
+    "ng-packagr": "next",
     "protractor": "~5.1.2",
     "rxjs": "^5.4.2",
     "ts-node": "~3.2.0",

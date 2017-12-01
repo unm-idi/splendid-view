@@ -1,8 +1,0 @@
-<h2>Radio Buttons</h2>
-
-<sv-radio-group [(selected)]="selected">
-  <sv-radio-button *ngFor="let option of options" [value]="option">{{option}}</sv-radio-button>
-  <sv-radio-button value="warning" color="warning">Warning</sv-radio-button>
-</sv-radio-group>
-
-<p>You have selected: {{selected}}</p>

@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SvButton } from './button';
+import { ButtonState } from './button-state';
+import { SvSpinnerModule } from '../spinner/spinner.module';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { SVRippleDirective } from '../core/ripple';
-
-import { SVButtonComponent } from './button.component';
-import { SVSpinnerModule } from '../spinner/spinner.module';
-
 @NgModule({
-  declarations: [ SVButtonComponent, SVRippleDirective ],
-  imports: [ CommonModule, SVSpinnerModule, BrowserModule, BrowserAnimationsModule ],
-  exports: [ SVButtonComponent ],
+  declarations: [ SvButton, ButtonState ],
+  imports: [ CommonModule, BrowserModule, BrowserAnimationsModule, SvSpinnerModule ],
+  exports: [ SvButton, ButtonState ],
   providers: [],
 })
-export class ButtonModule {}
+export class SvButtonModule {}

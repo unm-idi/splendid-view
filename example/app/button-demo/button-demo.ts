@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ButtonDemoComponent {
   loadingFlag = false;
-  alternateStateFlag = false;
-  alternateStateColor = 'secondary';
+  alternateState = 'button';
 
   clickTest() {
     // window.alert('You clicked a button!');
@@ -21,12 +20,20 @@ export class ButtonDemoComponent {
     }, 3000);
   }
 
-  alternateStateTest() {
-    this.alternateStateFlag = true;
-    this.alternateStateColor = 'primary';
-    setTimeout(() => {
-      this.alternateStateFlag = false;
-      this.alternateStateColor = 'secondary';
-    }, 3000);
+  alternateStateTest(x) {
+    if (x === 0) {
+      this.alternateState = 'success';
+      setTimeout(() => {
+        this.alternateState = 'button';
+      }, 3000);
+    } else {
+      this.alternateState = 'error';
+      setTimeout(() => {
+        this.alternateState = 'success';
+        setTimeout(() => {
+          this.alternateState = 'button';
+        }, 3000);
+      }, 3000);
+    }
   }
 }

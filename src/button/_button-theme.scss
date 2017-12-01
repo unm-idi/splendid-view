@@ -1,26 +1,62 @@
 @each $color, $value in $color-palette {
-  :host-context(.#{$color}) {
-    .sv-button,
-    .button-hollow {
-      border: 1px solid $value;
+  .sv-button.#{$color} button {
+    background-color: $value;
+    border-color: $value;
 
-      &.alternate-state,
-      &.alternate-state:hover,
-      &.alternate-state:disabled {
-        background-color: rgba($value, 0.25);
-      }
-
-      .sv-button-state {
-        color: $value;
-      }
+    &:hover {
+      background-color: rgba($value, 0.8);
     }
 
-    .sv-button {
-      background: $value;
-
-      &:hover {
-        background-color: rgba($value, 0.8);
-      }
+    &.alternate-state,
+    &.alternate-state:hover,
+    &.alternate-state:disabled {
+      background-color: rgba($value, 0.25);
+      color: $value;
     }
   }
+
+  .sv-button.hollow.#{$color} button {
+    color: $value;
+
+    &:hover {
+      color: #FFF;
+    }
+
+    &.alternate-state,
+    &.alternate-state:hover,
+    &.alternate-state:disabled {
+      color: $value;
+    }
+  }
+
+  // .sv-button.#{$color} button,
+  // .button-hollow.#{$color} button {
+  //   border: 1px solid $value;
+
+  //   &.alternate-state,
+  //   &.alternate-state:hover,
+  //   &.alternate-state:disabled {
+  //     background-color: rgba($value, 0.2);
+
+  //     .button-state {
+  //       color: $value;
+  //     }
+  //   }
+  // }
+
+  // .sv-button.#{$color} button {
+  //   background: $value;
+
+  //   &:hover {
+  //     background-color: rgba($value, 0.8);
+  //   }
+  // }
+
+  // .sv-button.hollow.#{$color} button {
+  //   color: $value;
+
+  //   &:hover {
+  //     background-color: rgba($value, 0.8);
+  //   }
+  // }
 }

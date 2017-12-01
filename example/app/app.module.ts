@@ -3,21 +3,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
-import { ButtonDemoModule } from './button-demo/button-demo.module';
-import { SpinnerDemoModule } from './spinner-demo/spinner-demo.module';
-import { SwitchDemoModule } from './switch-demo/switch-demo.module';
-import { RadioButtonDemoModule } from './radio-button-demo/radio-button-demo.module';
+import { ImportsModule } from './imports.module';
+
+import { ButtonDemoComponent } from './button-demo/button-demo';
+import { SpinnerDemo } from './spinner-demo/spinner-demo';
 
 @NgModule({
   imports: [
     BrowserModule,
-    ButtonDemoModule,
-    SpinnerDemoModule,
-    SwitchDemoModule,
-    RadioButtonDemoModule
+    ImportsModule
   ],
   declarations: [
     AppComponent,
+    ButtonDemoComponent,
+    SpinnerDemo
   ],
   providers: [],
   bootstrap: [AppComponent]
