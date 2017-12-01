@@ -6,7 +6,7 @@ webpackJsonp(["styles"],{
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../sass-loader/lib/loader.js?{\"sourceMap\":false,\"precision\":8,\"includePaths\":[]}!../../../../../example/styles/styles.scss");
+var content = __webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/lib/index.js?{\"ident\":\"postcss\",\"sourceMap\":false}!../../../../sass-loader/lib/loader.js?{\"sourceMap\":false,\"precision\":8,\"includePaths\":[]}!../../../../../example/styles/styles.scss");
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__("../../../../style-loader/addStyles.js")(content, {});
@@ -15,8 +15,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--9-1!../../node_modules/postcss-loader/index.js??postcss!../../node_modules/sass-loader/lib/loader.js??ref--9-3!./styles.scss", function() {
-			var newContent = require("!!../../node_modules/css-loader/index.js??ref--9-1!../../node_modules/postcss-loader/index.js??postcss!../../node_modules/sass-loader/lib/loader.js??ref--9-3!./styles.scss");
+		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--8-1!../../node_modules/postcss-loader/lib/index.js??postcss!../../node_modules/sass-loader/lib/loader.js??ref--8-3!./styles.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js??ref--8-1!../../node_modules/postcss-loader/lib/index.js??postcss!../../node_modules/sass-loader/lib/loader.js??ref--8-3!./styles.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -27,15 +27,15 @@ if(false) {
 
 /***/ }),
 
-/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../../sass-loader/lib/loader.js?{\"sourceMap\":false,\"precision\":8,\"includePaths\":[]}!../../../../../example/styles/styles.scss":
+/***/ "../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/lib/index.js?{\"ident\":\"postcss\",\"sourceMap\":false}!../../../../sass-loader/lib/loader.js?{\"sourceMap\":false,\"precision\":8,\"includePaths\":[]}!../../../../../example/styles/styles.scss":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Montserrat:500|Roboto:400,400i,700);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700);", ""]);
 
 // module
-exports.push([module.i, "/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  box-sizing: border-box; }\n\nbody {\n  font-family: \"Roboto\", sans-serif; }\n\nh1, h2, h3, h4, h5, h6 {\n  text-transform: uppercase; }\n\n.sv-label {\n  margin-bottom: 5px;\n  display: block;\n  font-family: \"Montserrat\", sans-serif;\n  color: #A1A6BA;\n  font-size: 11px;\n  letter-spacing: 0.1em;\n  text-transform: uppercase; }\n", ""]);
+exports.push([module.i, "/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  box-sizing: border-box; }\n\nbody {\n  font-family: \"Roboto\", sans-serif; }\n\nh1, h2, h3, h4, h5, h6 {\n  text-transform: uppercase; }\n\n.sv-label {\n  margin-bottom: 5px;\n  display: block;\n  font-family: \"Montserrat\", sans-serif;\n  color: #A1A6BA;\n  font-size: 11px;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n  font-weight: 400; }\n", ""]);
 
 // exports
 
