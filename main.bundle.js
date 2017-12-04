@@ -36,7 +36,7 @@ webpackEmptyAsyncContext.id = "../../../../../example/$$_lazy_route_resource laz
 /***/ "../../../../../example/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header>\n  <h1>Splendid View</h1>\n</header>\n\n<div class=\"wrapper\">\n  <sv-button-demo></sv-button-demo>\n  <sv-spinner-demo></sv-spinner-demo>\n</div>"
+module.exports = "<header>\n  <h1>Splendid View</h1>\n</header>\n\n<div class=\"wrapper\">\n  <sv-button-demo></sv-button-demo>\n  <sv-spinner-demo></sv-spinner-demo>\n  <sv-switch-demo></sv-switch-demo>\n</div>"
 
 /***/ }),
 
@@ -79,7 +79,7 @@ var AppComponent = (function () {
             selector: 'sv-root',
             template: __webpack_require__("../../../../../example/app/app.component.html"),
             styles: [__webpack_require__("../../../../../example/app/app.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* ViewEncapsulation */].None,
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* ViewEncapsulation */].None,
         })
     ], AppComponent);
     return AppComponent;
@@ -100,6 +100,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__imports_module__ = __webpack_require__("../../../../../example/app/imports.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_demo_button_demo__ = __webpack_require__("../../../../../example/app/button-demo/button-demo.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__spinner_demo_spinner_demo__ = __webpack_require__("../../../../../example/app/spinner-demo/spinner-demo.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__switch_demo_switch_demo__ = __webpack_require__("../../../../../example/app/switch-demo/switch-demo.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -112,11 +113,12 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* NgModule */])({
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_3__imports_module__["a" /* ImportsModule */]
@@ -124,7 +126,8 @@ var AppModule = (function () {
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_4__button_demo_button_demo__["a" /* ButtonDemoComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__spinner_demo_spinner_demo__["a" /* SpinnerDemo */]
+                __WEBPACK_IMPORTED_MODULE_5__spinner_demo_spinner_demo__["a" /* SpinnerDemo */],
+                __WEBPACK_IMPORTED_MODULE_6__switch_demo_switch_demo__["a" /* SwitchDemo */]
             ],
             providers: [],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2__app_component__["a" /* AppComponent */]]
@@ -241,11 +244,12 @@ var ImportsModule = (function () {
     function ImportsModule() {
     }
     ImportsModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModule */])({
             declarations: [],
             exports: [
                 __WEBPACK_IMPORTED_MODULE_1__src__["a" /* SvButtonModule */],
-                __WEBPACK_IMPORTED_MODULE_1__src__["b" /* SvSpinnerModule */]
+                __WEBPACK_IMPORTED_MODULE_1__src__["b" /* SvSpinnerModule */],
+                __WEBPACK_IMPORTED_MODULE_1__src__["c" /* SvSwitchModule */]
             ],
             providers: [],
         })
@@ -293,6 +297,42 @@ var SpinnerDemo = (function () {
 
 /***/ }),
 
+/***/ "../../../../../example/app/switch-demo/switch-demo.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h2>Switches</h2>\n\n<sv-switch></sv-switch>\n<sv-switch color=\"error\">I have a label</sv-switch>"
+
+/***/ }),
+
+/***/ "../../../../../example/app/switch-demo/switch-demo.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SwitchDemo; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var SwitchDemo = (function () {
+    function SwitchDemo() {
+    }
+    SwitchDemo = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'sv-switch-demo',
+            template: __webpack_require__("../../../../../example/app/switch-demo/switch-demo.html")
+        })
+    ], SwitchDemo);
+    return SwitchDemo;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../example/main.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -307,7 +347,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__config_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
@@ -337,11 +377,11 @@ var ButtonState = (function () {
         this._element = _element;
     }
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(),
         __metadata("design:type", String)
     ], ButtonState.prototype, "color", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(),
         __metadata("design:type", String)
     ], ButtonState.prototype, "state", void 0);
     ButtonState = __decorate([
@@ -351,7 +391,7 @@ var ButtonState = (function () {
                 'class': 'button-state'
             }
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
     ], ButtonState);
     return ButtonState;
 }());
@@ -396,7 +436,7 @@ var SvButtonModule = (function () {
     function SvButtonModule() {
     }
     SvButtonModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModule */])({
             declarations: [__WEBPACK_IMPORTED_MODULE_2__button__["a" /* SvButton */], __WEBPACK_IMPORTED_MODULE_3__button_state__["a" /* ButtonState */]],
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */], __WEBPACK_IMPORTED_MODULE_4__spinner_spinner_module__["a" /* SvSpinnerModule */]],
             exports: [__WEBPACK_IMPORTED_MODULE_2__button__["a" /* SvButton */], __WEBPACK_IMPORTED_MODULE_3__button_state__["a" /* ButtonState */]],
@@ -418,7 +458,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700);", ""]);
 
 // module
-exports.push([module.i, "/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n.sv-button.primary button {\n  background-color: #A8AA19;\n  border-color: #A8AA19; }\n  .sv-button.primary button:hover {\n    background-color: rgba(168, 170, 25, 0.8); }\n  .sv-button.primary button.alternate-state, .sv-button.primary button.alternate-state:hover, .sv-button.primary button.alternate-state:disabled {\n    background-color: rgba(168, 170, 25, 0.25);\n    color: #A8AA19; }\n\n.sv-button.hollow.primary button {\n  color: #A8AA19; }\n  .sv-button.hollow.primary button:hover {\n    color: #FFF; }\n  .sv-button.hollow.primary button.alternate-state, .sv-button.hollow.primary button.alternate-state:hover, .sv-button.hollow.primary button.alternate-state:disabled {\n    color: #A8AA19; }\n\n.sv-button.secondary button {\n  background-color: #007A86;\n  border-color: #007A86; }\n  .sv-button.secondary button:hover {\n    background-color: rgba(0, 122, 134, 0.8); }\n  .sv-button.secondary button.alternate-state, .sv-button.secondary button.alternate-state:hover, .sv-button.secondary button.alternate-state:disabled {\n    background-color: rgba(0, 122, 134, 0.25);\n    color: #007A86; }\n\n.sv-button.hollow.secondary button {\n  color: #007A86; }\n  .sv-button.hollow.secondary button:hover {\n    color: #FFF; }\n  .sv-button.hollow.secondary button.alternate-state, .sv-button.hollow.secondary button.alternate-state:hover, .sv-button.hollow.secondary button.alternate-state:disabled {\n    color: #007A86; }\n\n.sv-button.success button {\n  background-color: #A8AA19;\n  border-color: #A8AA19; }\n  .sv-button.success button:hover {\n    background-color: rgba(168, 170, 25, 0.8); }\n  .sv-button.success button.alternate-state, .sv-button.success button.alternate-state:hover, .sv-button.success button.alternate-state:disabled {\n    background-color: rgba(168, 170, 25, 0.25);\n    color: #A8AA19; }\n\n.sv-button.hollow.success button {\n  color: #A8AA19; }\n  .sv-button.hollow.success button:hover {\n    color: #FFF; }\n  .sv-button.hollow.success button.alternate-state, .sv-button.hollow.success button.alternate-state:hover, .sv-button.hollow.success button.alternate-state:disabled {\n    color: #A8AA19; }\n\n.sv-button.warning button {\n  background-color: #ED8B00;\n  border-color: #ED8B00; }\n  .sv-button.warning button:hover {\n    background-color: rgba(237, 139, 0, 0.8); }\n  .sv-button.warning button.alternate-state, .sv-button.warning button.alternate-state:hover, .sv-button.warning button.alternate-state:disabled {\n    background-color: rgba(237, 139, 0, 0.25);\n    color: #ED8B00; }\n\n.sv-button.hollow.warning button {\n  color: #ED8B00; }\n  .sv-button.hollow.warning button:hover {\n    color: #FFF; }\n  .sv-button.hollow.warning button.alternate-state, .sv-button.hollow.warning button.alternate-state:hover, .sv-button.hollow.warning button.alternate-state:disabled {\n    color: #ED8B00; }\n\n.sv-button.error button {\n  background-color: #BA0C2F;\n  border-color: #BA0C2F; }\n  .sv-button.error button:hover {\n    background-color: rgba(186, 12, 47, 0.8); }\n  .sv-button.error button.alternate-state, .sv-button.error button.alternate-state:hover, .sv-button.error button.alternate-state:disabled {\n    background-color: rgba(186, 12, 47, 0.25);\n    color: #BA0C2F; }\n\n.sv-button.hollow.error button {\n  color: #BA0C2F; }\n  .sv-button.hollow.error button:hover {\n    color: #FFF; }\n  .sv-button.hollow.error button.alternate-state, .sv-button.hollow.error button.alternate-state:hover, .sv-button.hollow.error button.alternate-state:disabled {\n    color: #BA0C2F; }\n\n.sv-button.gray button {\n  background-color: #A1A6BA;\n  border-color: #A1A6BA; }\n  .sv-button.gray button:hover {\n    background-color: rgba(161, 166, 186, 0.8); }\n  .sv-button.gray button.alternate-state, .sv-button.gray button.alternate-state:hover, .sv-button.gray button.alternate-state:disabled {\n    background-color: rgba(161, 166, 186, 0.25);\n    color: #A1A6BA; }\n\n.sv-button.hollow.gray button {\n  color: #A1A6BA; }\n  .sv-button.hollow.gray button:hover {\n    color: #FFF; }\n  .sv-button.hollow.gray button.alternate-state, .sv-button.hollow.gray button.alternate-state:hover, .sv-button.hollow.gray button.alternate-state:disabled {\n    color: #A1A6BA; }\n\n.sv-button button {\n  min-width: 160px;\n  line-height: 38px;\n  padding: 0 20px;\n  position: relative;\n  display: inline-block;\n  border-width: 1px;\n  border-style: solid;\n  border-radius: 4px;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 500;\n  font-size: 11px;\n  text-transform: uppercase;\n  letter-spacing: 0.1em;\n  cursor: pointer;\n  color: #FFF;\n  background-color: #A8AA19;\n  transition: background-color 0.2s ease-out; }\n  .sv-button button:focus, .sv-button button:active {\n    outline: none; }\n  .sv-button button:disabled {\n    opacity: 0.5;\n    cursor: not-allowed; }\n  .sv-button button.alternate-state, .sv-button button.alternate-state:hover, .sv-button button.alternate-state:disabled {\n    opacity: 1.0;\n    cursor: default; }\n  .sv-button button .sv-button-content {\n    display: inline-block;\n    transition: opacity .2s ease-out, -webkit-transform .2s ease-out;\n    transition: transform .2s ease-out, opacity .2s ease-out;\n    transition: transform .2s ease-out, opacity .2s ease-out, -webkit-transform .2s ease-out; }\n    .sv-button button .sv-button-content.hidden-state {\n      -webkit-transform: translateX(-10px);\n              transform: translateX(-10px);\n      opacity: 0; }\n    .sv-button button .sv-button-content.hidden-loading {\n      -webkit-transform: scale(0.5);\n              transform: scale(0.5);\n      opacity: 0; }\n  .sv-button button .state-container {\n    width: 100%;\n    position: absolute;\n    left: 0;\n    display: inline-block; }\n  .sv-button button .sv-button-spinner {\n    width: 100%;\n    height: 20px;\n    position: absolute;\n    left: 0;\n    top: 9.5px; }\n\n.sv-button.small button {\n  min-width: 100px;\n  line-height: 24px;\n  padding: 0 10px;\n  font-size: 9px; }\n  .sv-button.small button .sv-button-spinner {\n    top: 2px; }\n\n.sv-button.large button {\n  line-height: 48px;\n  font-size: 13px; }\n  .sv-button.large button .sv-button-spinner {\n    top: 14px; }\n\n.sv-button.long button {\n  width: 100%;\n  display: block; }\n\n.sv-button.hollow button {\n  background-color: transparent; }\n", ""]);
+exports.push([module.i, "/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  box-sizing: border-box; }\n\n.sv-button.primary button {\n  background-color: #A8AA19;\n  border-color: #A8AA19; }\n  .sv-button.primary button:hover {\n    background-color: rgba(168, 170, 25, 0.8); }\n  .sv-button.primary button.alternate-state, .sv-button.primary button.alternate-state:hover, .sv-button.primary button.alternate-state:disabled {\n    background-color: rgba(168, 170, 25, 0.25);\n    color: #A8AA19; }\n\n.sv-button.hollow.primary button {\n  color: #A8AA19; }\n  .sv-button.hollow.primary button:hover {\n    color: #FFF; }\n  .sv-button.hollow.primary button.alternate-state, .sv-button.hollow.primary button.alternate-state:hover, .sv-button.hollow.primary button.alternate-state:disabled {\n    color: #A8AA19; }\n\n.sv-button.secondary button {\n  background-color: #007A86;\n  border-color: #007A86; }\n  .sv-button.secondary button:hover {\n    background-color: rgba(0, 122, 134, 0.8); }\n  .sv-button.secondary button.alternate-state, .sv-button.secondary button.alternate-state:hover, .sv-button.secondary button.alternate-state:disabled {\n    background-color: rgba(0, 122, 134, 0.25);\n    color: #007A86; }\n\n.sv-button.hollow.secondary button {\n  color: #007A86; }\n  .sv-button.hollow.secondary button:hover {\n    color: #FFF; }\n  .sv-button.hollow.secondary button.alternate-state, .sv-button.hollow.secondary button.alternate-state:hover, .sv-button.hollow.secondary button.alternate-state:disabled {\n    color: #007A86; }\n\n.sv-button.success button {\n  background-color: #A8AA19;\n  border-color: #A8AA19; }\n  .sv-button.success button:hover {\n    background-color: rgba(168, 170, 25, 0.8); }\n  .sv-button.success button.alternate-state, .sv-button.success button.alternate-state:hover, .sv-button.success button.alternate-state:disabled {\n    background-color: rgba(168, 170, 25, 0.25);\n    color: #A8AA19; }\n\n.sv-button.hollow.success button {\n  color: #A8AA19; }\n  .sv-button.hollow.success button:hover {\n    color: #FFF; }\n  .sv-button.hollow.success button.alternate-state, .sv-button.hollow.success button.alternate-state:hover, .sv-button.hollow.success button.alternate-state:disabled {\n    color: #A8AA19; }\n\n.sv-button.warning button {\n  background-color: #ED8B00;\n  border-color: #ED8B00; }\n  .sv-button.warning button:hover {\n    background-color: rgba(237, 139, 0, 0.8); }\n  .sv-button.warning button.alternate-state, .sv-button.warning button.alternate-state:hover, .sv-button.warning button.alternate-state:disabled {\n    background-color: rgba(237, 139, 0, 0.25);\n    color: #ED8B00; }\n\n.sv-button.hollow.warning button {\n  color: #ED8B00; }\n  .sv-button.hollow.warning button:hover {\n    color: #FFF; }\n  .sv-button.hollow.warning button.alternate-state, .sv-button.hollow.warning button.alternate-state:hover, .sv-button.hollow.warning button.alternate-state:disabled {\n    color: #ED8B00; }\n\n.sv-button.error button {\n  background-color: #BA0C2F;\n  border-color: #BA0C2F; }\n  .sv-button.error button:hover {\n    background-color: rgba(186, 12, 47, 0.8); }\n  .sv-button.error button.alternate-state, .sv-button.error button.alternate-state:hover, .sv-button.error button.alternate-state:disabled {\n    background-color: rgba(186, 12, 47, 0.25);\n    color: #BA0C2F; }\n\n.sv-button.hollow.error button {\n  color: #BA0C2F; }\n  .sv-button.hollow.error button:hover {\n    color: #FFF; }\n  .sv-button.hollow.error button.alternate-state, .sv-button.hollow.error button.alternate-state:hover, .sv-button.hollow.error button.alternate-state:disabled {\n    color: #BA0C2F; }\n\n.sv-button.gray button {\n  background-color: #A1A6BA;\n  border-color: #A1A6BA; }\n  .sv-button.gray button:hover {\n    background-color: rgba(161, 166, 186, 0.8); }\n  .sv-button.gray button.alternate-state, .sv-button.gray button.alternate-state:hover, .sv-button.gray button.alternate-state:disabled {\n    background-color: rgba(161, 166, 186, 0.25);\n    color: #A1A6BA; }\n\n.sv-button.hollow.gray button {\n  color: #A1A6BA; }\n  .sv-button.hollow.gray button:hover {\n    color: #FFF; }\n  .sv-button.hollow.gray button.alternate-state, .sv-button.hollow.gray button.alternate-state:hover, .sv-button.hollow.gray button.alternate-state:disabled {\n    color: #A1A6BA; }\n\n.sv-button button {\n  min-width: 160px;\n  line-height: 38px;\n  padding: 0 20px;\n  position: relative;\n  display: inline-block;\n  border-width: 1px;\n  border-style: solid;\n  border-radius: 4px;\n  font-family: \"Montserrat\", sans-serif;\n  font-weight: 500;\n  font-size: 11px;\n  text-transform: uppercase;\n  letter-spacing: 0.1em;\n  cursor: pointer;\n  color: #FFF;\n  background-color: #A8AA19;\n  transition: background-color 0.2s ease-out; }\n  .sv-button button:focus, .sv-button button:active {\n    outline: none; }\n  .sv-button button:disabled {\n    opacity: 0.5;\n    cursor: not-allowed; }\n  .sv-button button.alternate-state, .sv-button button.alternate-state:hover, .sv-button button.alternate-state:disabled {\n    opacity: 1.0;\n    cursor: default; }\n  .sv-button button .sv-button-content {\n    display: inline-block;\n    transition: opacity .2s ease-out, -webkit-transform .2s ease-out;\n    transition: transform .2s ease-out, opacity .2s ease-out;\n    transition: transform .2s ease-out, opacity .2s ease-out, -webkit-transform .2s ease-out; }\n    .sv-button button .sv-button-content.hidden-state {\n      -webkit-transform: translateX(-10px);\n              transform: translateX(-10px);\n      opacity: 0; }\n    .sv-button button .sv-button-content.hidden-loading {\n      -webkit-transform: scale(0.5);\n              transform: scale(0.5);\n      opacity: 0; }\n  .sv-button button .state-container {\n    width: 100%;\n    position: absolute;\n    left: 0;\n    display: inline-block; }\n  .sv-button button .sv-button-spinner {\n    width: 100%;\n    height: 20px;\n    position: absolute;\n    left: 0;\n    top: 9.5px; }\n\n.sv-button.small button {\n  min-width: 100px;\n  line-height: 24px;\n  padding: 0 10px;\n  font-size: 9px; }\n  .sv-button.small button .sv-button-spinner {\n    top: 2px; }\n\n.sv-button.large button {\n  line-height: 48px;\n  font-size: 13px; }\n  .sv-button.large button .sv-button-spinner {\n    top: 14px; }\n\n.sv-button.long button {\n  width: 100%;\n  display: block; }\n\n.sv-button.hollow button {\n  background-color: transparent; }\n", ""]);
 
 // exports
 
@@ -523,23 +563,23 @@ var SvButton = (function (_super) {
         }
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(),
         __metadata("design:type", String)
     ], SvButton.prototype, "color", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(),
         __metadata("design:type", Object)
     ], SvButton.prototype, "disabled", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* Output */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* Output */])(),
         __metadata("design:type", Object)
     ], SvButton.prototype, "onClick", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ContentChildren */])(__WEBPACK_IMPORTED_MODULE_3__button_state__["a" /* ButtonState */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* QueryList */])
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* QueryList */])
     ], SvButton.prototype, "states", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(),
         __metadata("design:type", Object),
         __metadata("design:paramtypes", [String])
     ], SvButton.prototype, "buttonState", null);
@@ -573,9 +613,9 @@ var SvButton = (function (_super) {
                     ])
                 ])
             ],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* ViewEncapsulation */].None
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* ViewEncapsulation */].None
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
     ], SvButton);
     return SvButton;
 }(_ButtonBase));
@@ -676,6 +716,9 @@ function colorMixin(base, defaultColor) {
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__button_button_module__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__spinner_spinner_module__ = __webpack_require__("../../../../../src/spinner/spinner.module.ts");
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__spinner_spinner_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__switch_switch_module__ = __webpack_require__("../../../../../src/switch/switch.module.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_3__switch_switch_module__["a"]; });
+
 
 
 
@@ -711,7 +754,7 @@ var SvSpinnerModule = (function () {
     function SvSpinnerModule() {
     }
     SvSpinnerModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["F" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModule */])({
             declarations: [__WEBPACK_IMPORTED_MODULE_2__spinner__["a" /* SvSpinner */]],
             imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */]],
             exports: [__WEBPACK_IMPORTED_MODULE_2__spinner__["a" /* SvSpinner */]],
@@ -733,7 +776,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700);", ""]);
 
 // module
-exports.push([module.i, "/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n.sv-spinner.primary .spinner > div {\n  border-color: #A8AA19; }\n\n.sv-spinner.secondary .spinner > div {\n  border-color: #007A86; }\n\n.sv-spinner.success .spinner > div {\n  border-color: #A8AA19; }\n\n.sv-spinner.warning .spinner > div {\n  border-color: #ED8B00; }\n\n.sv-spinner.error .spinner > div {\n  border-color: #BA0C2F; }\n\n.sv-spinner.gray .spinner > div {\n  border-color: #A1A6BA; }\n\n.spinner-container {\n  display: inline-block;\n  text-align: center;\n  min-height: 20px; }\n  .spinner-container span {\n    font-family: \"Montserrat\", sans-serif;\n    text-transform: uppercase;\n    font-size: 10px;\n    letter-spacing: 0.1em; }\n\n.spinner {\n  margin: 0px auto 0;\n  text-align: center;\n  height: 20px; }\n\n.spinner > div {\n  width: 12px;\n  height: 12px;\n  border: 2px solid #A8AA19;\n  border-radius: 100%;\n  display: inline-block;\n  vertical-align: top;\n  margin-top: 4px;\n  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n  animation: sk-bouncedelay 1.4s infinite ease-in-out both; }\n\n.spinner .bounce1 {\n  -webkit-animation-delay: -0.32s;\n  animation-delay: -0.32s; }\n\n.spinner .bounce2 {\n  -webkit-animation-delay: -0.16s;\n  animation-delay: -0.16s; }\n\n@-webkit-keyframes sk-bouncedelay {\n  0%, 80%, 100% {\n    -webkit-transform: scale(0); }\n  40% {\n    -webkit-transform: scale(1); } }\n\n@keyframes sk-bouncedelay {\n  0%, 80%, 100% {\n    -webkit-transform: scale(0);\n    transform: scale(0); }\n  40% {\n    -webkit-transform: scale(1);\n    transform: scale(1); } }\n", ""]);
+exports.push([module.i, "/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  box-sizing: border-box; }\n\n.sv-spinner.primary .spinner > div {\n  border-color: #A8AA19; }\n\n.sv-spinner.secondary .spinner > div {\n  border-color: #007A86; }\n\n.sv-spinner.success .spinner > div {\n  border-color: #A8AA19; }\n\n.sv-spinner.warning .spinner > div {\n  border-color: #ED8B00; }\n\n.sv-spinner.error .spinner > div {\n  border-color: #BA0C2F; }\n\n.sv-spinner.gray .spinner > div {\n  border-color: #A1A6BA; }\n\n.spinner-container {\n  display: inline-block;\n  text-align: center;\n  min-height: 20px; }\n  .spinner-container span {\n    font-family: \"Montserrat\", sans-serif;\n    text-transform: uppercase;\n    font-size: 10px;\n    letter-spacing: 0.1em; }\n\n.spinner {\n  margin: 0px auto 0;\n  text-align: center;\n  height: 20px; }\n\n.spinner > div {\n  width: 12px;\n  height: 12px;\n  border: 2px solid #A8AA19;\n  border-radius: 100%;\n  display: inline-block;\n  vertical-align: top;\n  margin-top: 4px;\n  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n  animation: sk-bouncedelay 1.4s infinite ease-in-out both; }\n\n.spinner .bounce1 {\n  -webkit-animation-delay: -0.32s;\n  animation-delay: -0.32s; }\n\n.spinner .bounce2 {\n  -webkit-animation-delay: -0.16s;\n  animation-delay: -0.16s; }\n\n@-webkit-keyframes sk-bouncedelay {\n  0%, 80%, 100% {\n    -webkit-transform: scale(0); }\n  40% {\n    -webkit-transform: scale(1); } }\n\n@keyframes sk-bouncedelay {\n  0%, 80%, 100% {\n    -webkit-transform: scale(0);\n    transform: scale(0); }\n  40% {\n    -webkit-transform: scale(1);\n    transform: scale(1); } }\n", ""]);
 
 // exports
 
@@ -788,7 +831,7 @@ var SvSpinner = (function (_super) {
         return _super.call(this, renderer, element) || this;
     }
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Input */])(),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(),
         __metadata("design:type", String)
     ], SvSpinner.prototype, "color", void 0);
     SvSpinner = __decorate([
@@ -799,12 +842,163 @@ var SvSpinner = (function (_super) {
             host: {
                 'class': 'sv-spinner'
             },
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* ViewEncapsulation */].None
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* ViewEncapsulation */].None
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
     ], SvSpinner);
     return SvSpinner;
 }(_SvSpinnerBase));
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/switch/switch.html":
+/***/ (function(module, exports) {
+
+module.exports = "<!-- Switch Element -->\n<div class=\"sv-switch-control\" [ngClass]=\"{on: state}\" (click)=\"changeState($event)\">\n  <span class=\"sv-switch-state-indicator\"></span>\n</div>\n\n<!-- Label -->\n<label class=\"sv-switch-label\">\n  <ng-content></ng-content>\n</label>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/switch/switch.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvSwitchModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__switch__ = __webpack_require__("../../../../../src/switch/switch.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var SvSwitchModule = (function () {
+    function SvSwitchModule() {
+    }
+    SvSwitchModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* NgModule */])({
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__switch__["a" /* SvSwitch */]],
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_2__switch__["a" /* SvSwitch */]],
+            providers: [],
+        })
+    ], SvSwitchModule);
+    return SvSwitchModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/switch/switch.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700);", ""]);
+
+// module
+exports.push([module.i, "/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  box-sizing: border-box; }\n\n.sv-switch.primary .sv-switch-control.on {\n  background-color: #A8AA19; }\n\n.sv-switch.secondary .sv-switch-control.on {\n  background-color: #007A86; }\n\n.sv-switch.success .sv-switch-control.on {\n  background-color: #A8AA19; }\n\n.sv-switch.warning .sv-switch-control.on {\n  background-color: #ED8B00; }\n\n.sv-switch.error .sv-switch-control.on {\n  background-color: #BA0C2F; }\n\n.sv-switch.gray .sv-switch-control.on {\n  background-color: #A1A6BA; }\n\n.sv-switch {\n  height: 20px; }\n  .sv-switch .sv-switch-control {\n    width: 40px;\n    height: 20px;\n    padding: 2px;\n    display: inline-block;\n    cursor: pointer;\n    transition: background-color 0.2s linear;\n    border-radius: 10px;\n    background-color: #B9BED2; }\n    .sv-switch .sv-switch-control:hover .sv-switch-state-indicator {\n      -webkit-transform: translateX(2px);\n              transform: translateX(2px); }\n    .sv-switch .sv-switch-control .sv-switch-state-indicator {\n      width: 16px;\n      height: 16px;\n      display: block;\n      background-color: #FFF;\n      border-radius: 50%;\n      transition: 0.2s ease-in-out; }\n    .sv-switch .sv-switch-control.on .sv-switch-state-indicator {\n      -webkit-transform: translateX(20px);\n              transform: translateX(20px);\n      box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }\n    .sv-switch .sv-switch-control.on:hover .sv-switch-state-indicator {\n      -webkit-transform: translate(18px);\n              transform: translate(18px); }\n\n.sv-switch-label {\n  font-family: \"Montserrat\", sans-serif;\n  font-size: 12px;\n  font-weight: 500;\n  position: relative;\n  top: -4.5px;\n  left: 5px;\n  display: inline-block; }\n\n.sv-switch.disabled {\n  opacity: 0.5; }\n  .sv-switch.disabled .sv-switch-control {\n    cursor: default; }\n  .sv-switch.disabled:hover .sv-switch-state-indicator {\n    -webkit-transform: none;\n            transform: none; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/switch/switch.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export SvSwitchBase */
+/* unused harmony export _SvSwitchBase */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvSwitch; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core__ = __webpack_require__("../../../../../src/core/index.ts");
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SvSwitchBase = (function () {
+    function SvSwitchBase(_renderer, _element) {
+        this._renderer = _renderer;
+        this._element = _element;
+    }
+    return SvSwitchBase;
+}());
+
+var _SvSwitchBase = Object(__WEBPACK_IMPORTED_MODULE_1__core__["a" /* colorMixin */])(SvSwitchBase);
+var SvSwitch = (function (_super) {
+    __extends(SvSwitch, _super);
+    function SvSwitch(renderer, element) {
+        var _this = _super.call(this, renderer, element) || this;
+        _this.state = false;
+        _this.disabled = false;
+        _this.stateChange = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* EventEmitter */]();
+        return _this;
+    }
+    // Method to change the state of the switch
+    SvSwitch.prototype.changeState = function (event) {
+        if (!this.disabled) {
+            this.state = !this.state;
+            this.stateChange.emit(this.state);
+        }
+    };
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(),
+        __metadata("design:type", Object)
+    ], SvSwitch.prototype, "state", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(),
+        __metadata("design:type", String)
+    ], SvSwitch.prototype, "color", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* HostBinding */])('class.disabled'), Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Input */])(),
+        __metadata("design:type", Object)
+    ], SvSwitch.prototype, "disabled", void 0);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* Output */])(),
+        __metadata("design:type", Object)
+    ], SvSwitch.prototype, "stateChange", void 0);
+    SvSwitch = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'sv-switch',
+            template: __webpack_require__("../../../../../src/switch/switch.html"),
+            styles: [__webpack_require__("../../../../../src/switch/switch.scss")],
+            host: {
+                'class': 'sv-switch',
+                'disabled': 'disabled'
+            },
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* ViewEncapsulation */].None
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["T" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
+    ], SvSwitch);
+    return SvSwitch;
+}(_SvSwitchBase));
 
 
 
