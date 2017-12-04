@@ -2,14 +2,16 @@ import { NgModule } from '@angular/core';
 
 import {
   SvButtonModule,
-  SvSpinnerModule
+  SvSpinnerModule,
+  SvSwitchModule
 } from '../../src';
 
 @NgModule({
   declarations: [],
   exports: [
     SvButtonModule,
-    SvSpinnerModule
+    SvSpinnerModule,
+    SvSwitchModule
   ],
   providers: [],
 })

@@ -1,0 +1,9 @@
+<!-- Switch Element -->
+<div class="sv-switch-control" [ngClass]="{on: state}" (click)="changeState($event)">
+  <span class="sv-switch-state-indicator"></span>
+</div>
+
+<!-- Label -->
+<label class="sv-switch-label">
+  <ng-content></ng-content>
+</label>

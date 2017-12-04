@@ -1,0 +1,7 @@
+@each $color, $value in $color-palette {
+  .sv-switch.#{$color} {
+    .sv-switch-control.on {
+      background-color: $value;
+    }
+  }
+}

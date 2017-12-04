@@ -1,0 +1,72 @@
+@import "../base";
+@import './switch-theme';
+
+.sv-switch {
+  height: 20px;
+
+  .sv-switch-control {
+    width: 40px;
+    height: 20px;
+    padding: 2px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+    border-radius: 10px;
+
+    // OFF State
+    background-color: $light-gray;
+
+    &:hover {
+      .sv-switch-state-indicator {
+        transform: translateX(2px);
+      }
+    }
+
+    .sv-switch-state-indicator {
+      width: 16px;
+      height: 16px;
+      display: block;
+      background-color: #FFF;
+      border-radius: 50%;
+      transition: 0.2s ease-in-out;
+    }
+
+    // ON State
+    &.on {
+      .sv-switch-state-indicator {
+        transform: translateX(20px);
+        box-shadow: 0 0 5px rgba(#000, 0.5);
+      }
+
+      &:hover {
+        .sv-switch-state-indicator {
+          transform: translate(18px);
+        }
+      }
+    }
+  }
+}
+
+.sv-switch-label {
+  font-family: $font-family-ui;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  top: -4.5px;
+  left: 5px;
+  display: inline-block;
+}
+
+.sv-switch.disabled {
+  opacity: 0.5;
+
+  .sv-switch-control {
+    cursor: default;
+  }
+
+  &:hover {
+    .sv-switch-state-indicator {
+      transform: none;
+    }
+  }
+}

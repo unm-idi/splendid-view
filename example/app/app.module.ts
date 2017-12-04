@@ -7,6 +7,7 @@ import { ImportsModule } from './imports.module';
 
 import { ButtonDemoComponent } from './button-demo/button-demo';
 import { SpinnerDemo } from './spinner-demo/spinner-demo';
+import { SwitchDemo } from './switch-demo/switch-demo';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { SpinnerDemo } from './spinner-demo/spinner-demo';
   declarations: [
     AppComponent,
     ButtonDemoComponent,
-    SpinnerDemo
+    SpinnerDemo,
+    SwitchDemo
   ],
   providers: [],
   bootstrap: [AppComponent]
