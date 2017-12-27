@@ -1,0 +1,11 @@
+<div class="sv-radio-button-container" (click)="selected = true">
+  <!-- Radio Button Element -->
+  <div class="sv-radio-button-display" [ngClass]="{active: selected}"></div>
+
+  <!-- Radio Button Label -->
+  <label class="sv-radio-button-label">
+    <ng-content></ng-content>
+  </label>
+
+  <input type="radio" [checked]="selected" [value]="value" [name]="name">
+</div>

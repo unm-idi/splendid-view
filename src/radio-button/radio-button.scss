@@ -1,0 +1,63 @@
+@import '../base';
+@import './radio-button-theme.scss';
+
+.sv-radio-button {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+
+  .sv-radio-button-container {
+    height: 20px;
+
+    input[type=radio] {
+      display: none;
+    }
+  }
+
+  .sv-radio-button-display {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    border: 2px solid $dark-gray;
+    border-radius: 50%;
+
+    // Base state
+    &::before {
+      content: ' ';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      top: 3px;
+      left: 3px;
+      transform: scale(0);
+      opacity: 0;
+
+      transition: transform 0.1s ease-out, opacity 0.1s ease-out, border-color 0.1s ease-out;
+    }
+
+    // Active state
+    &.active {
+      &::before {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  }
+
+  .sv-radio-button-label {
+    position: relative;
+    top: -6px;
+    display: inline-block;
+    margin-left: 5px;
+    font-family: $font-family-ui;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+}
+
+.sv-radio-group .sv-radio-button {
+  margin-right: 20px;
+}

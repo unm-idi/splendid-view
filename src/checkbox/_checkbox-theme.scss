@@ -1,0 +1,8 @@
+@each $color, $value in $color-palette {
+  .sv-checkbox.#{$color} .sv-checkbox-display {
+    &.active {
+      border-color: $value;
+      background: $value;
+    }
+  }
+}

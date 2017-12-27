@@ -1,0 +1,57 @@
+@import '../base';
+@import './checkbox-theme.scss';
+
+.sv-checkbox {
+  display: inline-block;
+  cursor: pointer;
+
+  user-select: none;
+
+  .sv-checkbox-container {
+    height: 20px;
+
+    .sv-checkbox-display {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      position: relative;
+
+      border: 2px solid $dark-gray;
+      border-radius: $border-radius-base;
+
+      transition: all 0.2s ease-out;
+
+      .sv-checkbox-check {
+        width: 14px;
+        margin-left: 1px;
+        fill: white;
+        opacity: 0;
+        transform: scale(0.5);
+
+        transition: all 0.2s ease-out;
+      }
+
+      &.active {
+        .sv-checkbox-check {
+          opacity: 1;
+          transform: scale(1.0);
+        }
+      }
+    }
+  }
+
+  .sv-checkbox-label {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    margin-left: 5px;
+    font-family: $font-family-ui;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+}

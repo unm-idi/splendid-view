@@ -3,7 +3,9 @@ import { NgModule } from '@angular/core';
 import {
   SvButtonModule,
   SvSpinnerModule,
-  SvSwitchModule
+  SvSwitchModule,
+  SvRadioButtonModule,
+  SvCheckboxModule
 } from '../../src';
 
 @NgModule({
@@ -11,7 +13,9 @@ import {
   exports: [
     SvButtonModule,
     SvSpinnerModule,
-    SvSwitchModule
+    SvSwitchModule,
+    SvRadioButtonModule,
+    SvCheckboxModule
   ],
   providers: [],
 })

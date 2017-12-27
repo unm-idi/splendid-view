@@ -1,0 +1,21 @@
+<h2>Radio Buttons</h2>
+
+<label class="sv-label">Individual Radio Buttons</label>
+<sv-radio-button name="nogroup" value="A">A</sv-radio-button>
+<sv-radio-button name="nogroup" value="B">B</sv-radio-button>
+
+<label class="sv-label">Radio Group</label>
+<sv-radio-group name="la" [(ngModel)]="option">
+  <sv-radio-button color="error" value="one">One</sv-radio-button>
+  <sv-radio-button value="two">Two</sv-radio-button>
+  <sv-radio-button color="warning" value="three">Three</sv-radio-button>
+</sv-radio-group><br>
+<b>Selected Value:</b> {{option}}
+<br><br>
+<sv-radio-group name="bla" color="error" [(ngModel)]="other">
+  <sv-radio-button value="stuff">Stuff</sv-radio-button><br>
+  <sv-radio-button value="things">Things</sv-radio-button><br>
+  <sv-radio-button value="blas">Blas</sv-radio-button>
+</sv-radio-group>
+<br>
+<b>Selected Value:</b> {{other}}

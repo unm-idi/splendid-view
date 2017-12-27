@@ -1,0 +1,11 @@
+@each $color, $value in $color-palette {
+  .sv-radio-button.#{$color} .sv-radio-button-display {
+    &::before {
+      background-color: $value;
+    }
+
+    &.active {
+      border-color: $value;
+    }
+  }
+}

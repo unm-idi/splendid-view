@@ -1,0 +1,14 @@
+<h2>Checkboxes</h2>
+<label class="sv-label">Individual Checkboxes</label>
+<sv-checkbox [(ngModel)]="value1"></sv-checkbox>
+<sv-checkbox name="test" [(ngModel)]="value2" color="secondary">Check this label out</sv-checkbox><br>
+values: {{value1}} / {{value2}}
+
+<label class="sv-label">Checkbox group</label>
+<sv-checkbox-group [(ngModel)]="groupValues">
+  <sv-checkbox value="one">One</sv-checkbox>
+  <sv-checkbox value="two">Two</sv-checkbox>
+  <sv-checkbox value="three">Three</sv-checkbox>
+</sv-checkbox-group><br>
+checked Values: {{groupValues.toString()}}<br>
+Two checked: {{twoChecked}}
