@@ -1,0 +1,7 @@
+@mixin text-field-base {
+  font-family: $font-family-ui;
+  font-size: 12px;
+  font-weight: 500;
+  color: $dark-gray;
+  text-transform: uppercase;
+}

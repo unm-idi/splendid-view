@@ -11,6 +11,7 @@ import { SpinnerDemo } from './spinner-demo/spinner-demo';
 import { SwitchDemo } from './switch-demo/switch-demo';
 import { RadioButtonDemo } from './radio-button-demo/radio-button-demo';
 import { CheckboxDemo } from './checkbox-demo/checkbox-demo';
+import { SelectDemo } from './select-demo/select-demo';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { CheckboxDemo } from './checkbox-demo/checkbox-demo';
     SpinnerDemo,
     SwitchDemo,
     RadioButtonDemo,
-    CheckboxDemo
+    CheckboxDemo,
+    SelectDemo
   ],
   providers: [],
   bootstrap: [AppComponent]

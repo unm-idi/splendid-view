@@ -12,6 +12,7 @@ export class CheckboxGroupService {
   // Observable
   valuesSelected$ = this._selectedValues.asObservable();
 
+  // Set values
   setValues(value: string[]) {
     this._selected = value;
     this._selectedValues.next(this._selected);

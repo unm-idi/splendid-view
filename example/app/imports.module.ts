@@ -5,7 +5,8 @@ import {
   SvSpinnerModule,
   SvSwitchModule,
   SvRadioButtonModule,
-  SvCheckboxModule
+  SvCheckboxModule,
+  SvSelectModule
 } from '../../src';
 
 @NgModule({
@@ -15,7 +16,8 @@ import {
     SvSpinnerModule,
     SvSwitchModule,
     SvRadioButtonModule,
-    SvCheckboxModule
+    SvCheckboxModule,
+    SvSelectModule
   ],
   providers: [],
 })

@@ -1,0 +1,9 @@
+<div class="sv-select-container" [ngClass]="{open: open}">
+  <input class="sv-select-display" [value]="selected || ''" type="text" readonly (click)="open = !open" placeholder="Select">
+
+  <ul *ngIf="options.length > 0 && open" class="sv-select-options" @openClose>
+    <li *ngFor="let option of options" (click)="makeSelection(option)">{{option}}</li>
+  </ul>
+
+  <div *ngIf="options.length == 0 && open" class="sv-select-no-options">No Options</div>
+</div>

@@ -1,7 +1,7 @@
 import { Component, Renderer2, ElementRef, Input, ViewEncapsulation, forwardRef, Optional } from '@angular/core';
 import { colorMixin, ColorPalette, ColorValue } from '../core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { CheckboxGroupService } from './checkbox-group-service'
+import { CheckboxGroupService } from './checkbox-group-service';
 import { Subscription } from 'rxjs/Subscription';
 
 export class CheckboxBase {

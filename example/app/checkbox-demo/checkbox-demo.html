@@ -5,9 +5,9 @@
 values: {{value1}} / {{value2}}
 
 <label class="sv-label">Checkbox group</label>
-<sv-checkbox-group [(ngModel)]="groupValues">
+<sv-checkbox-group [(ngModel)]="groupValues" color="warning">
   <sv-checkbox value="one">One</sv-checkbox>
-  <sv-checkbox value="two">Two</sv-checkbox>
+  <sv-checkbox value="two" [(ngModel)]="twoChecked">Two</sv-checkbox>
   <sv-checkbox value="three">Three</sv-checkbox>
 </sv-checkbox-group><br>
 checked Values: {{groupValues.toString()}}<br>
