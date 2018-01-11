@@ -12,7 +12,7 @@ import { Checkbox } from './checkbox';
   `
 })
 class SvCheckboxTest {
-  test1: Boolean;
+  test1: boolean;
   test2 = true;
 }
 
