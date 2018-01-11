@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
+import { Observable } from 'rxjs/Observable';
 
 // Service to communicate with all checkboxes in group
 @Injectable()
@@ -10,7 +11,7 @@ export class CheckboxGroupService {
   private _selectedValues = new Subject<Array<string>>();
 
   // Observable
-  valuesSelected$ = this._selectedValues.asObservable();
+  valuesSelected$: Observable<any> = this._selectedValues.asObservable();
 
   // Set values
   setValues(value: string[]) {
