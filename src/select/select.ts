@@ -1,6 +1,11 @@
-import { Component, Input, Renderer2, ElementRef, ViewEncapsulation } from '@angular/core';
+import { Component, Input, Renderer2, ElementRef, ViewEncapsulation, ViewChild } from '@angular/core';
 import { trigger, transition, style, animate, state } from '@angular/animations';
 import { colorMixin, ColorPalette, ColorValue } from '../core';
+
+import fontawesome from '@fortawesome/fontawesome';
+import { faChevronDown, faCaretDown } from '@fortawesome/fontawesome-free-solid';
+import { OnInit } from '@angular/core/src/metadata/lifecycle_hooks';
+fontawesome.library.add(faChevronDown, faCaretDown);
 
 export class SvSelectBase {
   constructor(public _renderer: Renderer2, public _element: ElementRef) { }
@@ -13,34 +18,38 @@ export const _SvSelectBase = colorMixin(SvSelectBase);
   templateUrl: 'select.html',
   styleUrls: ['select.scss'],
   encapsulation: ViewEncapsulation.None,
-  host: {
-    'class': 'sv-select',
-  },
   animations: [
-    trigger('openClose', [
-      state('in', style({
-        height: 200,
-      })),
+    trigger('showOptions', [
+      state('in', style({ opacity: 1, transform: 'translateY(0)' })),
       transition(':enter', [
-        style({
-          height: 0,
-          borderColor: '#A1A6BA'
-        }),
-        animate('100ms')
+        style({ opacity: 0, transform: 'translateY(-10px)' }),
+        animate('100ms ease-out')
       ]),
       transition(':leave', [
-        animate('100ms', style({
-          height: 0
-        }))
+        animate('100ms ease-out', style({ opacity: 0, transform: 'translateY(-10px)' }))
       ])
     ])
-  ]
+  ],
+  host: {
+    'class': 'sv-select',
+  }
 })
 
-export class SvSelect extends _SvSelectBase {
+export class SvSelect extends _SvSelectBase implements OnInit {
 
   // The select box's color
   @Input() color: ColorPalette;
+
+  // Determines if the options are searchable
+  @Input() search = false;
+
+  @Input() placeholder = 'Select';
+
+  // The search key
+  searchKey = '';
+
+  // The search text field element
+  @ViewChild('search') searchField: ElementRef;
 
   // The selected value
   private _selected: string;
@@ -50,12 +59,22 @@ export class SvSelect extends _SvSelectBase {
   }
 
   // Options array
-  @Input() options: string[] = [];
+  @Input() options: Array<string> = [];
+
+  // Filtered list
+  private filteredOptions: Array<string>;
 
   // Flags if the select box is open
   private _open = false;
   get open() { return this._open; }
   set open(newValue: boolean) {
+
+    if (newValue && this.search) {
+      setTimeout(() => this.searchField.nativeElement.focus(), 0);
+    } else if (!newValue && this.search) {
+      this.searchKey = '';
+    }
+
     this._open = newValue;
   }
 
@@ -63,8 +82,28 @@ export class SvSelect extends _SvSelectBase {
     super(renderer, element);
   }
 
+  ngOnInit() {
+    this.filteredOptions = this.options;
+  }
+
+  filterOptions() {
+    if (this.searchKey !== '') {
+      this.filteredOptions = this.options.filter(option => {
+        return option.toLowerCase().includes(this.searchKey);
+      });
+    } else {
+      this.filteredOptions = this.options;
+    }
+  }
+
   makeSelection(option) {
+    this.searchKey = '';
+    this.filterOptions();
     this.selected = option;
     this.open = false;
+  }
+
+  something() {
+    console.log('outside click!!!!');
   }
 }

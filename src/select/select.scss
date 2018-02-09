@@ -2,139 +2,111 @@
 @import './select-theme';
 
 .sv-select {
+  width: 100%;
   display: inline-block;
 
   .sv-select-container {
     width: 100%;
     position: relative;
-    background-color: white;
-    border: 1px solid $dark-gray;
-    border-radius: $border-radius-base;
+  }
 
-    transition: all 0.1s;
+  .sv-select-chevron {
+    @include text-field-base;
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+
+    &.rotated {
+      color: black;
+      transform: rotate(180deg);
+    }
+  }
+
+  .sv-select-display {
+    @include text-field-base;
+    padding-right: 30px;
+    overflow: hidden;
+    border-radius: $border-radius-base;
+    border: 1px solid $medium-gray;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
 
     &:hover {
-      border-color: rgba($dark-gray, 0.8);
+      border-color: $dark-gray;
     }
 
     &.open {
-      border-radius: $border-radius-base $border-radius-base 0 0;
-      border-color: $primary-color;
-      @include card-shadow;
-    }
+      color: black;
+      border-color: black;
 
-    .sv-select-display {
-      @include text-field-base;
+      &:hover {
+        border-color: black;
+      }
+    } 
+  }
 
-      height: 38px;
-      width: 100%;
-      padding: 0 10px;
-      border: none;
-      border-radius: $border-radius-base;
+  .sv-selected {
+    @include text-field-base;
+    width: 100%;
+    height: 38px;
+    padding: 0;
+    padding-left: 15px;
+    border: none;
+
+    &.static {
       cursor: pointer;
     }
 
-    .sv-select-options {
-      @include card-shadow;
+    &.search {
+      color: black;
+    }
+  }
 
-      width: calc(100% + 2px);
-      padding: 0;
-      margin: 0;
-      margin-left: -1px;
-      position: absolute;
-      z-index: 200;
-      list-style-type: none;
-      background: white;
-      border: 1px solid $dark-gray;
-      border-top: none;
-      border-radius: 0 0 $border-radius-base $border-radius-base;
-      overflow: hidden;
+  .sv-select-options {
+    @include reset-list;
+    @include card-shadow;
+    width: 100%;
+    max-height: 200px;
+    position: absolute;
+    top: 50px;
+    overflow: hidden;
+    z-index: 10000;
+    background: white;
+    border-radius: $border-radius-base;
+    border: 1px solid black;
+    overflow-y: scroll;
+    transform-origin: 0 0;
 
-      transition: all 0.1s;
+    li {
+      height: 40px;
+      padding: 0px 10px;
+      color: #000;
+      border-top: 1px solid $light-gray;
+      font-family: $font-family-ui;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 40px;
 
-      li {
-        height: 40px;
-        padding: 0px 10px;
-        line-height: 40px;
-        border-top: 1px solid $light-gray;
-        font-family: $font-family-ui;
-        font-size: 12px;
-        font-weight: 500;
-        color: #000;
-        text-transform: uppercase;
+      &:first-child {
+        border: none;
+      }
 
-        &:hover {
-          background: $light-gray;
-          cursor: pointer;
-        }
+      &:hover {
+        background: $light-gray;
+        cursor: pointer;
+      }
+    }
+
+    .sv-select-no-results {
+      color: $dark-gray;
+      text-align: center;
+
+      &:hover {
+        background: transparent;
+        cursor: default;
       }
     }
   }
 }
-
-// .sv-select {
-//   .sv-select-container {
-//     position: relative;
-//     max-height: 40px;
-//     min-width: 160px;
-//     overflow: hidden;
-//     border: 1px solid $dark-gray;
-//     border-radius: $border-radius-base;
-
-//     transition: all 0.2s ease-in-out;
-
-//     &.active {
-//       max-height: 240px;
-//       box-shadow: 0px 6px 15px rgba(#000, 0.1);
-//       border-color: $primary-color;
-//       // position: absolute;
-
-//       .sv-select-display {
-//         // background: $dark-gray;
-//         // color: white;
-
-//         .sv-select-options {
-//           position: absolute;
-//         }
-//       }
-//     }
-
-//     .sv-select-display {
-//       height: 38px;
-//       width: 100%;
-//       padding: 0px 10px;
-//       border: none;
-//       border-radius: $border-radius-base;
-//       font-family: $font-family-ui;
-//       font-size: 12px;
-//       font-weight: 500;
-//       color: $dark-gray;
-//       text-transform: uppercase;
-//     }
-
-//     .sv-select-options {
-//       max-height: 200px;
-//       margin: 0;
-//       padding: 0;
-//       list-style-type: none;
-//       overflow-y: scroll;
-
-//       li {
-//         height: 40px;
-//         padding: 0px 10px;
-//         line-height: 40px;
-//         border-top: 1px solid $light-gray;
-//         font-family: $font-family-ui;
-//         font-size: 12px;
-//         font-weight: 500;
-//         color: #000;
-//         text-transform: uppercase;
-
-//         &:hover {
-//           background: $light-gray;
-//           cursor: pointer;
-//         }
-//       }
-//     }
-//   }
-// }

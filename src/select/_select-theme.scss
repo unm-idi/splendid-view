@@ -2,7 +2,7 @@
   .sv-select.#{$color} .sv-select-container {
     &.open,
     &.open .sv-select-options {
-      border-color: $value;
+      // border-color: $value;
     }
   }
 }

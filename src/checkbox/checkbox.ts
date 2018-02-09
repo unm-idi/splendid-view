@@ -4,6 +4,10 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { CheckboxGroupService } from './checkbox-group-service';
 import { Subscription } from 'rxjs/Subscription';
 
+import fontawesome from '@fortawesome/fontawesome';
+import { faCheck } from '@fortawesome/fontawesome-free-solid';
+fontawesome.library.add(faCheck);
+
 export class CheckboxBase {
   constructor(public _renderer: Renderer2, public _element: ElementRef) { }
 }

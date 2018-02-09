@@ -1,8 +1,16 @@
 @each $color, $value in $color-palette {
   .sv-checkbox.#{$color} .sv-checkbox-display {
+    path {
+      stroke: white;
+    }
+
     &.active {
-      border-color: $value;
       background: $value;
+      border-color: $value;
+      
+      path {
+        stroke: $value;
+      }
     }
   }
 }

@@ -10,8 +10,8 @@
     &.alternate-state,
     &.alternate-state:hover,
     &.alternate-state:disabled {
-      background-color: rgba($value, 0.25);
       color: $value;
+      background-color: rgba($value, 0.25);
     }
   }
 
@@ -28,35 +28,4 @@
       color: $value;
     }
   }
-
-  // .sv-button.#{$color} button,
-  // .button-hollow.#{$color} button {
-  //   border: 1px solid $value;
-
-  //   &.alternate-state,
-  //   &.alternate-state:hover,
-  //   &.alternate-state:disabled {
-  //     background-color: rgba($value, 0.2);
-
-  //     .button-state {
-  //       color: $value;
-  //     }
-  //   }
-  // }
-
-  // .sv-button.#{$color} button {
-  //   background: $value;
-
-  //   &:hover {
-  //     background-color: rgba($value, 0.8);
-  //   }
-  // }
-
-  // .sv-button.hollow.#{$color} button {
-  //   color: $value;
-
-  //   &:hover {
-  //     background-color: rgba($value, 0.8);
-  //   }
-  // }
 }

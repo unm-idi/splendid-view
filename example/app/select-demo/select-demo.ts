@@ -6,5 +6,5 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class SelectDemo {
-  items = ['one', 'two', 'three'];
+  items = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'a really really really really really really long one'];
 }

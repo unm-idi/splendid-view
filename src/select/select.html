@@ -1,9 +1,46 @@
 <div class="sv-select-container" [ngClass]="{open: open}">
-  <input class="sv-select-display" [value]="selected || ''" type="text" readonly (click)="open = !open" placeholder="Select">
+  <!-- Displays the selected value -->
+  <div 
+    class="sv-select-display"
+    [ngClass]="{open: open}"
+    (click) = "open = !open"
+  >
 
-  <ul *ngIf="options.length > 0 && open" class="sv-select-options" @openClose>
-    <li *ngFor="let option of options" (click)="makeSelection(option)">{{option}}</li>
+    <!-- Static display of selected value -->
+    <input 
+      *ngIf="!(open && search)"
+      class="sv-selected static"
+      type="text" 
+      readonly
+      onfocus="this.blur()"
+      [value]="selected || placeholder"
+    />
+
+    <!-- Search if enabled -->
+    <input
+      #search
+      *ngIf="open && search"
+      class="sv-selected search"
+      type="text" 
+      [(ngModel)]="searchKey"
+      (ngModelChange)="filterOptions()"
+      (click)="$event.stopPropagation()"
+      [placeholder]="selected || placeholder"
+    />
+  </div>
+
+  <!-- Chevron -->
+  <span 
+    class="sv-select-chevron"
+    [ngClass]="{rotated: open}"
+    (click)="open = !open"
+  >
+    <i class="fas fa-chevron-down"></i>
+  </span>
+
+  <!-- List of options -->
+  <ul *ngIf="open" class="sv-select-options" @showOptions>
+    <li *ngFor="let option of filteredOptions" (click)="makeSelection(option)">{{option}}</li>
+    <li class="sv-select-no-results" *ngIf="filteredOptions.length == 0">No Results</li>
   </ul>
-
-  <div *ngIf="options.length == 0 && open" class="sv-select-no-options">No Options</div>
 </div>
