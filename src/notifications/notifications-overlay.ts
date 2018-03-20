@@ -21,32 +21,32 @@ fontawesome.library.add(faCheckCircle, faInfoCircle, faExclamationCircle, faExcl
   animations: [
     trigger('toastAnimation', [
       // Desktop
-      transition("void => show", [
+      transition('void => show', [
         style({opacity: 0, transform: 'translateX(100%)'}),
         animate(
-          "250ms ease-out",
+          '250ms ease-out',
           style({opacity: 1, transform: 'translateX(0)'})
         )
       ]),
-      transition("show => void", [
+      transition('show => void', [
         style({ opacity: 1, transform: 'translateX(0)' }),
         animate(
-          "250ms ease-out",
+          '250ms ease-out',
           style({ opacity: 0, transform: 'translateX(100%)' }),
         )
       ]),
       // Mobile
-      transition("void => showMobile", [
+      transition('void => showMobile', [
         style({ opacity: 0, transform: 'translateY(-100%)' }),
         animate(
-          "250ms ease-out",
+          '250ms ease-out',
           style({ opacity: 1, transform: 'translateY(0)' })
         )
       ]),
-      transition("showMobile => void", [
+      transition('showMobile => void', [
         style({ opacity: 1, transform: 'translateY(0)' }),
         animate(
-          "250ms ease-out",
+          '250ms ease-out',
           style({ opacity: 0, transform: 'translateY(-100%)' }),
         )
       ])
@@ -62,10 +62,10 @@ export class SvNotificationsOverlayComponent {
   constructor() { }
 
   addToast(type: NotificationType, message: string, list: Array<string>, userOptions: object) {
-    let options = {duration: 3000, dismissible: true, icon: true}
+    const options = {duration: 3000, dismissible: true, icon: true};
     if (userOptions) {
-      for (let k of Object.keys(userOptions)) {
-        options[k] = userOptions[k]
+      for (const k of Object.keys(userOptions)) {
+        options[k] = userOptions[k];
       }
     }
 
@@ -78,17 +78,17 @@ export class SvNotificationsOverlayComponent {
   }
 
   dismissToast(t: Toast) {
-    if (t.options['dismissible']) { this.removeToast(t.id) }
+    if (t.options['dismissible']) { this.removeToast(t.id); }
   }
 
   removeToast(id) {
-    const index = this.toast.findIndex(x => {return x.id == id});
+    const index = this.toast.findIndex(x => x.id === id);
     this.toast.splice(index, 1);
   }
 
   toastState() {
     if (window.outerWidth > 720) {
-      return 'show'
+      return 'show';
     } else {
       return 'showMobile';
     }

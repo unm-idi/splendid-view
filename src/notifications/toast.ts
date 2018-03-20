@@ -1,4 +1,4 @@
-import { Time } from "@angular/common";
+import { Time } from '@angular/common';
 
 export type NotificationType = 'success' | 'warning' | 'error' | 'info';
 
@@ -6,7 +6,7 @@ export class Toast {
   id: string;
   timeout: any;
   options: object;
-  
+
   constructor(
     private type: NotificationType,
     private message: string,
@@ -14,6 +14,6 @@ export class Toast {
     options: object
   ) {
       this.options = options;
-      this.id = Math.random().toString(36).substr(2,9);
+      this.id = Math.random().toString(36).substr(2, 9);
     }
 }

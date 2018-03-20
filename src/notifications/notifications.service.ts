@@ -4,7 +4,7 @@ import { NotificationType } from './toast';
 
 @Injectable()
 export class SvNotificationsService {
-  
+
   private notificationOverlay: SvNotificationsOverlayComponent;
 
   constructor(
@@ -17,16 +17,16 @@ export class SvNotificationsService {
     this.appRef.attachView(componentRef.hostView);
     const domElem = (componentRef.hostView as EmbeddedViewRef<any>).rootNodes[0] as HTMLElement;
     document.body.appendChild(domElem);
-    
+
     // Get notications overlay component instance
     this.notificationOverlay = componentRef.instance;
   }
-  
-  addToast(type: NotificationType, message: string, options: object = undefined) {
-    this.addListToast(type, message, [], options)
+
+  addToast(type: NotificationType, message: string, options: object) {
+    this.addListToast(type, message, [], options);
   }
 
-  addListToast(type: NotificationType, message: string, list: Array<string>, options: object = undefined) {
+  addListToast(type: NotificationType, message: string, list: Array<string>, options: object) {
     this.notificationOverlay.addToast(type, message, list, options);
   }
 }

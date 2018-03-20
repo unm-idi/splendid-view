@@ -18,6 +18,6 @@ export class SvNotificationsModule {
     return {
       ngModule: SvNotificationsModule,
       providers: [ SvNotificationsService ]
-    }
+    };
   }
 }
