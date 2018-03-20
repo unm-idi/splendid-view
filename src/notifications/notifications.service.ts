@@ -22,11 +22,11 @@ export class SvNotificationsService {
     this.notificationOverlay = componentRef.instance;
   }
 
-  addToast(type: NotificationType, message: string, options: object) {
+  addToast(type: NotificationType, message: string, options: object = null) {
     this.addListToast(type, message, [], options);
   }
 
-  addListToast(type: NotificationType, message: string, list: Array<string>, options: object) {
+  addListToast(type: NotificationType, message: string, list: Array<string>, options: object = null) {
     this.notificationOverlay.addToast(type, message, list, options);
   }
 }
