@@ -1,6 +1,6 @@
 webpackJsonp(["main"],{
 
-/***/ "../../../../../config/environment.ts":
+/***/ "./config/environment.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -16,7 +16,7 @@ var environment = {
 
 /***/ }),
 
-/***/ "../../../../../example/$$_lazy_route_resource lazy recursive":
+/***/ "./example/$$_lazy_route_resource lazy recursive":
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -29,58 +29,54 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = "../../../../../example/$$_lazy_route_resource lazy recursive";
+webpackEmptyAsyncContext.id = "./example/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "../../../../../example/app/app.component.html":
+/***/ "./example/app/app.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<header>\n  <h1>Splendid View</h1>\n</header>\n\n<div class=\"wrapper\">\n  <sv-button-demo></sv-button-demo>\n  <sv-spinner-demo></sv-spinner-demo>\n  <sv-switch-demo></sv-switch-demo>\n  <sv-radio-button-demo></sv-radio-button-demo>\n  <sv-checkbox-demo></sv-checkbox-demo>\n  <sv-select-demo></sv-select-demo>\n</div>"
 
 /***/ }),
 
-/***/ "../../../../../example/app/app.component.scss":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./example/app/app.component.scss":
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\nbody {\n  font-family: \"Roboto\", sans-serif; }\nh1, h2, h3, h4, h5, h6 {\n  text-transform: uppercase; }\n.sv-label {\n  margin-bottom: 5px;\n  display: block;\n  color: #A1A6BA;\n  font-family: \"Montserrat\", sans-serif;\n  font-size: 11px;\n  font-weight: 400;\n  letter-spacing: 0.1em;\n  text-transform: uppercase; }\nbody {\n  width: 100%;\n  height: 100%;\n  padding: 0;\n  margin: 0; }\nheader {\n  width: 100%;\n  height: 400px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  background: #A1A6BA;\n  background: -webkit-gradient(linear, left top, right bottom, from(#757c9a), to(#cdd0da));\n  background: linear-gradient(to bottom right, #757c9a, #cdd0da); }\nh1 {\n  color: white;\n  text-align: center;\n  letter-spacing: 0.5em; }\n.wrapper {\n  max-width: 800px;\n  margin: auto;\n  padding: 0px 20px;\n  padding-bottom: 200px; }\nlabel.sv-label {\n  margin-top: 20px; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+module.exports = "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\nbody {\n  font-family: \"Roboto\", sans-serif; }\nh1, h2, h3, h4, h5, h6 {\n  text-transform: uppercase; }\n.sv-label {\n  margin-bottom: 5px;\n  display: block;\n  color: #A1A6BA;\n  font-family: \"Montserrat\", sans-serif;\n  font-size: 11px;\n  font-weight: 400;\n  letter-spacing: 0.1em;\n  text-transform: uppercase; }\nbody {\n  width: 100%;\n  height: 100%;\n  padding: 0;\n  margin: 0; }\nheader {\n  width: 100%;\n  height: 400px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  background: #A1A6BA;\n  background: -webkit-gradient(linear, left top, right bottom, from(#757c9a), to(#cdd0da));\n  background: linear-gradient(to bottom right, #757c9a, #cdd0da); }\nh1 {\n  color: white;\n  text-align: center;\n  letter-spacing: 0.5em; }\n.wrapper {\n  max-width: 800px;\n  margin: auto;\n  padding: 0px 20px;\n  padding-bottom: 200px; }\nlabel.sv-label {\n  margin-top: 20px; }\n"
 
 /***/ }),
 
-/***/ "../../../../../example/app/app.component.ts":
+/***/ "./example/app/app.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_notifications_notifications_service__ = __webpack_require__("./src/notifications/notifications.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(buffet) {
+        this.buffet = buffet;
     }
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-root',
-            template: __webpack_require__("../../../../../example/app/app.component.html"),
-            styles: [__webpack_require__("../../../../../example/app/app.component.scss")],
+            template: __webpack_require__("./example/app/app.component.html"),
+            styles: [__webpack_require__("./example/app/app.component.scss")],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewEncapsulation */].None,
-        })
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__src_notifications_notifications_service__["a" /* SvNotificationsService */]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -89,28 +85,30 @@ var AppComponent = (function () {
 
 /***/ }),
 
-/***/ "../../../../../example/app/app.module.ts":
+/***/ "./example/app/app.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("../../../../../example/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__imports_module__ = __webpack_require__("../../../../../example/app/imports.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_demo_button_demo__ = __webpack_require__("../../../../../example/app/button-demo/button-demo.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__spinner_demo_spinner_demo__ = __webpack_require__("../../../../../example/app/spinner-demo/spinner-demo.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__switch_demo_switch_demo__ = __webpack_require__("../../../../../example/app/switch-demo/switch-demo.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__radio_button_demo_radio_button_demo__ = __webpack_require__("../../../../../example/app/radio-button-demo/radio-button-demo.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__checkbox_demo_checkbox_demo__ = __webpack_require__("../../../../../example/app/checkbox-demo/checkbox-demo.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__select_demo_select_demo__ = __webpack_require__("../../../../../example/app/select-demo/select-demo.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__("./example/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__imports_module__ = __webpack_require__("./example/app/imports.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_demo_button_demo__ = __webpack_require__("./example/app/button-demo/button-demo.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__spinner_demo_spinner_demo__ = __webpack_require__("./example/app/spinner-demo/spinner-demo.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__switch_demo_switch_demo__ = __webpack_require__("./example/app/switch-demo/switch-demo.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__radio_button_demo_radio_button_demo__ = __webpack_require__("./example/app/radio-button-demo/radio-button-demo.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__checkbox_demo_checkbox_demo__ = __webpack_require__("./example/app/checkbox-demo/checkbox-demo.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__select_demo_select_demo__ = __webpack_require__("./example/app/select-demo/select-demo.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__src__ = __webpack_require__("./src/index.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -128,6 +126,7 @@ var AppModule = (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["H" /* NgModule */])({
             imports: [
+                __WEBPACK_IMPORTED_MODULE_11__src__["c" /* SvNotificationsModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_4__imports_module__["a" /* ImportsModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */]
@@ -152,51 +151,52 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ "../../../../../example/app/button-demo/button-demo.html":
+/***/ "./example/app/button-demo/button-demo.html":
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Buttons</h2>\n\n<label class=\"sv-label\">Buttons</label>\n\n<sv-button>Click Me!</sv-button>\n<sv-button class=\"hollow\">Click Me!</sv-button>\n<sv-button color=\"secondary\">Click Me!</sv-button>\n<sv-button color=\"error\" class=\"hollow\">Click Me!</sv-button><br><br>\n\n<sv-button class=\"small\" color=\"gray\">I'm Smaller</sv-button>\n<sv-button class=\"hollow small\" color=\"warning\">Same</sv-button><br><br>\n\n<sv-button class=\"large\">I'm bigger</sv-button>\n<sv-button class=\"hollow large\">YAY</sv-button><br><br>\n\n<sv-button class=\"long\">I'm a long button!</sv-button>\n\n<label class=\"sv-label\">Disabled Buttons</label>\n<sv-button [disabled]=\"true\">I'm Disabled</sv-button>\n<sv-button class=\"hollow\" [disabled]=\"true\" color=\"warning\">So am I</sv-button>\n\n<label class=\"sv-label\">Button States</label>\n<sv-button [buttonState]=\"alternateState\" (onClick)=\"alternateStateTest(0)\" color=\"secondary\">\n  Save\n  <span svButtonState state=\"success\">Success</span>\n  <span svButtonState state=\"error\">Error</span>\n</sv-button>\n\n<sv-button [buttonState]=\"alternateState\" (onClick)=\"alternateStateTest(1)\" color=\"secondary\" class=\"hollow small\">\n  Save\n  <span svButtonState state=\"success\">Success</span>\n  <span svButtonState state=\"error\">Error</span>\n</sv-button>\n\n<sv-button [buttonState]=\"loadingFlag ? 'loading' : 'button'\" color=\"blue\" (onClick)=\"loadingStateTest()\">Load More</sv-button>\n\n<sv-button buttonState=\"loading\" color=\"gray\"></sv-button>"
+module.exports = "<h2>Buttons</h2>\n\n<label class=\"sv-label\">Buttons</label>\n\n<sv-button (onClick)=\"clickTest()\">Click Me!</sv-button>\n<sv-button class=\"hollow\">Click Me!</sv-button>\n<sv-button color=\"secondary\">Click Me!</sv-button>\n<sv-button color=\"error\" class=\"hollow\">Click Me!</sv-button><br><br>\n\n<sv-button class=\"small\" color=\"gray\">I'm Smaller</sv-button>\n<sv-button class=\"hollow small\" color=\"warning\">Same</sv-button><br><br>\n\n<sv-button class=\"large\">I'm bigger</sv-button>\n<sv-button class=\"hollow large\">YAY</sv-button><br><br>\n\n<sv-button class=\"long\">I'm a long button!</sv-button>\n\n<label class=\"sv-label\">Disabled Buttons</label>\n<sv-button [disabled]=\"true\">I'm Disabled</sv-button>\n<sv-button class=\"hollow\" [disabled]=\"true\" color=\"warning\">So am I</sv-button>\n\n<label class=\"sv-label\">Button States</label>\n<sv-button [buttonState]=\"alternateState\" (onClick)=\"alternateStateTest(0)\" color=\"secondary\">\n  Save\n  <span svButtonState state=\"success\">Success</span>\n  <span svButtonState state=\"error\">Error</span>\n</sv-button>\n\n<sv-button [buttonState]=\"alternateState\" (onClick)=\"alternateStateTest(1)\" color=\"secondary\" class=\"hollow small\">\n  Save\n  <span svButtonState state=\"success\">Success</span>\n  <span svButtonState state=\"error\">Error</span>\n</sv-button>\n\n<sv-button [buttonState]=\"loadingFlag ? 'loading' : 'button'\" color=\"blue\" (onClick)=\"loadingStateTest()\">Load More</sv-button>\n\n<sv-button buttonState=\"loading\" color=\"gray\"></sv-button>"
 
 /***/ }),
 
-/***/ "../../../../../example/app/button-demo/button-demo.scss":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./example/app/button-demo/button-demo.scss":
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+module.exports = ""
 
 /***/ }),
 
-/***/ "../../../../../example/app/button-demo/button-demo.ts":
+/***/ "./example/app/button-demo/button-demo.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonDemoComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_notifications_notifications_service__ = __webpack_require__("./src/notifications/notifications.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var ButtonDemoComponent = (function () {
-    function ButtonDemoComponent() {
+    function ButtonDemoComponent(ns) {
+        this.ns = ns;
         this.loadingFlag = false;
         this.alternateState = 'button';
     }
     ButtonDemoComponent.prototype.clickTest = function () {
-        // window.alert('You clicked a button!');
+        var type = ['info', 'success', 'warning', 'error'][Math.floor(Math.random() * 4)];
+        if (Math.random() > 0.5) {
+            this.ns.addToast(type, 'I\'m an awesome toast!');
+        }
+        else {
+            this.ns.addListToast(type, 'Something might not be right:', ['This is a problem', 'So is this'], { duration: 5000, dismissible: false });
+        }
     };
     ButtonDemoComponent.prototype.loadingStateTest = function () {
         var _this = this;
@@ -226,9 +226,10 @@ var ButtonDemoComponent = (function () {
     ButtonDemoComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-button-demo',
-            template: __webpack_require__("../../../../../example/app/button-demo/button-demo.html"),
-            styles: [__webpack_require__("../../../../../example/app/button-demo/button-demo.scss")]
-        })
+            template: __webpack_require__("./example/app/button-demo/button-demo.html"),
+            styles: [__webpack_require__("./example/app/button-demo/button-demo.scss")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__src_notifications_notifications_service__["a" /* SvNotificationsService */]])
     ], ButtonDemoComponent);
     return ButtonDemoComponent;
 }());
@@ -237,19 +238,19 @@ var ButtonDemoComponent = (function () {
 
 /***/ }),
 
-/***/ "../../../../../example/app/checkbox-demo/checkbox-demo.html":
+/***/ "./example/app/checkbox-demo/checkbox-demo.html":
 /***/ (function(module, exports) {
 
 module.exports = "<h2>Checkboxes</h2>\n<label class=\"sv-label\">Individual Checkboxes</label>\n<sv-checkbox [(ngModel)]=\"value1\"></sv-checkbox>\n<sv-checkbox name=\"test\" [(ngModel)]=\"value2\" color=\"secondary\">Check this label out</sv-checkbox><br>\nvalues: {{value1}} / {{value2}}\n\n<label class=\"sv-label\">Checkbox group</label>\n<sv-checkbox-group [(ngModel)]=\"groupValues\" color=\"warning\">\n  <sv-checkbox value=\"one\">One</sv-checkbox>\n  <sv-checkbox value=\"two\" [(ngModel)]=\"twoChecked\">Two</sv-checkbox>\n  <sv-checkbox value=\"three\">Three</sv-checkbox>\n</sv-checkbox-group><br>\nchecked Values: {{groupValues.toString()}}<br>\nTwo checked: {{twoChecked}}"
 
 /***/ }),
 
-/***/ "../../../../../example/app/checkbox-demo/checkbox-demo.ts":
+/***/ "./example/app/checkbox-demo/checkbox-demo.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxDemo; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -266,7 +267,7 @@ var CheckboxDemo = (function () {
     CheckboxDemo = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-checkbox-demo',
-            template: __webpack_require__("../../../../../example/app/checkbox-demo/checkbox-demo.html")
+            template: __webpack_require__("./example/app/checkbox-demo/checkbox-demo.html")
         })
     ], CheckboxDemo);
     return CheckboxDemo;
@@ -276,13 +277,13 @@ var CheckboxDemo = (function () {
 
 /***/ }),
 
-/***/ "../../../../../example/app/imports.module.ts":
+/***/ "./example/app/imports.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ImportsModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src__ = __webpack_require__("../../../../../src/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src__ = __webpack_require__("./src/index.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -299,11 +300,11 @@ var ImportsModule = (function () {
             declarations: [],
             exports: [
                 __WEBPACK_IMPORTED_MODULE_1__src__["a" /* SvButtonModule */],
-                __WEBPACK_IMPORTED_MODULE_1__src__["e" /* SvSpinnerModule */],
-                __WEBPACK_IMPORTED_MODULE_1__src__["f" /* SvSwitchModule */],
-                __WEBPACK_IMPORTED_MODULE_1__src__["c" /* SvRadioButtonModule */],
+                __WEBPACK_IMPORTED_MODULE_1__src__["f" /* SvSpinnerModule */],
+                __WEBPACK_IMPORTED_MODULE_1__src__["g" /* SvSwitchModule */],
+                __WEBPACK_IMPORTED_MODULE_1__src__["d" /* SvRadioButtonModule */],
                 __WEBPACK_IMPORTED_MODULE_1__src__["b" /* SvCheckboxModule */],
-                __WEBPACK_IMPORTED_MODULE_1__src__["d" /* SvSelectModule */]
+                __WEBPACK_IMPORTED_MODULE_1__src__["e" /* SvSelectModule */]
             ],
             providers: [],
         })
@@ -315,19 +316,19 @@ var ImportsModule = (function () {
 
 /***/ }),
 
-/***/ "../../../../../example/app/radio-button-demo/radio-button-demo.html":
+/***/ "./example/app/radio-button-demo/radio-button-demo.html":
 /***/ (function(module, exports) {
 
 module.exports = "<h2>Radio Buttons</h2>\n\n<label class=\"sv-label\">Individual Radio Buttons</label>\n<sv-radio-button name=\"nogroup\" value=\"A\">A</sv-radio-button>\n<sv-radio-button name=\"nogroup\" value=\"B\">B</sv-radio-button>\n\n<label class=\"sv-label\">Radio Group</label>\n<sv-radio-group name=\"la\" [(ngModel)]=\"option\">\n  <sv-radio-button color=\"error\" value=\"one\">One</sv-radio-button>\n  <sv-radio-button value=\"two\">Two</sv-radio-button>\n  <sv-radio-button color=\"warning\" value=\"three\">Three</sv-radio-button>\n</sv-radio-group><br>\n<b>Selected Value:</b> {{option}}\n<br><br>\n<sv-radio-group name=\"bla\" color=\"error\" [(ngModel)]=\"other\">\n  <sv-radio-button value=\"stuff\">Stuff</sv-radio-button><br>\n  <sv-radio-button value=\"things\">Things</sv-radio-button><br>\n  <sv-radio-button value=\"blas\">Blas</sv-radio-button>\n</sv-radio-group>\n<br>\n<b>Selected Value:</b> {{other}}"
 
 /***/ }),
 
-/***/ "../../../../../example/app/radio-button-demo/radio-button-demo.ts":
+/***/ "./example/app/radio-button-demo/radio-button-demo.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RadioButtonDemo; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -343,7 +344,7 @@ var RadioButtonDemo = (function () {
     RadioButtonDemo = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-radio-button-demo',
-            template: __webpack_require__("../../../../../example/app/radio-button-demo/radio-button-demo.html")
+            template: __webpack_require__("./example/app/radio-button-demo/radio-button-demo.html")
         })
     ], RadioButtonDemo);
     return RadioButtonDemo;
@@ -353,19 +354,19 @@ var RadioButtonDemo = (function () {
 
 /***/ }),
 
-/***/ "../../../../../example/app/select-demo/select-demo.html":
+/***/ "./example/app/select-demo/select-demo.html":
 /***/ (function(module, exports) {
 
 module.exports = "<h2>Select</h2>\n<sv-select [options]=\"items\" color=\"secondary\" search=\"true\"></sv-select>\n\n<br>\n<br>\n\n<sv-select></sv-select>\n\n<br>\n<br>\n\n<sv-select></sv-select>"
 
 /***/ }),
 
-/***/ "../../../../../example/app/select-demo/select-demo.ts":
+/***/ "./example/app/select-demo/select-demo.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectDemo; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -380,7 +381,7 @@ var SelectDemo = (function () {
     SelectDemo = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-select-demo',
-            template: __webpack_require__("../../../../../example/app/select-demo/select-demo.html")
+            template: __webpack_require__("./example/app/select-demo/select-demo.html")
         })
     ], SelectDemo);
     return SelectDemo;
@@ -390,19 +391,19 @@ var SelectDemo = (function () {
 
 /***/ }),
 
-/***/ "../../../../../example/app/spinner-demo/spinner-demo.html":
+/***/ "./example/app/spinner-demo/spinner-demo.html":
 /***/ (function(module, exports) {
 
 module.exports = "<h2>Spinner</h2>\n\n<label class=\"sv-label\">Spinner</label>\n<sv-spinner></sv-spinner>\n\n<label class=\"sv-label\">Spinner with Text</label>\n<sv-spinner color=\"warning\">Loading</sv-spinner>"
 
 /***/ }),
 
-/***/ "../../../../../example/app/spinner-demo/spinner-demo.ts":
+/***/ "./example/app/spinner-demo/spinner-demo.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SpinnerDemo; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -416,7 +417,7 @@ var SpinnerDemo = (function () {
     SpinnerDemo = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-spinner-demo',
-            template: __webpack_require__("../../../../../example/app/spinner-demo/spinner-demo.html")
+            template: __webpack_require__("./example/app/spinner-demo/spinner-demo.html")
         })
     ], SpinnerDemo);
     return SpinnerDemo;
@@ -426,24 +427,27 @@ var SpinnerDemo = (function () {
 
 /***/ }),
 
-/***/ "../../../../../example/app/switch-demo/switch-demo.html":
+/***/ "./example/app/switch-demo/switch-demo.html":
 /***/ (function(module, exports) {
 
 module.exports = "<h2>Switches</h2>\n\n<sv-switch></sv-switch>\n<sv-switch color=\"error\">I have a label</sv-switch>"
 
 /***/ }),
 
-/***/ "../../../../../example/app/switch-demo/switch-demo.ts":
+/***/ "./example/app/switch-demo/switch-demo.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SwitchDemo; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
 var SwitchDemo = (function () {
@@ -452,8 +456,9 @@ var SwitchDemo = (function () {
     SwitchDemo = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-switch-demo',
-            template: __webpack_require__("../../../../../example/app/switch-demo/switch-demo.html")
-        })
+            template: __webpack_require__("./example/app/switch-demo/switch-demo.html")
+        }),
+        __metadata("design:paramtypes", [])
     ], SwitchDemo);
     return SwitchDemo;
 }());
@@ -462,15 +467,15 @@ var SwitchDemo = (function () {
 
 /***/ }),
 
-/***/ "../../../../../example/main.ts":
+/***/ "./example/main.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/esm5/platform-browser-dynamic.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__("../../../../../example/app/app.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_environment__ = __webpack_require__("../../../../../config/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("./node_modules/@angular/platform-browser-dynamic/esm5/platform-browser-dynamic.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__("./example/app/app.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__config_environment__ = __webpack_require__("./config/environment.ts");
 
 
 
@@ -484,12 +489,12 @@ Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ "../../../../../src/button/button-state.ts":
+/***/ "./src/button/button-state.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ButtonState; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -529,25 +534,25 @@ var ButtonState = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/button/button.html":
+/***/ "./src/button/button.html":
 /***/ (function(module, exports) {
 
 module.exports = "<button\n  (click)=\"handleClick($event)\"\n  [ngClass]=\"{'alternate-state': buttonState !== 'button'}\"\n  [disabled]=\"disabled\"\n>\n\n  <!-- Main Button Text -->\n  <span \n    [ngClass]=\"{'hidden-loading': buttonState == 'loading', 'hidden-state': !['button', 'loading'].includes(buttonState)}\"\n    class=\"sv-button-content\"\n  >\n    <ng-content></ng-content>\n  </span>\n\n  <!-- Loading State -->\n  <span *ngIf=\"buttonState === 'loading'\" class=\"sv-button-spinner\" @loadingState>\n    <sv-spinner [color]=\"color\"></sv-spinner>\n  </span>\n  \n  <!-- Button States -->\n  <span class=\"state-container\" *ngIf=\"buttonState === 'success'\" @alternateState>\n    <ng-content select=\"[svButtonState][state=success]\"></ng-content>\n  </span>\n\n  <span class=\"state-container\" *ngIf=\"buttonState === 'error'\" @alternateState>\n    <ng-content select=\"[svButtonState][state=error]\"></ng-content>\n  </span>\n</button>"
 
 /***/ }),
 
-/***/ "../../../../../src/button/button.module.ts":
+/***/ "./src/button/button.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvButtonModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button__ = __webpack_require__("../../../../../src/button/button.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_state__ = __webpack_require__("../../../../../src/button/button-state.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__spinner_spinner_module__ = __webpack_require__("../../../../../src/spinner/spinner.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button__ = __webpack_require__("./src/button/button.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_state__ = __webpack_require__("./src/button/button-state.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__spinner_spinner_module__ = __webpack_require__("./src/spinner/spinner.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_platform_browser_animations__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/animations.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -579,35 +584,24 @@ var SvButtonModule = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/button/button.scss":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./src/button/button.scss":
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-button.primary button {\n  background-color: #A8AA19;\n  border-color: #A8AA19; }\n.sv-button.primary button:hover {\n    background-color: rgba(168, 170, 25, 0.8); }\n.sv-button.primary button.alternate-state, .sv-button.primary button.alternate-state:hover, .sv-button.primary button.alternate-state:disabled {\n    color: #A8AA19;\n    background-color: rgba(168, 170, 25, 0.25); }\n.sv-button.hollow.primary button {\n  color: #A8AA19; }\n.sv-button.hollow.primary button:hover {\n    color: #FFF; }\n.sv-button.hollow.primary button.alternate-state, .sv-button.hollow.primary button.alternate-state:hover, .sv-button.hollow.primary button.alternate-state:disabled {\n    color: #A8AA19; }\n.sv-button.secondary button {\n  background-color: #007A86;\n  border-color: #007A86; }\n.sv-button.secondary button:hover {\n    background-color: rgba(0, 122, 134, 0.8); }\n.sv-button.secondary button.alternate-state, .sv-button.secondary button.alternate-state:hover, .sv-button.secondary button.alternate-state:disabled {\n    color: #007A86;\n    background-color: rgba(0, 122, 134, 0.25); }\n.sv-button.hollow.secondary button {\n  color: #007A86; }\n.sv-button.hollow.secondary button:hover {\n    color: #FFF; }\n.sv-button.hollow.secondary button.alternate-state, .sv-button.hollow.secondary button.alternate-state:hover, .sv-button.hollow.secondary button.alternate-state:disabled {\n    color: #007A86; }\n.sv-button.success button {\n  background-color: #A8AA19;\n  border-color: #A8AA19; }\n.sv-button.success button:hover {\n    background-color: rgba(168, 170, 25, 0.8); }\n.sv-button.success button.alternate-state, .sv-button.success button.alternate-state:hover, .sv-button.success button.alternate-state:disabled {\n    color: #A8AA19;\n    background-color: rgba(168, 170, 25, 0.25); }\n.sv-button.hollow.success button {\n  color: #A8AA19; }\n.sv-button.hollow.success button:hover {\n    color: #FFF; }\n.sv-button.hollow.success button.alternate-state, .sv-button.hollow.success button.alternate-state:hover, .sv-button.hollow.success button.alternate-state:disabled {\n    color: #A8AA19; }\n.sv-button.warning button {\n  background-color: #ED8B00;\n  border-color: #ED8B00; }\n.sv-button.warning button:hover {\n    background-color: rgba(237, 139, 0, 0.8); }\n.sv-button.warning button.alternate-state, .sv-button.warning button.alternate-state:hover, .sv-button.warning button.alternate-state:disabled {\n    color: #ED8B00;\n    background-color: rgba(237, 139, 0, 0.25); }\n.sv-button.hollow.warning button {\n  color: #ED8B00; }\n.sv-button.hollow.warning button:hover {\n    color: #FFF; }\n.sv-button.hollow.warning button.alternate-state, .sv-button.hollow.warning button.alternate-state:hover, .sv-button.hollow.warning button.alternate-state:disabled {\n    color: #ED8B00; }\n.sv-button.error button {\n  background-color: #BA0C2F;\n  border-color: #BA0C2F; }\n.sv-button.error button:hover {\n    background-color: rgba(186, 12, 47, 0.8); }\n.sv-button.error button.alternate-state, .sv-button.error button.alternate-state:hover, .sv-button.error button.alternate-state:disabled {\n    color: #BA0C2F;\n    background-color: rgba(186, 12, 47, 0.25); }\n.sv-button.hollow.error button {\n  color: #BA0C2F; }\n.sv-button.hollow.error button:hover {\n    color: #FFF; }\n.sv-button.hollow.error button.alternate-state, .sv-button.hollow.error button.alternate-state:hover, .sv-button.hollow.error button.alternate-state:disabled {\n    color: #BA0C2F; }\n.sv-button.gray button {\n  background-color: #A1A6BA;\n  border-color: #A1A6BA; }\n.sv-button.gray button:hover {\n    background-color: rgba(161, 166, 186, 0.8); }\n.sv-button.gray button.alternate-state, .sv-button.gray button.alternate-state:hover, .sv-button.gray button.alternate-state:disabled {\n    color: #A1A6BA;\n    background-color: rgba(161, 166, 186, 0.25); }\n.sv-button.hollow.gray button {\n  color: #A1A6BA; }\n.sv-button.hollow.gray button:hover {\n    color: #FFF; }\n.sv-button.hollow.gray button.alternate-state, .sv-button.hollow.gray button.alternate-state:hover, .sv-button.hollow.gray button.alternate-state:disabled {\n    color: #A1A6BA; }\n.sv-button button {\n  min-width: 160px;\n  padding: 0 20px;\n  display: inline-block;\n  position: relative;\n  color: #FFF;\n  background-color: #A8AA19;\n  border-radius: 4px;\n  border-style: solid;\n  border-width: 1px;\n  font-family: \"Montserrat\", sans-serif;\n  font-size: 11px;\n  font-weight: 500;\n  line-height: 38px;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n  -webkit-transition: background-color 0.2s ease-out;\n  transition: background-color 0.2s ease-out;\n  cursor: pointer; }\n.sv-button button:focus, .sv-button button:active {\n    outline: none; }\n.sv-button button:disabled {\n    opacity: 0.5;\n    cursor: not-allowed; }\n.sv-button button.alternate-state, .sv-button button.alternate-state:hover, .sv-button button.alternate-state:disabled {\n    opacity: 1.0;\n    cursor: default; }\n.sv-button button .sv-button-content {\n    display: inline-block;\n    -webkit-transition: opacity .2s ease-out, -webkit-transform .2s ease-out;\n    transition: opacity .2s ease-out, -webkit-transform .2s ease-out;\n    transition: transform .2s ease-out, opacity .2s ease-out;\n    transition: transform .2s ease-out, opacity .2s ease-out, -webkit-transform .2s ease-out; }\n.sv-button button .sv-button-content.hidden-state {\n      opacity: 0;\n      -webkit-transform: translateX(-10px);\n              transform: translateX(-10px); }\n.sv-button button .sv-button-content.hidden-loading {\n      opacity: 0;\n      -webkit-transform: scale(0.5);\n              transform: scale(0.5); }\n.sv-button button .state-container {\n    width: 100%;\n    display: inline-block;\n    position: absolute;\n    left: 0; }\n.sv-button button .sv-button-spinner {\n    width: 100%;\n    height: 20px;\n    position: absolute;\n    top: 9.5px;\n    left: 0; }\n.sv-button.small button {\n  min-width: 100px;\n  padding: 0 10px;\n  font-size: 9px;\n  line-height: 24px; }\n.sv-button.small button .sv-button-spinner {\n    top: 2px; }\n.sv-button.large button {\n  font-size: 13px;\n  line-height: 48px; }\n.sv-button.large button .sv-button-spinner {\n    top: 14px; }\n.sv-button.long button {\n  width: 100%;\n  display: block; }\n.sv-button.hollow button {\n  background-color: transparent; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+module.exports = "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-button.primary button {\n  background-color: #A8AA19;\n  border-color: #A8AA19; }\n.sv-button.primary button:hover {\n    background-color: rgba(168, 170, 25, 0.8); }\n.sv-button.primary button.alternate-state, .sv-button.primary button.alternate-state:hover, .sv-button.primary button.alternate-state:disabled {\n    color: #A8AA19;\n    background-color: rgba(168, 170, 25, 0.25); }\n.sv-button.hollow.primary button {\n  color: #A8AA19; }\n.sv-button.hollow.primary button:hover {\n    color: #FFF; }\n.sv-button.hollow.primary button.alternate-state, .sv-button.hollow.primary button.alternate-state:hover, .sv-button.hollow.primary button.alternate-state:disabled {\n    color: #A8AA19; }\n.sv-button.secondary button {\n  background-color: #007A86;\n  border-color: #007A86; }\n.sv-button.secondary button:hover {\n    background-color: rgba(0, 122, 134, 0.8); }\n.sv-button.secondary button.alternate-state, .sv-button.secondary button.alternate-state:hover, .sv-button.secondary button.alternate-state:disabled {\n    color: #007A86;\n    background-color: rgba(0, 122, 134, 0.25); }\n.sv-button.hollow.secondary button {\n  color: #007A86; }\n.sv-button.hollow.secondary button:hover {\n    color: #FFF; }\n.sv-button.hollow.secondary button.alternate-state, .sv-button.hollow.secondary button.alternate-state:hover, .sv-button.hollow.secondary button.alternate-state:disabled {\n    color: #007A86; }\n.sv-button.success button {\n  background-color: #A8AA19;\n  border-color: #A8AA19; }\n.sv-button.success button:hover {\n    background-color: rgba(168, 170, 25, 0.8); }\n.sv-button.success button.alternate-state, .sv-button.success button.alternate-state:hover, .sv-button.success button.alternate-state:disabled {\n    color: #A8AA19;\n    background-color: rgba(168, 170, 25, 0.25); }\n.sv-button.hollow.success button {\n  color: #A8AA19; }\n.sv-button.hollow.success button:hover {\n    color: #FFF; }\n.sv-button.hollow.success button.alternate-state, .sv-button.hollow.success button.alternate-state:hover, .sv-button.hollow.success button.alternate-state:disabled {\n    color: #A8AA19; }\n.sv-button.warning button {\n  background-color: #ED8B00;\n  border-color: #ED8B00; }\n.sv-button.warning button:hover {\n    background-color: rgba(237, 139, 0, 0.8); }\n.sv-button.warning button.alternate-state, .sv-button.warning button.alternate-state:hover, .sv-button.warning button.alternate-state:disabled {\n    color: #ED8B00;\n    background-color: rgba(237, 139, 0, 0.25); }\n.sv-button.hollow.warning button {\n  color: #ED8B00; }\n.sv-button.hollow.warning button:hover {\n    color: #FFF; }\n.sv-button.hollow.warning button.alternate-state, .sv-button.hollow.warning button.alternate-state:hover, .sv-button.hollow.warning button.alternate-state:disabled {\n    color: #ED8B00; }\n.sv-button.error button {\n  background-color: #BA0C2F;\n  border-color: #BA0C2F; }\n.sv-button.error button:hover {\n    background-color: rgba(186, 12, 47, 0.8); }\n.sv-button.error button.alternate-state, .sv-button.error button.alternate-state:hover, .sv-button.error button.alternate-state:disabled {\n    color: #BA0C2F;\n    background-color: rgba(186, 12, 47, 0.25); }\n.sv-button.hollow.error button {\n  color: #BA0C2F; }\n.sv-button.hollow.error button:hover {\n    color: #FFF; }\n.sv-button.hollow.error button.alternate-state, .sv-button.hollow.error button.alternate-state:hover, .sv-button.hollow.error button.alternate-state:disabled {\n    color: #BA0C2F; }\n.sv-button.gray button {\n  background-color: #A1A6BA;\n  border-color: #A1A6BA; }\n.sv-button.gray button:hover {\n    background-color: rgba(161, 166, 186, 0.8); }\n.sv-button.gray button.alternate-state, .sv-button.gray button.alternate-state:hover, .sv-button.gray button.alternate-state:disabled {\n    color: #A1A6BA;\n    background-color: rgba(161, 166, 186, 0.25); }\n.sv-button.hollow.gray button {\n  color: #A1A6BA; }\n.sv-button.hollow.gray button:hover {\n    color: #FFF; }\n.sv-button.hollow.gray button.alternate-state, .sv-button.hollow.gray button.alternate-state:hover, .sv-button.hollow.gray button.alternate-state:disabled {\n    color: #A1A6BA; }\n.sv-button button {\n  min-width: 160px;\n  padding: 0 20px;\n  display: inline-block;\n  position: relative;\n  color: #FFF;\n  background-color: #A8AA19;\n  border-radius: 4px;\n  border-style: solid;\n  border-width: 1px;\n  font-family: \"Montserrat\", sans-serif;\n  font-size: 11px;\n  font-weight: 500;\n  line-height: 38px;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n  -webkit-transition: background-color 0.2s ease-out;\n  transition: background-color 0.2s ease-out;\n  cursor: pointer; }\n.sv-button button:focus, .sv-button button:active {\n    outline: none; }\n.sv-button button:disabled {\n    opacity: 0.5;\n    cursor: not-allowed; }\n.sv-button button.alternate-state, .sv-button button.alternate-state:hover, .sv-button button.alternate-state:disabled {\n    opacity: 1.0;\n    cursor: default; }\n.sv-button button .sv-button-content {\n    display: inline-block;\n    -webkit-transition: opacity .2s ease-out, -webkit-transform .2s ease-out;\n    transition: opacity .2s ease-out, -webkit-transform .2s ease-out;\n    transition: transform .2s ease-out, opacity .2s ease-out;\n    transition: transform .2s ease-out, opacity .2s ease-out, -webkit-transform .2s ease-out; }\n.sv-button button .sv-button-content.hidden-state {\n      opacity: 0;\n      -webkit-transform: translateX(-10px);\n              transform: translateX(-10px); }\n.sv-button button .sv-button-content.hidden-loading {\n      opacity: 0;\n      -webkit-transform: scale(0.5);\n              transform: scale(0.5); }\n.sv-button button .state-container {\n    width: 100%;\n    display: inline-block;\n    position: absolute;\n    left: 0; }\n.sv-button button .sv-button-spinner {\n    width: 100%;\n    height: 20px;\n    position: absolute;\n    top: 9.5px;\n    left: 0; }\n.sv-button.small button {\n  min-width: 100px;\n  padding: 0 10px;\n  font-size: 9px;\n  line-height: 24px; }\n.sv-button.small button .sv-button-spinner {\n    top: 2px; }\n.sv-button.large button {\n  font-size: 13px;\n  line-height: 48px; }\n.sv-button.large button .sv-button-spinner {\n    top: 14px; }\n.sv-button.long button {\n  width: 100%;\n  display: block; }\n.sv-button.hollow button {\n  background-color: transparent; }\n"
 
 /***/ }),
 
-/***/ "../../../../../src/button/button.ts":
+/***/ "./src/button/button.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export ButtonBase */
 /* unused harmony export _ButtonBase */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvButton; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_animations__ = __webpack_require__("../../../animations/esm5/animations.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core__ = __webpack_require__("../../../../../src/core/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_state__ = __webpack_require__("../../../../../src/button/button-state.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_animations__ = __webpack_require__("./node_modules/@angular/animations/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core__ = __webpack_require__("./src/core/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_state__ = __webpack_require__("./src/button/button-state.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -715,8 +709,8 @@ var SvButton = (function (_super) {
     SvButton = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-button',
-            template: __webpack_require__("../../../../../src/button/button.html"),
-            styles: [__webpack_require__("../../../../../src/button/button.scss")],
+            template: __webpack_require__("./src/button/button.html"),
+            styles: [__webpack_require__("./src/button/button.scss")],
             host: {
                 'class': 'sv-button'
             },
@@ -753,13 +747,13 @@ var SvButton = (function (_super) {
 
 /***/ }),
 
-/***/ "../../../../../src/checkbox/checkbox-group-service.ts":
+/***/ "./src/checkbox/checkbox-group-service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CheckboxGroupService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__("./node_modules/rxjs/_esm5/Subject.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -803,15 +797,15 @@ var CheckboxGroupService = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/checkbox/checkbox-group.ts":
+/***/ "./src/checkbox/checkbox-group.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvCheckboxGroup; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkbox_group_service__ = __webpack_require__("../../../../../src/checkbox/checkbox-group-service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__checkbox__ = __webpack_require__("../../../../../src/checkbox/checkbox.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkbox_group_service__ = __webpack_require__("./src/checkbox/checkbox-group-service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__checkbox__ = __webpack_require__("./src/checkbox/checkbox.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -919,22 +913,22 @@ var SvCheckboxGroup = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/checkbox/checkbox.html":
+/***/ "./src/checkbox/checkbox.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"sv-checkbox-container\" (click)=\"checked = !checked\">\n  <!-- The checkbox element -->\n  <div class=\"sv-checkbox-display\" [ngClass]=\"{active: checked}\">\n    <i class=\"fas fa-check\"></i>\n  </div>\n\n  <!-- Checkbox Button Label -->\n  <label class=\"sv-checkbox-label\">\n    <ng-content></ng-content>\n  </label>\n\n  <!-- Native checkbox -->\n  <input type=\"checkbox\" value=\"thing\" [checked]=\"checked\">\n</div>"
 
 /***/ }),
 
-/***/ "../../../../../src/checkbox/checkbox.module.ts":
+/***/ "./src/checkbox/checkbox.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvCheckboxModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkbox__ = __webpack_require__("../../../../../src/checkbox/checkbox.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__checkbox_group__ = __webpack_require__("../../../../../src/checkbox/checkbox-group.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__checkbox__ = __webpack_require__("./src/checkbox/checkbox.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__checkbox_group__ = __webpack_require__("./src/checkbox/checkbox-group.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -963,37 +957,26 @@ var SvCheckboxModule = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/checkbox/checkbox.scss":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./src/checkbox/checkbox.scss":
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-checkbox.primary .sv-checkbox-display path {\n  stroke: white; }\n.sv-checkbox.primary .sv-checkbox-display.active {\n  background: #A8AA19;\n  border-color: #A8AA19; }\n.sv-checkbox.primary .sv-checkbox-display.active path {\n    stroke: #A8AA19; }\n.sv-checkbox.secondary .sv-checkbox-display path {\n  stroke: white; }\n.sv-checkbox.secondary .sv-checkbox-display.active {\n  background: #007A86;\n  border-color: #007A86; }\n.sv-checkbox.secondary .sv-checkbox-display.active path {\n    stroke: #007A86; }\n.sv-checkbox.success .sv-checkbox-display path {\n  stroke: white; }\n.sv-checkbox.success .sv-checkbox-display.active {\n  background: #A8AA19;\n  border-color: #A8AA19; }\n.sv-checkbox.success .sv-checkbox-display.active path {\n    stroke: #A8AA19; }\n.sv-checkbox.warning .sv-checkbox-display path {\n  stroke: white; }\n.sv-checkbox.warning .sv-checkbox-display.active {\n  background: #ED8B00;\n  border-color: #ED8B00; }\n.sv-checkbox.warning .sv-checkbox-display.active path {\n    stroke: #ED8B00; }\n.sv-checkbox.error .sv-checkbox-display path {\n  stroke: white; }\n.sv-checkbox.error .sv-checkbox-display.active {\n  background: #BA0C2F;\n  border-color: #BA0C2F; }\n.sv-checkbox.error .sv-checkbox-display.active path {\n    stroke: #BA0C2F; }\n.sv-checkbox.gray .sv-checkbox-display path {\n  stroke: white; }\n.sv-checkbox.gray .sv-checkbox-display.active {\n  background: #A1A6BA;\n  border-color: #A1A6BA; }\n.sv-checkbox.gray .sv-checkbox-display.active path {\n    stroke: #A1A6BA; }\n.sv-checkbox {\n  display: inline-block;\n  cursor: pointer;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none; }\n.sv-checkbox .sv-checkbox-container {\n    height: 20px; }\n.sv-checkbox .sv-checkbox-container .sv-checkbox-display {\n      width: 20px;\n      height: 20px;\n      display: inline-block;\n      position: relative;\n      border-radius: 4px;\n      border: 2px solid #A1A6BA;\n      text-align: center;\n      -webkit-transition: all 0.2s ease-out;\n      transition: all 0.2s ease-out; }\n.sv-checkbox .sv-checkbox-container .sv-checkbox-display .fa-check {\n        position: relative;\n        top: -1.5px;\n        color: white;\n        opacity: 0;\n        font-size: 14px;\n        -webkit-transform: scale(0.5);\n                transform: scale(0.5);\n        -webkit-transition: all 0.2s ease-out;\n        transition: all 0.2s ease-out; }\n.sv-checkbox .sv-checkbox-container .sv-checkbox-display .fa-check path {\n          -webkit-transition: stroke 0.2s ease-out;\n          transition: stroke 0.2s ease-out;\n          stroke-width: 40; }\n.sv-checkbox .sv-checkbox-container .sv-checkbox-display.active .fa-check {\n        opacity: 1;\n        -webkit-transform: scale(1);\n                transform: scale(1); }\n.sv-checkbox .sv-checkbox-label {\n    margin-left: 5px;\n    display: inline-block;\n    position: relative;\n    top: -2px;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    cursor: pointer; }\n.sv-checkbox input[type=checkbox] {\n    display: none; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+module.exports = "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-checkbox.primary .sv-checkbox-display path {\n  stroke: white; }\n.sv-checkbox.primary .sv-checkbox-display.active {\n  background: #A8AA19;\n  border-color: #A8AA19; }\n.sv-checkbox.primary .sv-checkbox-display.active path {\n    stroke: #A8AA19; }\n.sv-checkbox.secondary .sv-checkbox-display path {\n  stroke: white; }\n.sv-checkbox.secondary .sv-checkbox-display.active {\n  background: #007A86;\n  border-color: #007A86; }\n.sv-checkbox.secondary .sv-checkbox-display.active path {\n    stroke: #007A86; }\n.sv-checkbox.success .sv-checkbox-display path {\n  stroke: white; }\n.sv-checkbox.success .sv-checkbox-display.active {\n  background: #A8AA19;\n  border-color: #A8AA19; }\n.sv-checkbox.success .sv-checkbox-display.active path {\n    stroke: #A8AA19; }\n.sv-checkbox.warning .sv-checkbox-display path {\n  stroke: white; }\n.sv-checkbox.warning .sv-checkbox-display.active {\n  background: #ED8B00;\n  border-color: #ED8B00; }\n.sv-checkbox.warning .sv-checkbox-display.active path {\n    stroke: #ED8B00; }\n.sv-checkbox.error .sv-checkbox-display path {\n  stroke: white; }\n.sv-checkbox.error .sv-checkbox-display.active {\n  background: #BA0C2F;\n  border-color: #BA0C2F; }\n.sv-checkbox.error .sv-checkbox-display.active path {\n    stroke: #BA0C2F; }\n.sv-checkbox.gray .sv-checkbox-display path {\n  stroke: white; }\n.sv-checkbox.gray .sv-checkbox-display.active {\n  background: #A1A6BA;\n  border-color: #A1A6BA; }\n.sv-checkbox.gray .sv-checkbox-display.active path {\n    stroke: #A1A6BA; }\n.sv-checkbox {\n  display: inline-block;\n  cursor: pointer;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none; }\n.sv-checkbox .sv-checkbox-container {\n    height: 20px; }\n.sv-checkbox .sv-checkbox-container .sv-checkbox-display {\n      width: 20px;\n      height: 20px;\n      display: inline-block;\n      position: relative;\n      border-radius: 4px;\n      border: 2px solid #A1A6BA;\n      text-align: center;\n      -webkit-transition: all 0.2s ease-out;\n      transition: all 0.2s ease-out; }\n.sv-checkbox .sv-checkbox-container .sv-checkbox-display .fa-check {\n        position: relative;\n        top: -1.5px;\n        color: white;\n        opacity: 0;\n        font-size: 14px;\n        -webkit-transform: scale(0.5);\n                transform: scale(0.5);\n        -webkit-transition: all 0.2s ease-out;\n        transition: all 0.2s ease-out; }\n.sv-checkbox .sv-checkbox-container .sv-checkbox-display .fa-check path {\n          -webkit-transition: stroke 0.2s ease-out;\n          transition: stroke 0.2s ease-out;\n          stroke-width: 40; }\n.sv-checkbox .sv-checkbox-container .sv-checkbox-display.active .fa-check {\n        opacity: 1;\n        -webkit-transform: scale(1);\n                transform: scale(1); }\n.sv-checkbox .sv-checkbox-label {\n    margin-left: 5px;\n    display: inline-block;\n    position: relative;\n    top: -2px;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    cursor: pointer; }\n.sv-checkbox input[type=checkbox] {\n    display: none; }\n"
 
 /***/ }),
 
-/***/ "../../../../../src/checkbox/checkbox.ts":
+/***/ "./src/checkbox/checkbox.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export CheckboxBase */
 /* unused harmony export _CheckboxBase */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Checkbox; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core__ = __webpack_require__("../../../../../src/core/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__checkbox_group_service__ = __webpack_require__("../../../../../src/checkbox/checkbox-group-service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__ = __webpack_require__("../../../../@fortawesome/fontawesome/index.es.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__ = __webpack_require__("../../../../@fortawesome/fontawesome-free-solid/index.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core__ = __webpack_require__("./src/core/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__checkbox_group_service__ = __webpack_require__("./src/checkbox/checkbox-group-service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__ = __webpack_require__("./node_modules/@fortawesome/fontawesome/index.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__ = __webpack_require__("./node_modules/@fortawesome/fontawesome-free-solid/index.es.js");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1094,8 +1077,8 @@ var Checkbox = (function (_super) {
     Checkbox = Checkbox_1 = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-checkbox',
-            template: __webpack_require__("../../../../../src/checkbox/checkbox.html"),
-            styles: [__webpack_require__("../../../../../src/checkbox/checkbox.scss")],
+            template: __webpack_require__("./src/checkbox/checkbox.html"),
+            styles: [__webpack_require__("./src/checkbox/checkbox.scss")],
             providers: [
                 {
                     provide: __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* NG_VALUE_ACCESSOR */],
@@ -1119,7 +1102,7 @@ var Checkbox = (function (_super) {
 
 /***/ }),
 
-/***/ "../../../../../src/core/common/color.ts":
+/***/ "./src/core/common/color.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1190,12 +1173,12 @@ function colorMixin(base, defaultColor) {
 
 /***/ }),
 
-/***/ "../../../../../src/core/directives/outside-click.ts":
+/***/ "./src/core/directives/outside-click.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClickOutsideDirective; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1241,15 +1224,15 @@ var ClickOutsideDirective = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/core/index.ts":
+/***/ "./src/core/index.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_color__ = __webpack_require__("../../../../../src/core/common/color.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_color__ = __webpack_require__("./src/core/common/color.ts");
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__common_color__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pipes_searchFilter__ = __webpack_require__("../../../../../src/core/pipes/searchFilter.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pipes_searchFilter__ = __webpack_require__("./src/core/pipes/searchFilter.ts");
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_outside_click__ = __webpack_require__("../../../../../src/core/directives/outside-click.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_outside_click__ = __webpack_require__("./src/core/directives/outside-click.ts");
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__directives_outside_click__["a"]; });
 
 
@@ -1258,12 +1241,12 @@ var ClickOutsideDirective = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/core/pipes/searchFilter.ts":
+/***/ "./src/core/pipes/searchFilter.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export SearchFilterPipe */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1298,24 +1281,27 @@ var SearchFilterPipe = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/index.ts":
+/***/ "./src/index.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core__ = __webpack_require__("../../../../../src/core/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__core__ = __webpack_require__("./src/core/index.ts");
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button_module__ = __webpack_require__("../../../../../src/button/button.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button_module__ = __webpack_require__("./src/button/button.module.ts");
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__button_button_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__spinner_spinner_module__ = __webpack_require__("../../../../../src/spinner/spinner.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_2__spinner_spinner_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__switch_switch_module__ = __webpack_require__("../../../../../src/switch/switch.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_3__switch_switch_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__radio_button_radio_button_module__ = __webpack_require__("../../../../../src/radio-button/radio-button.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_4__radio_button_radio_button_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__checkbox_checkbox_module__ = __webpack_require__("../../../../../src/checkbox/checkbox.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__spinner_spinner_module__ = __webpack_require__("./src/spinner/spinner.module.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_2__spinner_spinner_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__switch_switch_module__ = __webpack_require__("./src/switch/switch.module.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_3__switch_switch_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__radio_button_radio_button_module__ = __webpack_require__("./src/radio-button/radio-button.module.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_4__radio_button_radio_button_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__checkbox_checkbox_module__ = __webpack_require__("./src/checkbox/checkbox.module.ts");
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_5__checkbox_checkbox_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__select_select_module__ = __webpack_require__("../../../../../src/select/select.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_6__select_select_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__select_select_module__ = __webpack_require__("./src/select/select.module.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_6__select_select_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__notifications_notifications_module__ = __webpack_require__("./src/notifications/notifications.module.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_7__notifications_notifications_module__["a"]; });
+
 
 
 
@@ -1327,23 +1313,261 @@ var SearchFilterPipe = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/radio-button/radio-button.html":
+/***/ "./src/notifications/notifications-overlay.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div \n  *ngFor=\"let t of toast\"\n  class=\"toast\"\n  [ngClass]=\"[t.type]\"\n  (click)=\"dismissToast(t)\"\n  [@toastAnimation]=\"toastState()\"\n>\n  <div class=\"icon\" *ngIf=\"t.options['icon']\">\n    <i *ngIf=\"t.type == 'info'\" class=\"fas fa-info-circle\"></i>\n    <i *ngIf=\"t.type == 'success'\" class=\"far fa-check-circle\"></i>\n    <i *ngIf=\"t.type == 'warning'\" class=\"fas fa-exclamation-circle\"></i>\n    <i *ngIf=\"t.type == 'error'\" class=\"fas fa-exclamation-triangle\"></i>\n  </div>\n  <div class=\"message\">\n    <div>\n      <p>{{t.message}}</p>\n      <ul *ngIf=\"t.messageList.length > 0\">\n        <li *ngFor=\"let m of t.messageList\">{{m}}</li>\n      </ul>\n    </div>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/notifications/notifications-overlay.scss":
+/***/ (function(module, exports) {
+
+module.exports = "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n:host {\n  -webkit-box-sizing: content-box;\n          box-sizing: content-box;\n  width: 400px;\n  max-height: 100vh;\n  padding: 20px;\n  position: fixed;\n  top: 0;\n  right: 0;\n  pointer-events: none; }\n:host:empty {\n  display: none; }\n:host > div {\n  pointer-events: all; }\n.toast {\n  -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);\n          box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);\n  width: 400px;\n  margin-bottom: 10px;\n  padding: 10px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  color: white;\n  border-radius: 4px; }\n.toast.success {\n    background: #A8AA19; }\n.toast.warning {\n    background: #ED8B00; }\n.toast.error {\n    background: #BA0C2F; }\n.toast.info {\n    background: black; }\n.toast .icon {\n    margin-right: 20px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    font-size: 24px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-flex: 0;\n        -ms-flex-positive: 0;\n            flex-grow: 0;\n    -ms-flex-negative: 0;\n        flex-shrink: 0; }\n.toast .message {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    font-size: 14px;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-box-orient: horizontal;\n    -webkit-box-direction: normal;\n        -ms-flex-direction: row;\n            flex-direction: row;\n    -webkit-box-flex: 1;\n        -ms-flex-positive: 1;\n            flex-grow: 1; }\n.toast .message ul {\n      margin-top: 5px;\n      margin-bottom: 0;\n      padding-left: 14px; }\n.toast p {\n  margin: 0; }\n@media (max-width: 767px) {\n  :host {\n    width: 100vw;\n    padding: 0; }\n  .toast {\n    width: 100vw;\n    border-radius: 0; } }\n"
+
+/***/ }),
+
+/***/ "./src/notifications/notifications-overlay.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvNotificationsOverlayComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__toast__ = __webpack_require__("./src/notifications/toast.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_animations__ = __webpack_require__("./node_modules/@angular/animations/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fortawesome_fontawesome__ = __webpack_require__("./node_modules/@fortawesome/fontawesome/index.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome_free_regular__ = __webpack_require__("./node_modules/@fortawesome/fontawesome-free-regular/index.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__ = __webpack_require__("./node_modules/@fortawesome/fontawesome-free-solid/index.es.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+__WEBPACK_IMPORTED_MODULE_3__fortawesome_fontawesome__["a" /* default */].library.add(__WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome_free_regular__["a" /* faCheckCircle */], __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__["f" /* faInfoCircle */], __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__["d" /* faExclamationCircle */], __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__["e" /* faExclamationTriangle */]);
+var SvNotificationsOverlayComponent = (function () {
+    function SvNotificationsOverlayComponent() {
+        // Array of toast to display
+        this.toast = [];
+        this.timeouts = [];
+    }
+    SvNotificationsOverlayComponent.prototype.addToast = function (type, message, list, userOptions) {
+        var _this = this;
+        var options = { duration: 3000, dismissible: true, icon: true };
+        if (userOptions) {
+            for (var _i = 0, _a = Object.keys(userOptions); _i < _a.length; _i++) {
+                var k = _a[_i];
+                options[k] = userOptions[k];
+            }
+        }
+        var t = new __WEBPACK_IMPORTED_MODULE_1__toast__["a" /* Toast */](type, message, list, options);
+        this.toast.unshift(t);
+        setTimeout(function () {
+            _this.removeToast(t.id);
+        }, options.duration);
+    };
+    SvNotificationsOverlayComponent.prototype.dismissToast = function (t) {
+        if (t.options['dismissible']) {
+            this.removeToast(t.id);
+        }
+    };
+    SvNotificationsOverlayComponent.prototype.removeToast = function (id) {
+        var index = this.toast.findIndex(function (x) { return x.id === id; });
+        this.toast.splice(index, 1);
+    };
+    SvNotificationsOverlayComponent.prototype.toastState = function () {
+        if (window.outerWidth > 720) {
+            return 'show';
+        }
+        else {
+            return 'showMobile';
+        }
+    };
+    SvNotificationsOverlayComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'sv-notifications-overlay',
+            template: __webpack_require__("./src/notifications/notifications-overlay.html"),
+            styles: [__webpack_require__("./src/notifications/notifications-overlay.scss")],
+            animations: [
+                Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["j" /* trigger */])('toastAnimation', [
+                    // Desktop
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('void => show', [
+                        Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({ opacity: 0, transform: 'translateX(100%)' }),
+                        Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('250ms ease-out', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({ opacity: 1, transform: 'translateX(0)' }))
+                    ]),
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('show => void', [
+                        Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({ opacity: 1, transform: 'translateX(0)' }),
+                        Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('250ms ease-out', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({ opacity: 0, transform: 'translateX(100%)' }))
+                    ]),
+                    // Mobile
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('void => showMobile', [
+                        Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({ opacity: 0, transform: 'translateY(-100%)' }),
+                        Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('250ms ease-out', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({ opacity: 1, transform: 'translateY(0)' }))
+                    ]),
+                    Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["i" /* transition */])('showMobile => void', [
+                        Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({ opacity: 1, transform: 'translateY(0)' }),
+                        Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["e" /* animate */])('250ms ease-out', Object(__WEBPACK_IMPORTED_MODULE_2__angular_animations__["h" /* style */])({ opacity: 0, transform: 'translateY(-100%)' }))
+                    ])
+                ])
+            ],
+        }),
+        __metadata("design:paramtypes", [])
+    ], SvNotificationsOverlayComponent);
+    return SvNotificationsOverlayComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/notifications/notifications.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvNotificationsModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__notifications_overlay__ = __webpack_require__("./src/notifications/notifications-overlay.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__notifications_service__ = __webpack_require__("./src/notifications/notifications.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/animations.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+var SvNotificationsModule = (function () {
+    function SvNotificationsModule() {
+    }
+    SvNotificationsModule_1 = SvNotificationsModule;
+    SvNotificationsModule.forRoot = function () {
+        return {
+            ngModule: SvNotificationsModule_1,
+            providers: [__WEBPACK_IMPORTED_MODULE_3__notifications_service__["a" /* SvNotificationsService */]]
+        };
+    };
+    SvNotificationsModule = SvNotificationsModule_1 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* NgModule */])({
+            imports: [__WEBPACK_IMPORTED_MODULE_4__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */], __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_2__notifications_overlay__["a" /* SvNotificationsOverlayComponent */]],
+            declarations: [__WEBPACK_IMPORTED_MODULE_2__notifications_overlay__["a" /* SvNotificationsOverlayComponent */]],
+            providers: [],
+            entryComponents: [__WEBPACK_IMPORTED_MODULE_2__notifications_overlay__["a" /* SvNotificationsOverlayComponent */]]
+        })
+    ], SvNotificationsModule);
+    return SvNotificationsModule;
+    var SvNotificationsModule_1;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/notifications/notifications.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvNotificationsService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__notifications_overlay__ = __webpack_require__("./src/notifications/notifications-overlay.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SvNotificationsService = (function () {
+    function SvNotificationsService(componentFactoryResolver, appRef, injector) {
+        this.componentFactoryResolver = componentFactoryResolver;
+        this.appRef = appRef;
+        this.injector = injector;
+        // Append notifications overlay component to body
+        var componentRef = this.componentFactoryResolver.resolveComponentFactory(__WEBPACK_IMPORTED_MODULE_1__notifications_overlay__["a" /* SvNotificationsOverlayComponent */]).create(this.injector);
+        this.appRef.attachView(componentRef.hostView);
+        var domElem = componentRef.hostView.rootNodes[0];
+        document.body.appendChild(domElem);
+        // Get notications overlay component instance
+        this.notificationOverlay = componentRef.instance;
+    }
+    SvNotificationsService.prototype.addToast = function (type, message, options) {
+        if (options === void 0) { options = null; }
+        this.addListToast(type, message, [], options);
+    };
+    SvNotificationsService.prototype.addListToast = function (type, message, list, options) {
+        if (options === void 0) { options = null; }
+        this.notificationOverlay.addToast(type, message, list, options);
+    };
+    SvNotificationsService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["z" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* ComponentFactoryResolver */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["f" /* ApplicationRef */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injector */]])
+    ], SvNotificationsService);
+    return SvNotificationsService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/notifications/toast.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Toast; });
+var Toast = (function () {
+    function Toast(type, message, messageList, options) {
+        this.type = type;
+        this.message = message;
+        this.messageList = messageList;
+        this.options = options;
+        this.id = Math.random().toString(36).substr(2, 9);
+    }
+    return Toast;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/radio-button/radio-button.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"sv-radio-button-container\" (click)=\"selected = true\">\n  <!-- Radio Button Element -->\n  <div class=\"sv-radio-button-display\" [ngClass]=\"{active: selected}\"></div>\n\n  <!-- Radio Button Label -->\n  <label class=\"sv-radio-button-label\">\n    <ng-content></ng-content>\n  </label>\n\n  <input type=\"radio\" [checked]=\"selected\" [value]=\"value\" [name]=\"name\">\n</div>"
 
 /***/ }),
 
-/***/ "../../../../../src/radio-button/radio-button.module.ts":
+/***/ "./src/radio-button/radio-button.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvRadioButtonModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__radio_button__ = __webpack_require__("../../../../../src/radio-button/radio-button.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__radio_group__ = __webpack_require__("../../../../../src/radio-button/radio-group.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__radio_button__ = __webpack_require__("./src/radio-button/radio-button.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__radio_group__ = __webpack_require__("./src/radio-button/radio-group.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1373,34 +1597,23 @@ var SvRadioButtonModule = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/radio-button/radio-button.scss":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./src/radio-button/radio-button.scss":
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-radio-button.primary .sv-radio-button-display::before {\n  background-color: #A8AA19; }\n.sv-radio-button.primary .sv-radio-button-display.active {\n  border-color: #A8AA19; }\n.sv-radio-button.secondary .sv-radio-button-display::before {\n  background-color: #007A86; }\n.sv-radio-button.secondary .sv-radio-button-display.active {\n  border-color: #007A86; }\n.sv-radio-button.success .sv-radio-button-display::before {\n  background-color: #A8AA19; }\n.sv-radio-button.success .sv-radio-button-display.active {\n  border-color: #A8AA19; }\n.sv-radio-button.warning .sv-radio-button-display::before {\n  background-color: #ED8B00; }\n.sv-radio-button.warning .sv-radio-button-display.active {\n  border-color: #ED8B00; }\n.sv-radio-button.error .sv-radio-button-display::before {\n  background-color: #BA0C2F; }\n.sv-radio-button.error .sv-radio-button-display.active {\n  border-color: #BA0C2F; }\n.sv-radio-button.gray .sv-radio-button-display::before {\n  background-color: #A1A6BA; }\n.sv-radio-button.gray .sv-radio-button-display.active {\n  border-color: #A1A6BA; }\n.sv-radio-button {\n  display: inline-block;\n  cursor: pointer;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none; }\n.sv-radio-button .sv-radio-button-container {\n    height: 20px; }\n.sv-radio-button .sv-radio-button-container input[type=radio] {\n      display: none; }\n.sv-radio-button .sv-radio-button-display {\n    width: 20px;\n    height: 20px;\n    display: inline-block;\n    position: relative;\n    border-radius: 50%;\n    border: 2px solid #A1A6BA; }\n.sv-radio-button .sv-radio-button-display::before {\n      content: ' ';\n      width: 10px;\n      height: 10px;\n      position: absolute;\n      top: 3px;\n      left: 3px;\n      opacity: 0;\n      border-radius: 50%;\n      -webkit-transform: scale(0);\n              transform: scale(0);\n      -webkit-transition: opacity 0.1s ease-out, border-color 0.1s ease-out, -webkit-transform 0.1s ease-out;\n      transition: opacity 0.1s ease-out, border-color 0.1s ease-out, -webkit-transform 0.1s ease-out;\n      transition: transform 0.1s ease-out, opacity 0.1s ease-out, border-color 0.1s ease-out;\n      transition: transform 0.1s ease-out, opacity 0.1s ease-out, border-color 0.1s ease-out, -webkit-transform 0.1s ease-out; }\n.sv-radio-button .sv-radio-button-display.active::before {\n      opacity: 1;\n      -webkit-transform: scale(1);\n              transform: scale(1); }\n.sv-radio-button .sv-radio-button-label {\n    margin-left: 5px;\n    display: inline-block;\n    position: relative;\n    top: -6px;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    cursor: pointer; }\n.sv-radio-group .sv-radio-button {\n  margin-right: 20px; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+module.exports = "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-radio-button.primary .sv-radio-button-display::before {\n  background-color: #A8AA19; }\n.sv-radio-button.primary .sv-radio-button-display.active {\n  border-color: #A8AA19; }\n.sv-radio-button.secondary .sv-radio-button-display::before {\n  background-color: #007A86; }\n.sv-radio-button.secondary .sv-radio-button-display.active {\n  border-color: #007A86; }\n.sv-radio-button.success .sv-radio-button-display::before {\n  background-color: #A8AA19; }\n.sv-radio-button.success .sv-radio-button-display.active {\n  border-color: #A8AA19; }\n.sv-radio-button.warning .sv-radio-button-display::before {\n  background-color: #ED8B00; }\n.sv-radio-button.warning .sv-radio-button-display.active {\n  border-color: #ED8B00; }\n.sv-radio-button.error .sv-radio-button-display::before {\n  background-color: #BA0C2F; }\n.sv-radio-button.error .sv-radio-button-display.active {\n  border-color: #BA0C2F; }\n.sv-radio-button.gray .sv-radio-button-display::before {\n  background-color: #A1A6BA; }\n.sv-radio-button.gray .sv-radio-button-display.active {\n  border-color: #A1A6BA; }\n.sv-radio-button {\n  display: inline-block;\n  cursor: pointer;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none; }\n.sv-radio-button .sv-radio-button-container {\n    height: 20px; }\n.sv-radio-button .sv-radio-button-container input[type=radio] {\n      display: none; }\n.sv-radio-button .sv-radio-button-display {\n    width: 20px;\n    height: 20px;\n    display: inline-block;\n    position: relative;\n    border-radius: 50%;\n    border: 2px solid #A1A6BA; }\n.sv-radio-button .sv-radio-button-display::before {\n      content: ' ';\n      width: 10px;\n      height: 10px;\n      position: absolute;\n      top: 3px;\n      left: 3px;\n      opacity: 0;\n      border-radius: 50%;\n      -webkit-transform: scale(0);\n              transform: scale(0);\n      -webkit-transition: opacity 0.1s ease-out, border-color 0.1s ease-out, -webkit-transform 0.1s ease-out;\n      transition: opacity 0.1s ease-out, border-color 0.1s ease-out, -webkit-transform 0.1s ease-out;\n      transition: transform 0.1s ease-out, opacity 0.1s ease-out, border-color 0.1s ease-out;\n      transition: transform 0.1s ease-out, opacity 0.1s ease-out, border-color 0.1s ease-out, -webkit-transform 0.1s ease-out; }\n.sv-radio-button .sv-radio-button-display.active::before {\n      opacity: 1;\n      -webkit-transform: scale(1);\n              transform: scale(1); }\n.sv-radio-button .sv-radio-button-label {\n    margin-left: 5px;\n    display: inline-block;\n    position: relative;\n    top: -6px;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    cursor: pointer; }\n.sv-radio-group .sv-radio-button {\n  margin-right: 20px; }\n"
 
 /***/ }),
 
-/***/ "../../../../../src/radio-button/radio-button.ts":
+/***/ "./src/radio-button/radio-button.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export SvRadioButtonBase */
 /* unused harmony export _SvRadioButtonBase */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvRadioButton; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core__ = __webpack_require__("../../../../../src/core/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__radio_group_service__ = __webpack_require__("../../../../../src/radio-button/radio-group-service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core__ = __webpack_require__("./src/core/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__radio_group_service__ = __webpack_require__("./src/radio-button/radio-group-service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1480,8 +1693,8 @@ var SvRadioButton = (function (_super) {
     SvRadioButton = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-radio-button',
-            template: __webpack_require__("../../../../../src/radio-button/radio-button.html"),
-            styles: [__webpack_require__("../../../../../src/radio-button/radio-button.scss")],
+            template: __webpack_require__("./src/radio-button/radio-button.html"),
+            styles: [__webpack_require__("./src/radio-button/radio-button.scss")],
             host: {
                 'class': 'sv-radio-button'
             },
@@ -1497,13 +1710,13 @@ var SvRadioButton = (function (_super) {
 
 /***/ }),
 
-/***/ "../../../../../src/radio-button/radio-group-service.ts":
+/***/ "./src/radio-button/radio-group-service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RadioGroupService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__("../../../../rxjs/_esm5/Subject.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__("./node_modules/rxjs/_esm5/Subject.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1534,15 +1747,15 @@ var RadioGroupService = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/radio-button/radio-group.ts":
+/***/ "./src/radio-button/radio-group.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvRadioGroup; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__radio_group_service__ = __webpack_require__("../../../../../src/radio-button/radio-group-service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__radio_button__ = __webpack_require__("../../../../../src/radio-button/radio-button.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__radio_group_service__ = __webpack_require__("./src/radio-button/radio-group-service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__radio_button__ = __webpack_require__("./src/radio-button/radio-button.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1668,23 +1881,23 @@ var SvRadioGroup = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/select/select.html":
+/***/ "./src/select/select.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"sv-select-container\" [ngClass]=\"{open: open}\">\n  <!-- Displays the selected value -->\n  <div \n    class=\"sv-select-display\"\n    [ngClass]=\"{open: open}\"\n    (click) = \"open = !open\"\n  >\n\n    <!-- Static display of selected value -->\n    <input \n      *ngIf=\"!(open && search)\"\n      class=\"sv-selected static\"\n      type=\"text\" \n      readonly\n      onfocus=\"this.blur()\"\n      [value]=\"selected || placeholder\"\n    />\n\n    <!-- Search if enabled -->\n    <input\n      #search\n      *ngIf=\"open && search\"\n      class=\"sv-selected search\"\n      type=\"text\" \n      [(ngModel)]=\"searchKey\"\n      (ngModelChange)=\"filterOptions()\"\n      (click)=\"$event.stopPropagation()\"\n      [placeholder]=\"selected || placeholder\"\n    />\n  </div>\n\n  <!-- Chevron -->\n  <span \n    class=\"sv-select-chevron\"\n    [ngClass]=\"{rotated: open}\"\n    (click)=\"open = !open\"\n  >\n    <i class=\"fas fa-chevron-down\"></i>\n  </span>\n\n  <!-- List of options -->\n  <ul *ngIf=\"open\" class=\"sv-select-options\" @showOptions>\n    <li *ngFor=\"let option of filteredOptions\" (click)=\"makeSelection(option)\">{{option}}</li>\n    <li class=\"sv-select-no-results\" *ngIf=\"filteredOptions.length == 0\">No Results</li>\n  </ul>\n</div>"
 
 /***/ }),
 
-/***/ "../../../../../src/select/select.module.ts":
+/***/ "./src/select/select.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvSelectModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select__ = __webpack_require__("../../../../../src/select/select.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core__ = __webpack_require__("../../../../../src/core/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select__ = __webpack_require__("./src/select/select.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core__ = __webpack_require__("./src/core/index.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1714,36 +1927,25 @@ var SvSelectModule = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/select/select.scss":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./src/select/select.scss":
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-select {\n  width: 100%;\n  display: inline-block; }\n.sv-select .sv-select-container {\n    width: 100%;\n    position: relative; }\n.sv-select .sv-select-chevron {\n    color: #A1A6BA;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    position: absolute;\n    top: 13px;\n    right: 15px;\n    -webkit-transition: all 0.2s ease-out;\n    transition: all 0.2s ease-out;\n    cursor: pointer; }\n.sv-select .sv-select-chevron.rotated {\n      color: black;\n      -webkit-transform: rotate(180deg);\n              transform: rotate(180deg); }\n.sv-select .sv-select-display {\n    color: #A1A6BA;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    padding-right: 30px;\n    overflow: hidden;\n    border-radius: 4px;\n    border: 1px solid #B9BED2;\n    -webkit-transition: all 0.2s ease-out;\n    transition: all 0.2s ease-out;\n    cursor: pointer; }\n.sv-select .sv-select-display:hover {\n      border-color: #A1A6BA; }\n.sv-select .sv-select-display.open {\n      color: black;\n      border-color: black; }\n.sv-select .sv-select-display.open:hover {\n        border-color: black; }\n.sv-select .sv-selected {\n    color: #A1A6BA;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    width: 100%;\n    height: 38px;\n    padding: 0;\n    padding-left: 15px;\n    border: none; }\n.sv-select .sv-selected.static {\n      cursor: pointer; }\n.sv-select .sv-selected.search {\n      color: black; }\n.sv-select .sv-select-options {\n    margin: 0;\n    padding: 0;\n    list-style-type: none;\n    -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);\n            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);\n    width: 100%;\n    max-height: 200px;\n    position: absolute;\n    top: 50px;\n    overflow: hidden;\n    z-index: 10000;\n    background: white;\n    border-radius: 4px;\n    border: 1px solid black;\n    overflow-y: scroll;\n    -webkit-transform-origin: 0 0;\n            transform-origin: 0 0; }\n.sv-select .sv-select-options li {\n      height: 40px;\n      padding: 0px 10px;\n      color: #000;\n      border-top: 1px solid #F1F2F7;\n      font-family: \"Montserrat\", sans-serif;\n      font-size: 12px;\n      font-weight: 500;\n      line-height: 40px; }\n.sv-select .sv-select-options li:first-child {\n        border: none; }\n.sv-select .sv-select-options li:hover {\n        background: #F1F2F7;\n        cursor: pointer; }\n.sv-select .sv-select-options .sv-select-no-results {\n      color: #A1A6BA;\n      text-align: center; }\n.sv-select .sv-select-options .sv-select-no-results:hover {\n        background: transparent;\n        cursor: default; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+module.exports = "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-select {\n  width: 100%;\n  display: inline-block; }\n.sv-select .sv-select-container {\n    width: 100%;\n    position: relative; }\n.sv-select .sv-select-chevron {\n    color: #A1A6BA;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    position: absolute;\n    top: 13px;\n    right: 15px;\n    -webkit-transition: all 0.2s ease-out;\n    transition: all 0.2s ease-out;\n    cursor: pointer; }\n.sv-select .sv-select-chevron.rotated {\n      color: black;\n      -webkit-transform: rotate(180deg);\n              transform: rotate(180deg); }\n.sv-select .sv-select-display {\n    color: #A1A6BA;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    padding-right: 30px;\n    overflow: hidden;\n    border-radius: 4px;\n    border: 1px solid #B9BED2;\n    -webkit-transition: all 0.2s ease-out;\n    transition: all 0.2s ease-out;\n    cursor: pointer; }\n.sv-select .sv-select-display:hover {\n      border-color: #A1A6BA; }\n.sv-select .sv-select-display.open {\n      color: black;\n      border-color: black; }\n.sv-select .sv-select-display.open:hover {\n        border-color: black; }\n.sv-select .sv-selected {\n    color: #A1A6BA;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    width: 100%;\n    height: 38px;\n    padding: 0;\n    padding-left: 15px;\n    border: none; }\n.sv-select .sv-selected.static {\n      cursor: pointer; }\n.sv-select .sv-selected.search {\n      color: black; }\n.sv-select .sv-select-options {\n    margin: 0;\n    padding: 0;\n    list-style-type: none;\n    -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);\n            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);\n    width: 100%;\n    max-height: 200px;\n    position: absolute;\n    top: 50px;\n    overflow: hidden;\n    z-index: 10000;\n    background: white;\n    border-radius: 4px;\n    border: 1px solid black;\n    overflow-y: scroll;\n    -webkit-transform-origin: 0 0;\n            transform-origin: 0 0; }\n.sv-select .sv-select-options li {\n      height: 40px;\n      padding: 0px 10px;\n      color: #000;\n      border-top: 1px solid #F1F2F7;\n      font-family: \"Montserrat\", sans-serif;\n      font-size: 12px;\n      font-weight: 500;\n      line-height: 40px; }\n.sv-select .sv-select-options li:first-child {\n        border: none; }\n.sv-select .sv-select-options li:hover {\n        background: #F1F2F7;\n        cursor: pointer; }\n.sv-select .sv-select-options .sv-select-no-results {\n      color: #A1A6BA;\n      text-align: center; }\n.sv-select .sv-select-options .sv-select-no-results:hover {\n        background: transparent;\n        cursor: default; }\n"
 
 /***/ }),
 
-/***/ "../../../../../src/select/select.ts":
+/***/ "./src/select/select.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export SvSelectBase */
 /* unused harmony export _SvSelectBase */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvSelect; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_animations__ = __webpack_require__("../../../animations/esm5/animations.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core__ = __webpack_require__("../../../../../src/core/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fortawesome_fontawesome__ = __webpack_require__("../../../../@fortawesome/fontawesome/index.es.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome_free_solid__ = __webpack_require__("../../../../@fortawesome/fontawesome-free-solid/index.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_animations__ = __webpack_require__("./node_modules/@angular/animations/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core__ = __webpack_require__("./src/core/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fortawesome_fontawesome__ = __webpack_require__("./node_modules/@fortawesome/fontawesome/index.es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome_free_solid__ = __webpack_require__("./node_modules/@fortawesome/fontawesome-free-solid/index.es.js");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -1862,8 +2064,8 @@ var SvSelect = (function (_super) {
     SvSelect = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-select',
-            template: __webpack_require__("../../../../../src/select/select.html"),
-            styles: [__webpack_require__("../../../../../src/select/select.scss")],
+            template: __webpack_require__("./src/select/select.html"),
+            styles: [__webpack_require__("./src/select/select.scss")],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewEncapsulation */].None,
             animations: [
                 Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["j" /* trigger */])('showOptions', [
@@ -1890,21 +2092,21 @@ var SvSelect = (function (_super) {
 
 /***/ }),
 
-/***/ "../../../../../src/spinner/spinner.html":
+/***/ "./src/spinner/spinner.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"spinner-container\">\n  <span>\n    <ng-content></ng-content>\n  </span>\n  <div class=\"spinner\">\n    <div class=\"bounce1\"></div>\n    <div class=\"bounce2\"></div>\n    <div class=\"bounce3\"></div>\n  </div>\n</div>"
 
 /***/ }),
 
-/***/ "../../../../../src/spinner/spinner.module.ts":
+/***/ "./src/spinner/spinner.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvSpinnerModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__spinner__ = __webpack_require__("../../../../../src/spinner/spinner.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__spinner__ = __webpack_require__("./src/spinner/spinner.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1932,33 +2134,22 @@ var SvSpinnerModule = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/spinner/spinner.scss":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./src/spinner/spinner.scss":
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-spinner.primary .spinner > div {\n  border-color: #A8AA19; }\n.sv-spinner.secondary .spinner > div {\n  border-color: #007A86; }\n.sv-spinner.success .spinner > div {\n  border-color: #A8AA19; }\n.sv-spinner.warning .spinner > div {\n  border-color: #ED8B00; }\n.sv-spinner.error .spinner > div {\n  border-color: #BA0C2F; }\n.sv-spinner.gray .spinner > div {\n  border-color: #A1A6BA; }\n.spinner-container {\n  min-height: 20px;\n  display: inline-block;\n  text-align: center; }\n.spinner-container span {\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 10px;\n    letter-spacing: 0.1em;\n    text-transform: uppercase; }\n.spinner {\n  height: 20px;\n  margin: 0px auto 0;\n  text-align: center; }\n.spinner > div {\n  width: 12px;\n  height: 12px;\n  margin-top: 4px;\n  display: inline-block;\n  border-radius: 100%;\n  border: 2px solid #A8AA19;\n  vertical-align: top;\n  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n  animation: sk-bouncedelay 1.4s infinite ease-in-out both; }\n.spinner .bounce1 {\n  -webkit-animation-delay: -0.32s;\n  animation-delay: -0.32s; }\n.spinner .bounce2 {\n  -webkit-animation-delay: -0.16s;\n  animation-delay: -0.16s; }\n@-webkit-keyframes sk-bouncedelay {\n  0%, 80%, 100% {\n    -webkit-transform: scale(0); }\n  40% {\n    -webkit-transform: scale(1); } }\n@keyframes sk-bouncedelay {\n  0%, 80%, 100% {\n    -webkit-transform: scale(0);\n    transform: scale(0); }\n  40% {\n    -webkit-transform: scale(1);\n    transform: scale(1); } }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+module.exports = "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-spinner.primary .spinner > div {\n  border-color: #A8AA19; }\n.sv-spinner.secondary .spinner > div {\n  border-color: #007A86; }\n.sv-spinner.success .spinner > div {\n  border-color: #A8AA19; }\n.sv-spinner.warning .spinner > div {\n  border-color: #ED8B00; }\n.sv-spinner.error .spinner > div {\n  border-color: #BA0C2F; }\n.sv-spinner.gray .spinner > div {\n  border-color: #A1A6BA; }\n.spinner-container {\n  min-height: 20px;\n  display: inline-block;\n  text-align: center; }\n.spinner-container span {\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 10px;\n    letter-spacing: 0.1em;\n    text-transform: uppercase; }\n.spinner {\n  height: 20px;\n  margin: 0px auto 0;\n  text-align: center; }\n.spinner > div {\n  width: 12px;\n  height: 12px;\n  margin-top: 4px;\n  display: inline-block;\n  border-radius: 100%;\n  border: 2px solid #A8AA19;\n  vertical-align: top;\n  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;\n  animation: sk-bouncedelay 1.4s infinite ease-in-out both; }\n.spinner .bounce1 {\n  -webkit-animation-delay: -0.32s;\n  animation-delay: -0.32s; }\n.spinner .bounce2 {\n  -webkit-animation-delay: -0.16s;\n  animation-delay: -0.16s; }\n@-webkit-keyframes sk-bouncedelay {\n  0%, 80%, 100% {\n    -webkit-transform: scale(0); }\n  40% {\n    -webkit-transform: scale(1); } }\n@keyframes sk-bouncedelay {\n  0%, 80%, 100% {\n    -webkit-transform: scale(0);\n    transform: scale(0); }\n  40% {\n    -webkit-transform: scale(1);\n    transform: scale(1); } }\n"
 
 /***/ }),
 
-/***/ "../../../../../src/spinner/spinner.ts":
+/***/ "./src/spinner/spinner.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export SvSpinnerBase */
 /* unused harmony export _SvSpinnerBase */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvSpinner; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core__ = __webpack_require__("../../../../../src/core/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core__ = __webpack_require__("./src/core/index.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2001,8 +2192,8 @@ var SvSpinner = (function (_super) {
     SvSpinner = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-spinner',
-            template: __webpack_require__("../../../../../src/spinner/spinner.html"),
-            styles: [__webpack_require__("../../../../../src/spinner/spinner.scss")],
+            template: __webpack_require__("./src/spinner/spinner.html"),
+            styles: [__webpack_require__("./src/spinner/spinner.scss")],
             host: {
                 'class': 'sv-spinner'
             },
@@ -2017,21 +2208,21 @@ var SvSpinner = (function (_super) {
 
 /***/ }),
 
-/***/ "../../../../../src/switch/switch.html":
+/***/ "./src/switch/switch.html":
 /***/ (function(module, exports) {
 
 module.exports = "<!-- Switch Element -->\n<div class=\"sv-switch-control\" [ngClass]=\"{on: state}\" (click)=\"changeState($event)\">\n  <span class=\"sv-switch-state-indicator\"></span>\n</div>\n\n<!-- Label -->\n<label class=\"sv-switch-label\">\n  <ng-content></ng-content>\n</label>\n"
 
 /***/ }),
 
-/***/ "../../../../../src/switch/switch.module.ts":
+/***/ "./src/switch/switch.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvSwitchModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__switch__ = __webpack_require__("../../../../../src/switch/switch.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__switch__ = __webpack_require__("./src/switch/switch.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2059,33 +2250,22 @@ var SvSwitchModule = (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/switch/switch.scss":
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./src/switch/switch.scss":
+/***/ (function(module, exports) {
 
-exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-switch.primary .sv-switch-control.on {\n  background-color: #A8AA19; }\n.sv-switch.secondary .sv-switch-control.on {\n  background-color: #007A86; }\n.sv-switch.success .sv-switch-control.on {\n  background-color: #A8AA19; }\n.sv-switch.warning .sv-switch-control.on {\n  background-color: #ED8B00; }\n.sv-switch.error .sv-switch-control.on {\n  background-color: #BA0C2F; }\n.sv-switch.gray .sv-switch-control.on {\n  background-color: #A1A6BA; }\n.sv-switch {\n  height: 20px; }\n.sv-switch .sv-switch-control {\n    width: 40px;\n    height: 20px;\n    padding: 2px;\n    display: inline-block;\n    background-color: #B9BED2;\n    border-radius: 10px;\n    -webkit-transition: background-color 0.2s linear;\n    transition: background-color 0.2s linear;\n    cursor: pointer; }\n.sv-switch .sv-switch-control:hover .sv-switch-state-indicator {\n      -webkit-transform: translateX(2px);\n              transform: translateX(2px); }\n.sv-switch .sv-switch-control .sv-switch-state-indicator {\n      width: 16px;\n      height: 16px;\n      display: block;\n      background-color: #FFF;\n      border-radius: 50%;\n      -webkit-transition: 0.2s ease-in-out;\n      transition: 0.2s ease-in-out; }\n.sv-switch .sv-switch-control.on .sv-switch-state-indicator {\n      -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);\n              box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);\n      -webkit-transform: translateX(20px);\n              transform: translateX(20px); }\n.sv-switch .sv-switch-control.on:hover .sv-switch-state-indicator {\n      -webkit-transform: translate(18px);\n              transform: translate(18px); }\n.sv-switch-label {\n  display: inline-block;\n  position: relative;\n  top: -4.5px;\n  left: 5px;\n  font-family: \"Montserrat\", sans-serif;\n  font-size: 12px;\n  font-weight: 500; }\n.sv-switch.disabled {\n  opacity: 0.5; }\n.sv-switch.disabled .sv-switch-control {\n    cursor: default; }\n.sv-switch.disabled:hover .sv-switch-state-indicator {\n    -webkit-transform: none;\n            transform: none; }\n", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
+module.exports = "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-switch.primary .sv-switch-control.on {\n  background-color: #A8AA19; }\n.sv-switch.secondary .sv-switch-control.on {\n  background-color: #007A86; }\n.sv-switch.success .sv-switch-control.on {\n  background-color: #A8AA19; }\n.sv-switch.warning .sv-switch-control.on {\n  background-color: #ED8B00; }\n.sv-switch.error .sv-switch-control.on {\n  background-color: #BA0C2F; }\n.sv-switch.gray .sv-switch-control.on {\n  background-color: #A1A6BA; }\n.sv-switch {\n  height: 20px; }\n.sv-switch .sv-switch-control {\n    width: 40px;\n    height: 20px;\n    padding: 2px;\n    display: inline-block;\n    background-color: #B9BED2;\n    border-radius: 10px;\n    -webkit-transition: background-color 0.2s linear;\n    transition: background-color 0.2s linear;\n    cursor: pointer; }\n.sv-switch .sv-switch-control:hover .sv-switch-state-indicator {\n      -webkit-transform: translateX(2px);\n              transform: translateX(2px); }\n.sv-switch .sv-switch-control .sv-switch-state-indicator {\n      width: 16px;\n      height: 16px;\n      display: block;\n      background-color: #FFF;\n      border-radius: 50%;\n      -webkit-transition: 0.2s ease-in-out;\n      transition: 0.2s ease-in-out; }\n.sv-switch .sv-switch-control.on .sv-switch-state-indicator {\n      -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);\n              box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);\n      -webkit-transform: translateX(20px);\n              transform: translateX(20px); }\n.sv-switch .sv-switch-control.on:hover .sv-switch-state-indicator {\n      -webkit-transform: translate(18px);\n              transform: translate(18px); }\n.sv-switch-label {\n  display: inline-block;\n  position: relative;\n  top: -4.5px;\n  left: 5px;\n  font-family: \"Montserrat\", sans-serif;\n  font-size: 12px;\n  font-weight: 500; }\n.sv-switch.disabled {\n  opacity: 0.5; }\n.sv-switch.disabled .sv-switch-control {\n    cursor: default; }\n.sv-switch.disabled:hover .sv-switch-state-indicator {\n    -webkit-transform: none;\n            transform: none; }\n"
 
 /***/ }),
 
-/***/ "../../../../../src/switch/switch.ts":
+/***/ "./src/switch/switch.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export SvSwitchBase */
 /* unused harmony export _SvSwitchBase */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvSwitch; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core__ = __webpack_require__("../../../../../src/core/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core__ = __webpack_require__("./src/core/index.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -2151,8 +2331,8 @@ var SvSwitch = (function (_super) {
     SvSwitch = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-switch',
-            template: __webpack_require__("../../../../../src/switch/switch.html"),
-            styles: [__webpack_require__("../../../../../src/switch/switch.scss")],
+            template: __webpack_require__("./src/switch/switch.html"),
+            styles: [__webpack_require__("./src/switch/switch.scss")],
             host: {
                 'class': 'sv-switch',
                 'disabled': 'disabled'
@@ -2171,7 +2351,7 @@ var SvSwitch = (function (_super) {
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("../../../../../example/main.ts");
+module.exports = __webpack_require__("./example/main.ts");
 
 
 /***/ })
