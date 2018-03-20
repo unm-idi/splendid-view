@@ -4,4 +4,6 @@ import { Component } from '@angular/core';
   selector: 'sv-switch-demo',
   templateUrl: './switch-demo.html'
 })
-export class SwitchDemo { }
+export class SwitchDemo {
+  constructor() { }
+}

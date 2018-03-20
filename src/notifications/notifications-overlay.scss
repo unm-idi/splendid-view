@@ -1,0 +1,91 @@
+@import "../base";
+
+$toast-width: 400px;
+$toast-width-mobile: 100vw;
+
+:host {
+  box-sizing: content-box;
+  width: $toast-width;
+  max-height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+:host:empty {
+  display: none;
+}
+
+:host > div {
+  pointer-events: all;
+}
+
+
+.toast {
+  @include card-shadow;
+  width: $toast-width;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  color: white;
+  border-radius: $border-radius-base;
+
+  &.success {
+    background: $success-color;
+  }
+
+  &.warning {
+    background: $warning-color;
+  }
+
+  &.error {
+    background: $error-color;
+  }
+
+  &.info {
+    background: black;
+  }
+
+  .icon {
+    margin-right: 20px;
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .message {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+
+    ul {
+      margin-top: 5px;
+      margin-bottom: 0;
+      padding-left: 14px;
+    }
+  }
+}
+
+.toast p {
+  margin: 0;
+}
+
+
+@include mobile {
+:host {
+  width: $toast-width-mobile;
+  padding: 0;
+}
+
+.toast {
+  width: $toast-width-mobile;
+  border-radius: 0;
+}
+}

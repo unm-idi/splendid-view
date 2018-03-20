@@ -13,8 +13,11 @@ import { RadioButtonDemo } from './radio-button-demo/radio-button-demo';
 import { CheckboxDemo } from './checkbox-demo/checkbox-demo';
 import { SelectDemo } from './select-demo/select-demo';
 
+import { SvNotificationsModule } from '../../src';
+
 @NgModule({
   imports: [
+    SvNotificationsModule.forRoot(),
     BrowserModule,
     ImportsModule,
     FormsModule
@@ -29,6 +32,6 @@ import { SelectDemo } from './select-demo/select-demo';
     SelectDemo
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

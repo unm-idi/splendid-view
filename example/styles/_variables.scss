@@ -46,3 +46,17 @@ $ui-input-size: 36px;
   Media Queries
 */
 
+$mobile-breakpoint: 767px;
+$tablet-breakpoint: 1024px;
+
+@mixin mobile {
+  @media (max-width: $mobile-breakpoint) { @content; }
+}
+
+@mixin tablet-only {
+  @media (min-width: $mobile-breakpoint + 1px) and (max-width: $tablet-breakpoint) { @content; }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet-breakpoint) { @content; }
+}

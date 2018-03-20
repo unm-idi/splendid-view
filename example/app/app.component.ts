@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
+import { SvNotificationsService } from '../../src/notifications/notifications.service';
 
 @Component({
   selector: 'sv-root',
@@ -7,4 +8,5 @@ import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
+  constructor(private buffet: SvNotificationsService) { }
 }
