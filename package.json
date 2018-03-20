@@ -6,7 +6,7 @@
     "email": "mshickman91@gmail.com",
     "url": ""
   },
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
   "scripts": {
     "start": "ng serve --host 0.0.0.0",

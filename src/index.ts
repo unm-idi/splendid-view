@@ -6,3 +6,4 @@ export * from './radio-button/radio-button.module';
 export * from './checkbox/checkbox.module';
 export * from './select/select.module';
 export * from './notifications/notifications.module';
+export { SvNotificationsService } from './notifications/notifications.service';
