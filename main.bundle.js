@@ -1301,6 +1301,9 @@ var SearchFilterPipe = (function () {
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_6__select_select_module__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__notifications_notifications_module__ = __webpack_require__("./src/notifications/notifications.module.ts");
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_7__notifications_notifications_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__notifications_notifications_service__ = __webpack_require__("./src/notifications/notifications.service.ts");
+/* unused harmony reexport SvNotificationsService */
+
 
 
 
