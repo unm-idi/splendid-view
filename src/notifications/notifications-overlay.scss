@@ -12,6 +12,7 @@ $toast-width-mobile: 100vw;
   top: 0;
   right: 0;
   pointer-events: none;
+  z-index: 1000000;
 }
 
 :host:empty {
