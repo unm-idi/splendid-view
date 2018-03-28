@@ -32,5 +32,7 @@
     "**/*.shim.ts",
     "**/*.spec.ts"
   ],
-  "files": []
+  "files": [
+    "base.scss"
+  ]
 }
