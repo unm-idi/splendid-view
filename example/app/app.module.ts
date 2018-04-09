@@ -11,7 +11,7 @@ import { SpinnerDemo } from './spinner-demo/spinner-demo';
 import { SwitchDemo } from './switch-demo/switch-demo';
 import { RadioButtonDemo } from './radio-button-demo/radio-button-demo';
 import { CheckboxDemo } from './checkbox-demo/checkbox-demo';
-import { SelectDemo } from './select-demo/select-demo';
+// import { SelectDemo } from './select-demo/select-demo';
 
 import { SvNotificationsModule } from '../../src';
 
@@ -28,8 +28,8 @@ import { SvNotificationsModule } from '../../src';
     SpinnerDemo,
     SwitchDemo,
     RadioButtonDemo,
-    CheckboxDemo,
-    SelectDemo
+    CheckboxDemo
+    // SelectDemo
   ],
   providers: [],
   bootstrap: [ AppComponent ]
