@@ -34,7 +34,6 @@ export const _SvSelectBase = colorMixin(SvSelectBase);
     'class': 'sv-select',
   }
 })
-
 export class SvSelect extends _SvSelectBase implements OnInit {
 
   // The select box's color

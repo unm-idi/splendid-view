@@ -56,7 +56,7 @@ fontawesome.library.add(faCheckCircle, faInfoCircle, faExclamationCircle, faExcl
 
 export class SvNotificationsOverlayComponent {
   // Array of toast to display
-  private toast = [];
+  toast = [];
   timeouts = [];
 
   constructor() { }

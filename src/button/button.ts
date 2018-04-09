@@ -64,9 +64,6 @@ export class SvButton extends _ButtonBase {
   // Output to broadcast a click event
   @Output() onClick = new EventEmitter<MouseEvent>();
 
-  // List of possible states the button can take on.
-  @ContentChildren(ButtonState) states: QueryList<ButtonState>;
-
   // The state that the button is in.
   private _buttonState = 'button';
 
@@ -96,6 +93,9 @@ export class SvButton extends _ButtonBase {
       }
     }
   }
+
+  // List of possible states the button can take on.
+  @ContentChildren(ButtonState) states: QueryList<ButtonState>;
 
   // Constructor
   constructor(renderer: Renderer2, element: ElementRef) {
