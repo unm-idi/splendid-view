@@ -36,7 +36,7 @@ webpackEmptyAsyncContext.id = "./example/$$_lazy_route_resource lazy recursive";
 /***/ "./example/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header>\n  <h1>Splendid View</h1>\n</header>\n\n<div class=\"wrapper\">\n  <sv-button-demo></sv-button-demo>\n  <sv-spinner-demo></sv-spinner-demo>\n  <sv-switch-demo></sv-switch-demo>\n  <sv-radio-button-demo></sv-radio-button-demo>\n  <sv-checkbox-demo></sv-checkbox-demo>\n  <sv-select-demo></sv-select-demo>\n</div>"
+module.exports = "<header>\n  <h1>Splendid View</h1>\n</header>\n\n<div class=\"wrapper\">\n  <sv-button-demo></sv-button-demo>\n  <sv-spinner-demo></sv-spinner-demo>\n  <sv-switch-demo></sv-switch-demo>\n  <sv-radio-button-demo></sv-radio-button-demo>\n  <sv-checkbox-demo></sv-checkbox-demo>\n  <!-- <sv-select-demo></sv-select-demo> -->\n</div>"
 
 /***/ }),
 
@@ -74,7 +74,7 @@ var AppComponent = (function () {
             selector: 'sv-root',
             template: __webpack_require__("./example/app/app.component.html"),
             styles: [__webpack_require__("./example/app/app.component.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewEncapsulation */].None,
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* ViewEncapsulation */].None,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__src_notifications_notifications_service__["a" /* SvNotificationsService */]])
     ], AppComponent);
@@ -100,8 +100,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__switch_demo_switch_demo__ = __webpack_require__("./example/app/switch-demo/switch-demo.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__radio_button_demo_radio_button_demo__ = __webpack_require__("./example/app/radio-button-demo/radio-button-demo.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__checkbox_demo_checkbox_demo__ = __webpack_require__("./example/app/checkbox-demo/checkbox-demo.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__select_demo_select_demo__ = __webpack_require__("./example/app/select-demo/select-demo.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__src__ = __webpack_require__("./src/index.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__src__ = __webpack_require__("./src/index.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -118,7 +117,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-
+// import { SelectDemo } from './select-demo/select-demo';
 
 var AppModule = (function () {
     function AppModule() {
@@ -126,7 +125,7 @@ var AppModule = (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["H" /* NgModule */])({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_11__src__["c" /* SvNotificationsModule */].forRoot(),
+                __WEBPACK_IMPORTED_MODULE_10__src__["c" /* SvNotificationsModule */].forRoot(),
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_4__imports_module__["a" /* ImportsModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */]
@@ -137,8 +136,8 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_6__spinner_demo_spinner_demo__["a" /* SpinnerDemo */],
                 __WEBPACK_IMPORTED_MODULE_7__switch_demo_switch_demo__["a" /* SwitchDemo */],
                 __WEBPACK_IMPORTED_MODULE_8__radio_button_demo_radio_button_demo__["a" /* RadioButtonDemo */],
-                __WEBPACK_IMPORTED_MODULE_9__checkbox_demo_checkbox_demo__["a" /* CheckboxDemo */],
-                __WEBPACK_IMPORTED_MODULE_10__select_demo_select_demo__["a" /* SelectDemo */]
+                __WEBPACK_IMPORTED_MODULE_9__checkbox_demo_checkbox_demo__["a" /* CheckboxDemo */]
+                // SelectDemo
             ],
             providers: [],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* AppComponent */]]
@@ -300,11 +299,10 @@ var ImportsModule = (function () {
             declarations: [],
             exports: [
                 __WEBPACK_IMPORTED_MODULE_1__src__["a" /* SvButtonModule */],
-                __WEBPACK_IMPORTED_MODULE_1__src__["f" /* SvSpinnerModule */],
-                __WEBPACK_IMPORTED_MODULE_1__src__["g" /* SvSwitchModule */],
+                __WEBPACK_IMPORTED_MODULE_1__src__["e" /* SvSpinnerModule */],
+                __WEBPACK_IMPORTED_MODULE_1__src__["f" /* SvSwitchModule */],
                 __WEBPACK_IMPORTED_MODULE_1__src__["d" /* SvRadioButtonModule */],
                 __WEBPACK_IMPORTED_MODULE_1__src__["b" /* SvCheckboxModule */],
-                __WEBPACK_IMPORTED_MODULE_1__src__["e" /* SvSelectModule */]
             ],
             providers: [],
         })
@@ -348,43 +346,6 @@ var RadioButtonDemo = (function () {
         })
     ], RadioButtonDemo);
     return RadioButtonDemo;
-}());
-
-
-
-/***/ }),
-
-/***/ "./example/app/select-demo/select-demo.html":
-/***/ (function(module, exports) {
-
-module.exports = "<h2>Select</h2>\n<sv-select [options]=\"items\" color=\"secondary\" search=\"true\"></sv-select>\n\n<br>\n<br>\n\n<sv-select></sv-select>\n\n<br>\n<br>\n\n<sv-select></sv-select>"
-
-/***/ }),
-
-/***/ "./example/app/select-demo/select-demo.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SelectDemo; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var SelectDemo = (function () {
-    function SelectDemo() {
-        this.items = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'a really really really really really really long one'];
-    }
-    SelectDemo = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'sv-select-demo',
-            template: __webpack_require__("./example/app/select-demo/select-demo.html")
-        })
-    ], SelectDemo);
-    return SelectDemo;
 }());
 
 
@@ -481,7 +442,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 if (__WEBPACK_IMPORTED_MODULE_3__config_environment__["a" /* environment */].production) {
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* enableProdMode */])();
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_10" /* enableProdMode */])();
 }
 Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_app_module__["a" /* AppModule */])
     .catch(function (err) { return console.log(err); });
@@ -633,7 +594,7 @@ var ButtonBase = (function () {
     return ButtonBase;
 }());
 
-var _ButtonBase = Object(__WEBPACK_IMPORTED_MODULE_2__core__["b" /* colorMixin */])(ButtonBase);
+var _ButtonBase = Object(__WEBPACK_IMPORTED_MODULE_2__core__["a" /* colorMixin */])(ButtonBase);
 var SvButton = (function (_super) {
     __extends(SvButton, _super);
     // Constructor
@@ -698,14 +659,14 @@ var SvButton = (function (_super) {
         __metadata("design:type", Object)
     ], SvButton.prototype, "onClick", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ContentChildren */])(__WEBPACK_IMPORTED_MODULE_3__button_state__["a" /* ButtonState */]),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* QueryList */])
-    ], SvButton.prototype, "states", void 0);
-    __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])(),
         __metadata("design:type", Object),
         __metadata("design:paramtypes", [String])
     ], SvButton.prototype, "buttonState", null);
+    __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ContentChildren */])(__WEBPACK_IMPORTED_MODULE_3__button_state__["a" /* ButtonState */]),
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* QueryList */])
+    ], SvButton.prototype, "states", void 0);
     SvButton = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'sv-button',
@@ -736,7 +697,7 @@ var SvButton = (function (_super) {
                     ])
                 ])
             ],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewEncapsulation */].None
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* ViewEncapsulation */].None
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
     ], SvButton);
@@ -879,7 +840,7 @@ var SvCheckboxGroup = (function () {
         });
     };
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ContentChildren */])(Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* forwardRef */])(function () { return __WEBPACK_IMPORTED_MODULE_3__checkbox__["a" /* Checkbox */]; })),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ContentChildren */])(Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* forwardRef */])(function () { return __WEBPACK_IMPORTED_MODULE_3__checkbox__["a" /* Checkbox */]; })),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* QueryList */])
     ], SvCheckboxGroup.prototype, "_checkboxes", void 0);
     __decorate([
@@ -894,7 +855,7 @@ var SvCheckboxGroup = (function () {
             providers: [
                 {
                     provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NG_VALUE_ACCESSOR */],
-                    useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* forwardRef */])(function () { return SvCheckboxGroup_1; }),
+                    useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* forwardRef */])(function () { return SvCheckboxGroup_1; }),
                     multi: true
                 },
                 __WEBPACK_IMPORTED_MODULE_2__checkbox_group_service__["a" /* CheckboxGroupService */]
@@ -1005,7 +966,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 
 
 
-__WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__["a" /* default */].library.add(__WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__["b" /* faCheck */]);
+__WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome__["a" /* default */].library.add(__WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__["a" /* faCheck */]);
 var CheckboxBase = (function () {
     function CheckboxBase(_renderer, _element) {
         this._renderer = _renderer;
@@ -1014,7 +975,7 @@ var CheckboxBase = (function () {
     return CheckboxBase;
 }());
 
-var _CheckboxBase = Object(__WEBPACK_IMPORTED_MODULE_1__core__["b" /* colorMixin */])(CheckboxBase);
+var _CheckboxBase = Object(__WEBPACK_IMPORTED_MODULE_1__core__["a" /* colorMixin */])(CheckboxBase);
 var Checkbox = (function (_super) {
     __extends(Checkbox, _super);
     function Checkbox(checkboxGroupService, renderer, element) {
@@ -1082,14 +1043,14 @@ var Checkbox = (function (_super) {
             providers: [
                 {
                     provide: __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* NG_VALUE_ACCESSOR */],
-                    useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* forwardRef */])(function () { return Checkbox_1; }),
+                    useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* forwardRef */])(function () { return Checkbox_1; }),
                     multi: true
                 }
             ],
             host: {
                 'class': 'sv-checkbox'
             },
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewEncapsulation */].None
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* ViewEncapsulation */].None
         }),
         __param(0, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* Optional */])()),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__checkbox_group_service__["a" /* CheckboxGroupService */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
@@ -1177,7 +1138,7 @@ function colorMixin(base, defaultColor) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClickOutsideDirective; });
+/* unused harmony export ClickOutsideDirective */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1229,53 +1190,11 @@ var ClickOutsideDirective = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__common_color__ = __webpack_require__("./src/core/common/color.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__common_color__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pipes_searchFilter__ = __webpack_require__("./src/core/pipes/searchFilter.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__common_color__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_outside_click__ = __webpack_require__("./src/core/directives/outside-click.ts");
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_outside_click__ = __webpack_require__("./src/core/directives/outside-click.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__directives_outside_click__["a"]; });
 
-
-
-
-
-/***/ }),
-
-/***/ "./src/core/pipes/searchFilter.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export SearchFilterPipe */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-var SearchFilterPipe = (function () {
-    function SearchFilterPipe() {
-    }
-    SearchFilterPipe.prototype.transform = function (items, searchText) {
-        if (!items) {
-            return [];
-        }
-        if (!searchText) {
-            return items;
-        }
-        searchText = searchText.toLowerCase();
-        return items.filter(function (it) {
-            return it.toLowerCase().includes(searchText);
-        });
-    };
-    SearchFilterPipe = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Pipe */])({
-            name: 'searchFilter'
-        })
-    ], SearchFilterPipe);
-    return SearchFilterPipe;
-}());
+// export * from './pipes/searchFilter';
 
 
 
@@ -1294,18 +1213,16 @@ var SearchFilterPipe = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button_button_state__ = __webpack_require__("./src/button/button-state.ts");
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__spinner_spinner_module__ = __webpack_require__("./src/spinner/spinner.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_4__spinner_spinner_module__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__spinner_spinner_module__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__switch_switch_module__ = __webpack_require__("./src/switch/switch.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_5__switch_switch_module__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__switch_switch_module__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__radio_button_radio_button_module__ = __webpack_require__("./src/radio-button/radio-button.module.ts");
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_6__radio_button_radio_button_module__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__checkbox_checkbox_module__ = __webpack_require__("./src/checkbox/checkbox.module.ts");
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_7__checkbox_checkbox_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__select_select_module__ = __webpack_require__("./src/select/select.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_8__select_select_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__notifications_notifications_module__ = __webpack_require__("./src/notifications/notifications.module.ts");
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_9__notifications_notifications_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__notifications_notifications_service__ = __webpack_require__("./src/notifications/notifications.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__notifications_notifications_module__ = __webpack_require__("./src/notifications/notifications.module.ts");
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_8__notifications_notifications_module__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__notifications_notifications_service__ = __webpack_require__("./src/notifications/notifications.service.ts");
 /* unused harmony reexport SvNotificationsService */
 
 
@@ -1315,7 +1232,7 @@ var SearchFilterPipe = (function () {
 
 
 
-
+// export * from './select/select.module';
 
 
 
@@ -1362,7 +1279,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-__WEBPACK_IMPORTED_MODULE_3__fortawesome_fontawesome__["a" /* default */].library.add(__WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome_free_regular__["a" /* faCheckCircle */], __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__["f" /* faInfoCircle */], __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__["d" /* faExclamationCircle */], __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__["e" /* faExclamationTriangle */]);
+__WEBPACK_IMPORTED_MODULE_3__fortawesome_fontawesome__["a" /* default */].library.add(__WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome_free_regular__["a" /* faCheckCircle */], __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__["d" /* faInfoCircle */], __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__["b" /* faExclamationCircle */], __WEBPACK_IMPORTED_MODULE_5__fortawesome_fontawesome_free_solid__["c" /* faExclamationTriangle */]);
 var SvNotificationsOverlayComponent = (function () {
     function SvNotificationsOverlayComponent() {
         // Array of toast to display
@@ -1656,7 +1573,7 @@ var SvRadioButtonBase = (function () {
     return SvRadioButtonBase;
 }());
 
-var _SvRadioButtonBase = Object(__WEBPACK_IMPORTED_MODULE_1__core__["b" /* colorMixin */])(SvRadioButtonBase);
+var _SvRadioButtonBase = Object(__WEBPACK_IMPORTED_MODULE_1__core__["a" /* colorMixin */])(SvRadioButtonBase);
 var SvRadioButton = (function (_super) {
     __extends(SvRadioButton, _super);
     function SvRadioButton(radioGroupService, renderer, element) {
@@ -1707,7 +1624,7 @@ var SvRadioButton = (function (_super) {
             host: {
                 'class': 'sv-radio-button'
             },
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewEncapsulation */].None
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* ViewEncapsulation */].None
         }),
         __param(0, Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* Optional */])()),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__radio_group_service__["a" /* RadioGroupService */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
@@ -1851,7 +1768,7 @@ var SvRadioGroup = (function () {
         __metadata("design:type", String)
     ], SvRadioGroup.prototype, "selected", void 0);
     __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ContentChildren */])(Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* forwardRef */])(function () { return __WEBPACK_IMPORTED_MODULE_3__radio_button__["a" /* SvRadioButton */]; })),
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["q" /* ContentChildren */])(Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* forwardRef */])(function () { return __WEBPACK_IMPORTED_MODULE_3__radio_button__["a" /* SvRadioButton */]; })),
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* QueryList */])
     ], SvRadioGroup.prototype, "_radioButtons", void 0);
     __decorate([
@@ -1871,7 +1788,7 @@ var SvRadioGroup = (function () {
             providers: [
                 {
                     provide: __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* NG_VALUE_ACCESSOR */],
-                    useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_12" /* forwardRef */])(function () { return SvRadioGroup_1; }),
+                    useExisting: Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_11" /* forwardRef */])(function () { return SvRadioGroup_1; }),
                     multi: true
                 },
                 __WEBPACK_IMPORTED_MODULE_2__radio_group_service__["a" /* RadioGroupService */]
@@ -1885,217 +1802,6 @@ var SvRadioGroup = (function () {
     return SvRadioGroup;
     var SvRadioGroup_1;
 }());
-
-
-
-/***/ }),
-
-/***/ "./src/select/select.html":
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"sv-select-container\" [ngClass]=\"{open: open}\">\n  <!-- Displays the selected value -->\n  <div \n    class=\"sv-select-display\"\n    [ngClass]=\"{open: open}\"\n    (click) = \"open = !open\"\n  >\n\n    <!-- Static display of selected value -->\n    <input \n      *ngIf=\"!(open && search)\"\n      class=\"sv-selected static\"\n      type=\"text\" \n      readonly\n      onfocus=\"this.blur()\"\n      [value]=\"selected || placeholder\"\n    />\n\n    <!-- Search if enabled -->\n    <input\n      #search\n      *ngIf=\"open && search\"\n      class=\"sv-selected search\"\n      type=\"text\" \n      [(ngModel)]=\"searchKey\"\n      (ngModelChange)=\"filterOptions()\"\n      (click)=\"$event.stopPropagation()\"\n      [placeholder]=\"selected || placeholder\"\n    />\n  </div>\n\n  <!-- Chevron -->\n  <span \n    class=\"sv-select-chevron\"\n    [ngClass]=\"{rotated: open}\"\n    (click)=\"open = !open\"\n  >\n    <i class=\"fas fa-chevron-down\"></i>\n  </span>\n\n  <!-- List of options -->\n  <ul *ngIf=\"open\" class=\"sv-select-options\" @showOptions>\n    <li *ngFor=\"let option of filteredOptions\" (click)=\"makeSelection(option)\">{{option}}</li>\n    <li class=\"sv-select-no-results\" *ngIf=\"filteredOptions.length == 0\">No Results</li>\n  </ul>\n</div>"
-
-/***/ }),
-
-/***/ "./src/select/select.module.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvSelectModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__select__ = __webpack_require__("./src/select/select.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__core__ = __webpack_require__("./src/core/index.ts");
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-var SvSelectModule = (function () {
-    function SvSelectModule() {
-    }
-    SvSelectModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["H" /* NgModule */])({
-            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */]],
-            exports: [__WEBPACK_IMPORTED_MODULE_2__select__["a" /* SvSelect */]],
-            declarations: [__WEBPACK_IMPORTED_MODULE_2__select__["a" /* SvSelect */], __WEBPACK_IMPORTED_MODULE_4__core__["a" /* ClickOutsideDirective */]],
-            providers: [],
-        })
-    ], SvSelectModule);
-    return SvSelectModule;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/select/select.scss":
-/***/ (function(module, exports) {
-
-module.exports = "\n@import url(\"https://fonts.googleapis.com/css?family=Montserrat:400,500|Roboto:400,400i,700\");\n/*\n  Typography\n*/\n/*\n  Colors\n*/\n/* \n  Stuff\n*/\n/*\n  Media Queries\n*/\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box; }\n.sv-select {\n  width: 100%;\n  display: inline-block; }\n.sv-select .sv-select-container {\n    width: 100%;\n    position: relative; }\n.sv-select .sv-select-chevron {\n    color: #A1A6BA;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    position: absolute;\n    top: 13px;\n    right: 15px;\n    -webkit-transition: all 0.2s ease-out;\n    transition: all 0.2s ease-out;\n    cursor: pointer; }\n.sv-select .sv-select-chevron.rotated {\n      color: black;\n      -webkit-transform: rotate(180deg);\n              transform: rotate(180deg); }\n.sv-select .sv-select-display {\n    color: #A1A6BA;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    padding-right: 30px;\n    overflow: hidden;\n    border-radius: 4px;\n    border: 1px solid #B9BED2;\n    -webkit-transition: all 0.2s ease-out;\n    transition: all 0.2s ease-out;\n    cursor: pointer; }\n.sv-select .sv-select-display:hover {\n      border-color: #A1A6BA; }\n.sv-select .sv-select-display.open {\n      color: black;\n      border-color: black; }\n.sv-select .sv-select-display.open:hover {\n        border-color: black; }\n.sv-select .sv-selected {\n    color: #A1A6BA;\n    font-family: \"Montserrat\", sans-serif;\n    font-size: 12px;\n    font-weight: 500;\n    width: 100%;\n    height: 38px;\n    padding: 0;\n    padding-left: 15px;\n    border: none; }\n.sv-select .sv-selected.static {\n      cursor: pointer; }\n.sv-select .sv-selected.search {\n      color: black; }\n.sv-select .sv-select-options {\n    margin: 0;\n    padding: 0;\n    list-style-type: none;\n    -webkit-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);\n            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);\n    width: 100%;\n    max-height: 200px;\n    position: absolute;\n    top: 50px;\n    overflow: hidden;\n    z-index: 10000;\n    background: white;\n    border-radius: 4px;\n    border: 1px solid black;\n    overflow-y: scroll;\n    -webkit-transform-origin: 0 0;\n            transform-origin: 0 0; }\n.sv-select .sv-select-options li {\n      height: 40px;\n      padding: 0px 10px;\n      color: #000;\n      border-top: 1px solid #F1F2F7;\n      font-family: \"Montserrat\", sans-serif;\n      font-size: 12px;\n      font-weight: 500;\n      line-height: 40px; }\n.sv-select .sv-select-options li:first-child {\n        border: none; }\n.sv-select .sv-select-options li:hover {\n        background: #F1F2F7;\n        cursor: pointer; }\n.sv-select .sv-select-options .sv-select-no-results {\n      color: #A1A6BA;\n      text-align: center; }\n.sv-select .sv-select-options .sv-select-no-results:hover {\n        background: transparent;\n        cursor: default; }\n"
-
-/***/ }),
-
-/***/ "./src/select/select.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export SvSelectBase */
-/* unused harmony export _SvSelectBase */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SvSelect; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_animations__ = __webpack_require__("./node_modules/@angular/animations/esm5/animations.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core__ = __webpack_require__("./src/core/index.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fortawesome_fontawesome__ = __webpack_require__("./node_modules/@fortawesome/fontawesome/index.es.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome_free_solid__ = __webpack_require__("./node_modules/@fortawesome/fontawesome-free-solid/index.es.js");
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-__WEBPACK_IMPORTED_MODULE_3__fortawesome_fontawesome__["a" /* default */].library.add(__WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome_free_solid__["c" /* faChevronDown */], __WEBPACK_IMPORTED_MODULE_4__fortawesome_fontawesome_free_solid__["a" /* faCaretDown */]);
-var SvSelectBase = (function () {
-    function SvSelectBase(_renderer, _element) {
-        this._renderer = _renderer;
-        this._element = _element;
-    }
-    return SvSelectBase;
-}());
-
-var _SvSelectBase = Object(__WEBPACK_IMPORTED_MODULE_2__core__["b" /* colorMixin */])(SvSelectBase);
-var SvSelect = (function (_super) {
-    __extends(SvSelect, _super);
-    function SvSelect(renderer, element) {
-        var _this = _super.call(this, renderer, element) || this;
-        // Determines if the options are searchable
-        _this.search = false;
-        _this.placeholder = 'Select';
-        // The search key
-        _this.searchKey = '';
-        // Options array
-        _this.options = [];
-        // Flags if the select box is open
-        _this._open = false;
-        return _this;
-    }
-    Object.defineProperty(SvSelect.prototype, "selected", {
-        get: function () { return this._selected; },
-        set: function (newValue) {
-            this._selected = newValue;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(SvSelect.prototype, "open", {
-        get: function () { return this._open; },
-        set: function (newValue) {
-            var _this = this;
-            if (newValue && this.search) {
-                setTimeout(function () { return _this.searchField.nativeElement.focus(); }, 0);
-            }
-            else if (!newValue && this.search) {
-                this.searchKey = '';
-            }
-            this._open = newValue;
-        },
-        enumerable: true,
-        configurable: true
-    });
-    SvSelect.prototype.ngOnInit = function () {
-        this.filteredOptions = this.options;
-    };
-    SvSelect.prototype.filterOptions = function () {
-        var _this = this;
-        if (this.searchKey !== '') {
-            this.filteredOptions = this.options.filter(function (option) {
-                return option.toLowerCase().includes(_this.searchKey);
-            });
-        }
-        else {
-            this.filteredOptions = this.options;
-        }
-    };
-    SvSelect.prototype.makeSelection = function (option) {
-        this.searchKey = '';
-        this.filterOptions();
-        this.selected = option;
-        this.open = false;
-    };
-    SvSelect.prototype.something = function () {
-        console.log('outside click!!!!');
-    };
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])(),
-        __metadata("design:type", String)
-    ], SvSelect.prototype, "color", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])(),
-        __metadata("design:type", Object)
-    ], SvSelect.prototype, "search", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])(),
-        __metadata("design:type", Object)
-    ], SvSelect.prototype, "placeholder", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_6" /* ViewChild */])('search'),
-        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */])
-    ], SvSelect.prototype, "searchField", void 0);
-    __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["C" /* Input */])(),
-        __metadata("design:type", Array)
-    ], SvSelect.prototype, "options", void 0);
-    SvSelect = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'sv-select',
-            template: __webpack_require__("./src/select/select.html"),
-            styles: [__webpack_require__("./src/select/select.scss")],
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewEncapsulation */].None,
-            animations: [
-                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["j" /* trigger */])('showOptions', [
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["g" /* state */])('in', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({ opacity: 1, transform: 'translateY(0)' })),
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["i" /* transition */])(':enter', [
-                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({ opacity: 0, transform: 'translateY(-10px)' }),
-                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* animate */])('100ms ease-out')
-                    ]),
-                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["i" /* transition */])(':leave', [
-                        Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* animate */])('100ms ease-out', Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["h" /* style */])({ opacity: 0, transform: 'translateY(-10px)' }))
-                    ])
-                ])
-            ],
-            host: {
-                'class': 'sv-select',
-            }
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
-    ], SvSelect);
-    return SvSelect;
-}(_SvSelectBase));
 
 
 
@@ -2188,7 +1894,7 @@ var SvSpinnerBase = (function () {
     return SvSpinnerBase;
 }());
 
-var _SvSpinnerBase = Object(__WEBPACK_IMPORTED_MODULE_1__core__["b" /* colorMixin */])(SvSpinnerBase);
+var _SvSpinnerBase = Object(__WEBPACK_IMPORTED_MODULE_1__core__["a" /* colorMixin */])(SvSpinnerBase);
 var SvSpinner = (function (_super) {
     __extends(SvSpinner, _super);
     function SvSpinner(renderer, element) {
@@ -2206,7 +1912,7 @@ var SvSpinner = (function (_super) {
             host: {
                 'class': 'sv-spinner'
             },
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewEncapsulation */].None
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* ViewEncapsulation */].None
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
     ], SvSpinner);
@@ -2304,7 +2010,7 @@ var SvSwitchBase = (function () {
     return SvSwitchBase;
 }());
 
-var _SvSwitchBase = Object(__WEBPACK_IMPORTED_MODULE_1__core__["b" /* colorMixin */])(SvSwitchBase);
+var _SvSwitchBase = Object(__WEBPACK_IMPORTED_MODULE_1__core__["a" /* colorMixin */])(SvSwitchBase);
 var SvSwitch = (function (_super) {
     __extends(SvSwitch, _super);
     function SvSwitch(renderer, element) {
@@ -2346,7 +2052,7 @@ var SvSwitch = (function (_super) {
                 'class': 'sv-switch',
                 'disabled': 'disabled'
             },
-            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_8" /* ViewEncapsulation */].None
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["_7" /* ViewEncapsulation */].None
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["U" /* Renderer2 */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["s" /* ElementRef */]])
     ], SvSwitch);
